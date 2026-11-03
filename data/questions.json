@@ -1,0 +1,343 @@
+{
+  "version": 1,
+  "sentenceCompletion": [
+    {
+      "id": "sc-001",
+      "type": "sentence-completion",
+      "stem": "Because the instructions were extremely ____, most of the participants completed the task without asking for help.",
+      "options": ["vague", "clear", "brief", "rare"],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "המשתתפים השלימו את המשימה בלי לבקש עזרה — כלומר ההוראות היו ברורות (clear). Because מציין סיבה ותוצאה, ולכן נדרשת מילה חיובית. vague (מעורפל) היה מוביל לתוצאה ההפוכה.",
+      "tags": ["vocabulary", "cause-effect"]
+    },
+    {
+      "id": "sc-002",
+      "type": "sentence-completion",
+      "stem": "The company decided to ____ the launch of its new product until the safety tests had been completed.",
+      "options": ["postpone", "celebrate", "announce", "accelerate"],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "המילה until (עד ש...) מרמזת על המתנה: החברה דחתה (postpone) את ההשקה עד לסיום בדיקות הבטיחות. accelerate (להאיץ) סותר את ההיגיון של המתנה.",
+      "tags": ["vocabulary", "time-clues"]
+    },
+    {
+      "id": "sc-003",
+      "type": "sentence-completion",
+      "stem": "Although the novel received ____ reviews from critics, it became one of the best-selling books of the year.",
+      "options": ["lengthy", "accurate", "unfavorable", "enthusiastic"],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Although (למרות ש...) מציין ניגוד: הספר הצליח מסחרית למרות ביקורות שליליות (unfavorable). enthusiastic (נלהבות) לא יוצר ניגוד ולכן אינו מתאים.",
+      "tags": ["vocabulary", "contrast"]
+    },
+    {
+      "id": "sc-004",
+      "type": "sentence-completion",
+      "stem": "The researchers were unable to ____ their results, so other scientists questioned the validity of the original study.",
+      "options": ["publish", "ignore", "simplify", "replicate"],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "מדענים אחרים הטילו ספק בתוקף המחקר כי החוקרים לא הצליחו לשחזר (replicate) את התוצאות. שחזור תוצאות הוא הבסיס לאמינות מחקר מדעי.",
+      "tags": ["academic-vocabulary", "cause-effect"]
+    },
+    {
+      "id": "sc-005",
+      "type": "sentence-completion",
+      "stem": "The ancient manuscript was so ____ that the librarians allowed only experts to handle it.",
+      "options": ["fragile", "popular", "recent", "colorful"],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "מבנה so ... that (כל כך ... ש...) מקשר בין התכונה לתוצאה: רק מומחים הורשו לגעת בכתב היד כי הוא היה שביר (fragile).",
+      "tags": ["vocabulary", "so-that"]
+    },
+    {
+      "id": "sc-006",
+      "type": "sentence-completion",
+      "stem": "____ the evidence against him was overwhelming, the jury took three days to reach a verdict.",
+      "options": ["Because", "Unless", "Even though", "So that"],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "יש ניגוד בין הראיות החד-משמעיות לבין הזמן הארוך שלקח למושבעים להחליט, ולכן נדרשת מילת ניגוד: Even though (אף על פי ש...). Because היה יוצר קשר סיבתי לא הגיוני.",
+      "tags": ["connectors", "contrast"]
+    }
+  ],
+  "restatement": [
+    {
+      "id": "rs-001",
+      "type": "restatement",
+      "stem": "Few people expected the experiment to succeed.",
+      "options": [
+        "Most people believed the experiment would succeed.",
+        "The experiment succeeded because many people supported it.",
+        "Only a small number of people thought the experiment would be successful.",
+        "Few people took part in the successful experiment."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Few (מעטים) = Only a small number. המשפט המקורי אומר שרק מעטים ציפו להצלחה. שימו לב: few בלי a הוא בעל משמעות שלילית (כמעט אף אחד), בניגוד ל-a few.",
+      "tags": ["quantifiers"]
+    },
+    {
+      "id": "rs-002",
+      "type": "restatement",
+      "stem": "The museum will remain closed until the renovations are completed.",
+      "options": [
+        "The museum will not reopen before the renovations are finished.",
+        "The renovations will begin once the museum closes.",
+        "The museum closed after the renovations were completed.",
+        "The renovations are taking place while the museum is open."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "remain closed until = לא ייפתח לפני ש... התשובה הנכונה שומרת על אותו סדר אירועים: קודם השיפוצים מסתיימים, ורק אחר כך המוזיאון נפתח.",
+      "tags": ["time-clauses"]
+    },
+    {
+      "id": "rs-003",
+      "type": "restatement",
+      "stem": "Had the warning been issued earlier, many residents could have left the area in time.",
+      "options": [
+        "Many residents left the area as soon as the warning was issued.",
+        "Because the warning came late, many residents were unable to leave the area in time.",
+        "The warning was issued early, but many residents chose to stay.",
+        "Residents were warned not to leave the area too early."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "Had ... been = If ... had been — משפט תנאי מסוג שלישי (על העבר, שלא התממש). המשמעות: האזהרה לא ניתנה מוקדם, ולכן תושבים רבים לא הספיקו לעזוב.",
+      "tags": ["conditionals", "inversion"]
+    },
+    {
+      "id": "rs-004",
+      "type": "restatement",
+      "stem": "Not only did the new policy reduce costs, but it also improved employee satisfaction.",
+      "options": [
+        "The new policy reduced costs at the expense of employee satisfaction.",
+        "Employees were satisfied with the policy, even though it did not reduce costs.",
+        "The new policy was introduced only in order to reduce costs.",
+        "The new policy both lowered costs and made employees more satisfied."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "Not only ... but also = both ... and (גם ... וגם). למדיניות היו שתי תוצאות חיוביות. אל תתבלבלו מ-only בתשובה השלישית — במשפט המקורי not only מוסיף, ולא מגביל.",
+      "tags": ["connectors", "addition"]
+    },
+    {
+      "id": "rs-005",
+      "type": "restatement",
+      "stem": "The professor's theory, however appealing it may seem, is not supported by the available data.",
+      "options": [
+        "The data clearly confirms the professor's appealing theory.",
+        "Although the professor's theory may be attractive, the existing data does not support it.",
+        "The professor finds the data more appealing than the theory.",
+        "The theory is unappealing because it ignores the available data."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "however + שם תואר = לא משנה כמה... (ויתור). כלומר: גם אם התאוריה נראית מושכת (appealing = attractive), הנתונים אינם תומכים בה.",
+      "tags": ["concession", "academic-vocabulary"]
+    },
+    {
+      "id": "rs-006",
+      "type": "restatement",
+      "stem": "It was not until the late nineteenth century that the cause of malaria was discovered.",
+      "options": [
+        "Malaria was first discovered in the late nineteenth century.",
+        "The cause of malaria was known long before the late nineteenth century.",
+        "The cause of malaria was discovered only in the late nineteenth century.",
+        "By the late nineteenth century, malaria had disappeared."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "It was not until X that Y = רק ב-X קרה Y. הגורם למחלה התגלה רק בסוף המאה ה-19. התשובה הראשונה היא מלכודת: היא מדברת על גילוי המחלה עצמה, ולא על הגורם לה.",
+      "tags": ["not-until", "emphasis"]
+    }
+  ],
+  "readingComprehension": [
+    {
+      "id": "p-001",
+      "title": "The Return of the Wolves",
+      "topic": "אקולוגיה",
+      "difficulty": 3,
+      "paragraphs": [
+        "In 1995, after an absence of nearly seventy years, gray wolves were reintroduced into Yellowstone National Park in the United States. Wolves had been deliberately eliminated from the park in the early twentieth century, when they were viewed mainly as a threat to livestock and to popular game animals such as elk.",
+        "Without their main predator, elk populations grew rapidly. Large herds spent long periods grazing along riverbanks, where they consumed young willow and aspen trees before the trees could mature. As these trees declined, riverbanks became less stable, and animals that depended on them, such as beavers and many songbirds, became increasingly rare.",
+        "The return of the wolves appeared to reverse this process. Elk numbers fell, and, perhaps more importantly, the remaining elk began to avoid open areas near rivers, where they could easily be hunted. In several locations, willows recovered and beaver colonies returned. Ecologists describe such a chain of effects, in which a predator indirectly influences plants and other species, as a \"trophic cascade.\"",
+        "Not all researchers, however, accept this dramatic account. Some point out that a series of dry years, an increase in the number of bears, and human hunting outside the park also reduced the elk population during the same period. In their view, the wolves played a role, but the recovery of Yellowstone cannot be explained by a single factor."
+      ],
+      "questions": [
+        {
+          "id": "rc-001-1",
+          "type": "reading-comprehension",
+          "passageId": "p-001",
+          "stem": "According to the second paragraph, the decline of willow and aspen trees was caused by -",
+          "options": [
+            "a series of unusually dry years",
+            "elk feeding along the rivers",
+            "beavers cutting down young trees",
+            "the return of the wolves"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [2],
+          "explanation": "בפסקה 2 נכתב שעדרי האיילים רעו לאורך הגדות ואכלו את העצים הצעירים לפני שהספיקו לגדול. השנים היבשות מוזכרות רק בפסקה 4 ובהקשר אחר.",
+          "tags": ["detail"]
+        },
+        {
+          "id": "rc-001-2",
+          "type": "reading-comprehension",
+          "passageId": "p-001",
+          "stem": "The term \"trophic cascade\" (paragraph 3) refers to -",
+          "options": [
+            "the sudden disappearance of a predator from an ecosystem",
+            "the movement of animals away from rivers",
+            "a series of indirect effects that a predator has on an ecosystem",
+            "the method ecologists use to count elk"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [3],
+          "explanation": "המונח מוגדר בפסקה עצמה: a chain of effects, in which a predator indirectly influences plants and other species — שרשרת של השפעות עקיפות של טורף על המערכת האקולוגית.",
+          "tags": ["term-definition"]
+        },
+        {
+          "id": "rc-001-3",
+          "type": "reading-comprehension",
+          "passageId": "p-001",
+          "stem": "The main purpose of the last paragraph is to -",
+          "options": [
+            "provide further evidence that the wolves saved Yellowstone",
+            "describe how bears compete with wolves for food",
+            "explain why wolves were removed from the park",
+            "suggest that the recovery had several causes, not only the wolves"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [4],
+          "explanation": "הפסקה פותחת ב-however ומציגה עמדה מסתייגת: גורמים נוספים (בצורת, דובים, ציד) תרמו לירידת מספר האיילים, ולכן ההתאוששות אינה נובעת מגורם יחיד.",
+          "tags": ["paragraph-purpose"]
+        },
+        {
+          "id": "rc-001-4",
+          "type": "reading-comprehension",
+          "passageId": "p-001",
+          "stem": "It can be inferred from the passage that in the early twentieth century, wolves were -",
+          "options": [
+            "considered harmful to human interests",
+            "protected by law within the park",
+            "the main food source of bears",
+            "studied closely by ecologists"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [1],
+          "explanation": "בפסקה 1 נכתב שהזאבים חוסלו בכוונה כי נתפסו כאיום על משק החי ועל חיות ציד — כלומר נחשבו מזיקים לאינטרסים של בני אדם.",
+          "tags": ["inference"]
+        }
+      ]
+    },
+    {
+      "id": "p-002",
+      "title": "Why We Forget",
+      "topic": "פסיכולוגיה",
+      "difficulty": 3,
+      "paragraphs": [
+        "In the 1880s, the German psychologist Hermann Ebbinghaus carried out one of the first scientific studies of memory. Using himself as the only subject, he memorized long lists of meaningless syllables, such as \"WID\" and \"ZOF,\" and then tested how many he could recall after different periods of time.",
+        "His results revealed a pattern now known as the \"forgetting curve.\" Most of the forgetting took place within the first hour or so after learning; after that, the rate of forgetting slowed considerably. Ebbinghaus chose meaningless syllables deliberately: because they had no connection to anything he already knew, he could measure memory without the influence of prior knowledge.",
+        "Ebbinghaus also noticed that reviewing material several times over a few days was far more effective than studying it repeatedly in a single session. This finding, known as the \"spacing effect,\" has since been confirmed in hundreds of experiments with learners of all ages.",
+        "Despite this evidence, many students continue to rely on last-minute \"cramming\" before exams. One reason may be that cramming produces a feeling of mastery: material studied an hour ago seems familiar. Unfortunately, this sense of familiarity is misleading, since much of the material is likely to be forgotten within days."
+      ],
+      "questions": [
+        {
+          "id": "rc-002-1",
+          "type": "reading-comprehension",
+          "passageId": "p-002",
+          "stem": "Ebbinghaus used meaningless syllables in order to -",
+          "options": [
+            "make the experiment more enjoyable",
+            "prevent existing knowledge from affecting the results",
+            "test his ability to learn foreign languages",
+            "compare his memory with that of other subjects"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [2],
+          "explanation": "בפסקה 2: ההברות נבחרו כי אין להן קשר לידע קודם, וכך אפשר למדוד זיכרון without the influence of prior knowledge. התשובה האחרונה שגויה — הוא היה הנבדק היחיד.",
+          "tags": ["detail", "purpose"]
+        },
+        {
+          "id": "rc-002-2",
+          "type": "reading-comprehension",
+          "passageId": "p-002",
+          "stem": "According to the \"forgetting curve\" (paragraph 2), -",
+          "options": [
+            "forgetting occurs at a constant rate",
+            "most information is forgotten only after several weeks",
+            "forgetting is fastest shortly after learning",
+            "meaningful material is never forgotten"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [2],
+          "explanation": "Most of the forgetting took place within the first hour — רוב השכחה מתרחשת זמן קצר אחרי הלמידה, ואחר כך הקצב מאט. לכן הקצב אינו קבוע.",
+          "tags": ["detail"]
+        },
+        {
+          "id": "rc-002-3",
+          "type": "reading-comprehension",
+          "passageId": "p-002",
+          "stem": "The word \"misleading\" in paragraph 4 is closest in meaning to -",
+          "options": [
+            "giving a false impression",
+            "difficult to describe",
+            "extremely pleasant",
+            "easy to change"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [4],
+          "explanation": "misleading = מטעה. תחושת ההיכרות נותנת רושם כוזב של שליטה בחומר, שכן החומר יישכח תוך ימים.",
+          "tags": ["vocabulary-in-context"]
+        },
+        {
+          "id": "rc-002-4",
+          "type": "reading-comprehension",
+          "passageId": "p-002",
+          "stem": "The author would most likely advise a student preparing for an exam to -",
+          "options": [
+            "study the material intensively the night before",
+            "memorize lists of meaningless syllables",
+            "avoid reviewing material that has already been studied",
+            "review the material several times over a period of days"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [3, 4],
+          "explanation": "הכותב מציג את אפקט הריווח (spacing effect) כיעיל ומבקר את שיטת ה-cramming. לכן הוא היה ממליץ לחזור על החומר כמה פעמים לאורך כמה ימים.",
+          "tags": ["inference", "author-view"]
+        }
+      ]
+    }
+  ]
+}
