@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "sentenceCompletion": [
     {
       "id": "sc-001",
@@ -358,6 +358,329 @@
         "academic-vocabulary",
         "inference"
       ]
+    },
+    {
+      "id": "sc-020",
+      "type": "sentence-completion",
+      "stem": "The new medication proved highly ____ in clinical trials, reducing symptoms in over 80 percent of patients.",
+      "options": [
+        "effective",
+        "expensive",
+        "controversial",
+        "obsolete"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "הפחתת תסמינים אצל יותר מ-80% מהמטופלים מעידה שהתרופה יעילה (effective). obsolete (מיושנת) ו-controversial (שנויה במחלוקת) אינן מתיישבות עם התוצאה החיובית.",
+      "tags": [
+        "vocabulary",
+        "context-clues"
+      ]
+    },
+    {
+      "id": "sc-021",
+      "type": "sentence-completion",
+      "stem": "Since the bridge had become ____ after decades of neglect, engineers recommended closing it immediately.",
+      "options": [
+        "prosperous",
+        "hazardous",
+        "famous",
+        "spacious"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Since מציין סיבה: המהנדסים המליצו לסגור את הגשר מיד — כי הוא הפך למסוכן (hazardous) אחרי עשורים של הזנחה. שאר המילים אינן מסבירות סגירה דחופה.",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-022",
+      "type": "sentence-completion",
+      "stem": "The archaeologists were ____ to find that the tomb, which they had assumed was looted centuries ago, was still full of treasures.",
+      "options": [
+        "reluctant",
+        "accustomed",
+        "astonished",
+        "determined"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "הארכאולוגים הניחו שהקבר נשדד, ולכן גילוי האוצרות הפתיע אותם מאוד — astonished (נדהמו). reluctant (מסרבים) ו-accustomed (רגילים) אינם מתאימים להפתעה.",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-023",
+      "type": "sentence-completion",
+      "stem": "____ the heavy rain, the outdoor concert went ahead as planned.",
+      "options": [
+        "Because of",
+        "In spite of",
+        "Instead of",
+        "According to"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "יש כאן ניגוד: גשם כבד, ובכל זאת הקונצרט התקיים כמתוכנן. In spite of (למרות) מבטא ניגוד. Because of היה הופך את הגשם לסיבה לקיום הקונצרט — חסר היגיון.",
+      "tags": [
+        "connectors",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-024",
+      "type": "sentence-completion",
+      "stem": "The study's sample was too small to ____ any firm conclusions about the general population.",
+      "options": [
+        "prevent",
+        "deny",
+        "borrow",
+        "draw"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "הצירוף הקבוע באנגלית הוא draw conclusions (להסיק מסקנות). too small to... מסביר שבגלל מדגם קטן אי אפשר להסיק מסקנות על כלל האוכלוסייה.",
+      "tags": [
+        "collocations",
+        "academic"
+      ]
+    },
+    {
+      "id": "sc-025",
+      "type": "sentence-completion",
+      "stem": "Once considered a luxury, mobile phones have become so ____ that most people cannot imagine life without them.",
+      "options": [
+        "scarce",
+        "indispensable",
+        "fragile",
+        "optional"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "אם רוב האנשים לא מסוגלים לדמיין חיים בלי טלפון — הוא הפך לחיוני (indispensable). optional (רשות) הוא ההפך. Once considered a luxury מדגיש את השינוי ממותרות להכרח.",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-026",
+      "type": "sentence-completion",
+      "stem": "The CEO's resignation was completely ____; no one at the company had expected it.",
+      "options": [
+        "inevitable",
+        "gradual",
+        "unforeseen",
+        "predictable"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "החלק השני של המשפט (אף אחד לא ציפה לזה) מסביר את החלק הראשון: ההתפטרות לא נצפתה מראש — unforeseen. predictable ו-inevitable הם ההפך.",
+      "tags": [
+        "vocabulary",
+        "definition-clue"
+      ]
+    },
+    {
+      "id": "sc-027",
+      "type": "sentence-completion",
+      "stem": "Many species of frogs are ____ to changes in their environment, which makes them useful indicators of ecosystem health.",
+      "options": [
+        "sensitive",
+        "indifferent",
+        "immune",
+        "superior"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "צפרדעים יכולות לשמש מדד לבריאות המערכת האקולוגית רק אם הן מגיבות לשינויים — כלומר רגישות להם (sensitive to). immune (חסינות) ו-indifferent (אדישות) הם ההפך.",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-028",
+      "type": "sentence-completion",
+      "stem": "The two candidates hold such ____ views on the economy that voters will have a clear choice.",
+      "options": [
+        "identical",
+        "opposing",
+        "moderate",
+        "temporary"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "בחירה ברורה נוצרת כשהעמדות שונות מאוד זו מזו — opposing (מנוגדות). אם היו identical (זהות), לא הייתה בחירה ברורה. המבנה such... that מציין תוצאה.",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-029",
+      "type": "sentence-completion",
+      "stem": "The historian argued that the empire's collapse was not sudden but rather the result of a ____ decline lasting several centuries.",
+      "options": [
+        "brief",
+        "recent",
+        "deliberate",
+        "gradual"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "not sudden but rather... מציב ניגוד ל-sudden (פתאומי), ו-lasting several centuries מחזק זאת: ירידה הדרגתית (gradual). brief (קצרה) סותר את \"כמה מאות שנים\".",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-030",
+      "type": "sentence-completion",
+      "stem": "The committee members could not agree on a plan, ____ the meeting ended without a decision.",
+      "options": [
+        "unless",
+        "so",
+        "although",
+        "whereas"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "חוסר ההסכמה הוא הסיבה, והפגישה שהסתיימה בלי החלטה היא התוצאה — לכן so (ולכן). although ו-whereas מציינים ניגוד, ו-unless מציין תנאי.",
+      "tags": [
+        "connectors",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-031",
+      "type": "sentence-completion",
+      "stem": "Because the data were collected over only two weeks, the researchers warned that their findings were ____ and should be confirmed by further studies.",
+      "options": [
+        "conclusive",
+        "preliminary",
+        "irrelevant",
+        "permanent"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "ממצאים שצריך לאשר במחקרים נוספים הם ממצאים ראשוניים — preliminary. conclusive (חד-משמעיים) סותר את הצורך באישור נוסף.",
+      "tags": [
+        "vocabulary",
+        "academic"
+      ]
+    },
+    {
+      "id": "sc-032",
+      "type": "sentence-completion",
+      "stem": "The author's ____ style, full of long sentences and rare words, makes her books difficult for young readers.",
+      "options": [
+        "plain",
+        "humorous",
+        "elaborate",
+        "concise"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "משפטים ארוכים ומילים נדירות מתארים סגנון מורכב ומסוגנן — elaborate. plain (פשוט) ו-concise (תמציתי) הם ההפך הגמור.",
+      "tags": [
+        "vocabulary",
+        "definition-clue"
+      ]
+    },
+    {
+      "id": "sc-033",
+      "type": "sentence-completion",
+      "stem": "The village was so ____ that the nearest hospital was a three-hour drive away.",
+      "options": [
+        "remote",
+        "crowded",
+        "modern",
+        "wealthy"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "שלוש שעות נסיעה לבית החולים הקרוב מעידות שהכפר מרוחק ומבודד — remote. המבנה so... that מקשר בין התכונה לתוצאה.",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-034",
+      "type": "sentence-completion",
+      "stem": "Critics claim that the new law will ____ freedom of speech, while its supporters insist it will protect it.",
+      "options": [
+        "guarantee",
+        "expand",
+        "celebrate",
+        "undermine"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "while מציין ניגוד בין המבקרים לתומכים. התומכים טוענים שהחוק יגן על חופש הביטוי, ולכן המבקרים טוענים את ההפך — שהוא יחליש/יערער אותו (undermine).",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-035",
+      "type": "sentence-completion",
+      "stem": "The scientist's early work was largely ____ during her lifetime, and only decades after her death did it receive the recognition it deserved.",
+      "options": [
+        "praised",
+        "overlooked",
+        "published",
+        "imitated"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "only decades after her death did it receive recognition — העבודה זכתה להכרה רק אחרי מותה, כלומר בחייה התעלמו ממנה (overlooked). praised (זכתה לשבחים) סותר זאת.",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-036",
+      "type": "sentence-completion",
+      "stem": "____ he had studied for weeks, he felt confident when he entered the exam room.",
+      "options": [
+        "Unless",
+        "Whereas",
+        "Since",
+        "Despite"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "הלמידה הממושכת היא הסיבה לביטחון, ולכן Since (מכיוון ש...). Despite מציין ניגוד וגם אינו יכול לבוא לפני משפט שלם עם נושא ונשוא (he had studied).",
+      "tags": [
+        "connectors",
+        "grammar"
+      ]
     }
   ],
   "restatement": [
@@ -639,6 +962,285 @@
       "explanation": "postpone = לדחות, ו-pending = עד ל... / בהמתנה ל... הוועדה דחתה את ההחלטה עד שתיערך חקירה נוספת. ההחלטה נדחתה, לא החקירה.",
       "tags": [
         "academic-vocabulary"
+      ]
+    },
+    {
+      "id": "rs-016",
+      "type": "restatement",
+      "stem": "No sooner had the concert begun than the power went out.",
+      "options": [
+        "The power went out shortly before the concert began.",
+        "The power went out immediately after the concert started.",
+        "The concert began as soon as the power was restored.",
+        "The concert was cancelled because the power had gone out."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "No sooner... than פירושו \"מיד אחרי ש...\": הקונצרט רק התחיל — והחשמל נפל. אפשרות 1 הופכת את סדר האירועים, ואפשרות 4 מוסיפה ביטול שלא נאמר.",
+      "tags": [
+        "inversion",
+        "time"
+      ]
+    },
+    {
+      "id": "rs-017",
+      "type": "restatement",
+      "stem": "The new manager is by no means inexperienced.",
+      "options": [
+        "The new manager has very little experience.",
+        "The new manager is not the most experienced person in the company.",
+        "The new manager certainly has experience.",
+        "The new manager gained experience by working in many places."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "by no means = בשום אופן לא. \"בשום אופן לא חסר ניסיון\" = בהחלט בעל ניסיון. שלילה כפולה (no means + in-experienced) יוצרת משמעות חיובית.",
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "id": "rs-018",
+      "type": "restatement",
+      "stem": "Were it not for the high cost, more families would install solar panels.",
+      "options": [
+        "The high cost prevents more families from installing solar panels.",
+        "More families install solar panels because the cost is high.",
+        "Solar panels are expensive because many families install them.",
+        "Families that install solar panels pay a high cost for electricity."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "Were it not for = If it were not for (אלמלא). אלמלא המחיר הגבוה, יותר משפחות היו מתקינות — כלומר המחיר הוא מה שמונע מהן. אפשרויות 2–3 הופכות את הסיבתיות.",
+      "tags": [
+        "conditionals",
+        "inversion"
+      ]
+    },
+    {
+      "id": "rs-019",
+      "type": "restatement",
+      "stem": "The film was not nearly as entertaining as the reviews had suggested.",
+      "options": [
+        "The film was almost as entertaining as the reviews had suggested.",
+        "The reviews suggested that the film would not be entertaining.",
+        "The film was far less entertaining than the reviews had led people to expect.",
+        "The film was more entertaining than the reviewers believed."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "not nearly as... as = רחוק מאוד מ... הסרט היה מהנה הרבה פחות ממה שהביקורות הבטיחו. מלכודת: nearly לבדה פירושה \"כמעט\", אבל not nearly פירושו \"בכלל לא קרוב\".",
+      "tags": [
+        "comparison"
+      ]
+    },
+    {
+      "id": "rs-020",
+      "type": "restatement",
+      "stem": "Little did the explorers know that their supplies would run out within a week.",
+      "options": [
+        "The explorers knew a little about how long their supplies would last.",
+        "The explorers did not realize that their supplies would last only a week.",
+        "The explorers expected to run out of supplies within a week.",
+        "The explorers' supplies were too small to last a week."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "Little did they know = הם כלל לא ידעו (מבנה הפוך שמדגיש שלילה). אין זה \"ידעו מעט\" (a little). אפשרות 3 אומרת שציפו לכך — ההפך.",
+      "tags": [
+        "inversion",
+        "negation"
+      ]
+    },
+    {
+      "id": "rs-021",
+      "type": "restatement",
+      "stem": "The report was released without the approval of the board.",
+      "options": [
+        "The board approved the report before it was released.",
+        "The board refused to release the report.",
+        "The report was not released because the board did not approve it.",
+        "The board did not approve the report before it was published."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "הדוח פורסם (released = published) בלי אישור הדירקטוריון. אפשרות 3 טוענת שהדוח לא פורסם — אך הוא כן פורסם. אפשרות 2 מוסיפה סירוב שלא נאמר.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "rs-022",
+      "type": "restatement",
+      "stem": "Owing to a shortage of qualified teachers, many schools have had to increase class sizes.",
+      "options": [
+        "Many schools have larger classes because there are not enough qualified teachers.",
+        "Qualified teachers prefer to work in schools with larger classes.",
+        "Schools with large classes need fewer qualified teachers.",
+        "Many teachers have left because class sizes have increased."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Owing to = because of (בגלל). shortage = מחסור (not enough). המחסור במורים הוא הסיבה, והכיתות הגדולות הן התוצאה. אפשרות 4 הופכת סיבה ותוצאה.",
+      "tags": [
+        "cause-effect",
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "rs-023",
+      "type": "restatement",
+      "stem": "The museum's collection, though small, is remarkably varied.",
+      "options": [
+        "The museum has a large and varied collection.",
+        "Although the collection is not large, it includes a wide variety of items.",
+        "The museum's collection is small because it is so varied.",
+        "The museum plans to make its small collection more varied."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "though small = although it is small. remarkably varied = מגוון במיוחד. אפשרות 3 יוצרת קשר סיבתי שאינו קיים, ואפשרות 4 מדברת על תוכנית עתידית.",
+      "tags": [
+        "contrast"
+      ]
+    },
+    {
+      "id": "rs-024",
+      "type": "restatement",
+      "stem": "Seldom does the committee reject a proposal outright.",
+      "options": [
+        "The committee often rejects proposals without discussion.",
+        "The committee never considers proposals carefully.",
+        "The committee rarely rejects a proposal completely.",
+        "The committee sometimes accepts proposals it had previously rejected."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "Seldom = rarely (לעיתים רחוקות). outright = completely (לגמרי, על הסף). המבנה ההפוך (Seldom does) אינו משנה את המשמעות. often ו-never קיצוניים מדי.",
+      "tags": [
+        "inversion",
+        "frequency"
+      ]
+    },
+    {
+      "id": "rs-025",
+      "type": "restatement",
+      "stem": "It is unlikely that the project will be completed on schedule.",
+      "options": [
+        "The project will probably not be finished on time.",
+        "The project was finished later than scheduled.",
+        "No one knows when the project is scheduled to be completed.",
+        "The project will be completed on time, although it is difficult."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "unlikely = probably not (כנראה שלא). on schedule = on time. אפשרות 2 בזמן עבר — המשפט המקורי עוסק בעתיד.",
+      "tags": [
+        "probability"
+      ]
+    },
+    {
+      "id": "rs-026",
+      "type": "restatement",
+      "stem": "She had barely sat down when the phone rang.",
+      "options": [
+        "She sat down because the phone was ringing.",
+        "The phone rang a long time after she had sat down.",
+        "She did not sit down until the phone had stopped ringing.",
+        "The phone rang almost as soon as she sat down."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "barely... when = כמעט מיד כש... היא בקושי הספיקה להתיישב והטלפון צלצל — כלומר הצלצול הגיע מיד אחרי שהתיישבה.",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "rs-027",
+      "type": "restatement",
+      "stem": "The decline in bee populations poses a serious threat to agriculture.",
+      "options": [
+        "Agriculture has caused a serious decline in bee populations.",
+        "Farming may be seriously endangered by the decreasing number of bees.",
+        "Bees are a serious threat to many agricultural crops.",
+        "The number of bees has declined despite efforts by farmers."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "pose a threat to = מהווה איום על. הירידה במספר הדבורים (decline = decreasing number) מאיימת על החקלאות (agriculture = farming). אפשרות 1 הופכת את הסיבתיות.",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "rs-028",
+      "type": "restatement",
+      "stem": "Far from being a failure, the experiment provided valuable information.",
+      "options": [
+        "The experiment failed, but it still provided some information.",
+        "The experiment was a failure because the information was not valuable.",
+        "The experiment was not a failure at all; in fact, it yielded useful information.",
+        "The information from the experiment was far less valuable than expected."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "Far from being = רחוק מלהיות, כלל לא. הניסוי בכלל לא היה כישלון. מלכודת: אפשרות 1 מניחה שהניסוי נכשל — וזה ההפך מהנאמר.",
+      "tags": [
+        "negation",
+        "idioms"
+      ]
+    },
+    {
+      "id": "rs-029",
+      "type": "restatement",
+      "stem": "Only after the second test did the researchers notice the error.",
+      "options": [
+        "The researchers noticed the error before the second test.",
+        "The researchers did not notice the error until the second test.",
+        "The error occurred only in the second test.",
+        "After noticing the error, the researchers ran a second test."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "Only after... did = רק אחרי... = not... until. החוקרים הבחינו בטעות רק בבדיקה השנייה. אפשרות 4 הופכת את סדר האירועים, ואפשרות 3 מדברת על מתי הטעות קרתה ולא מתי התגלתה.",
+      "tags": [
+        "inversion",
+        "time"
+      ]
+    },
+    {
+      "id": "rs-030",
+      "type": "restatement",
+      "stem": "Regardless of the weather, the ceremony will take place outdoors.",
+      "options": [
+        "The ceremony will be held outside whatever the weather is like.",
+        "If the weather is bad, the ceremony will be moved indoors.",
+        "The ceremony will take place outdoors only if the weather is good.",
+        "The weather will decide whether the ceremony is held outdoors."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Regardless of = without considering (בלי קשר ל-). הטקס יתקיים בחוץ בכל מזג אוויר. כל שאר האפשרויות הופכות את מזג האוויר לתנאי — ההפך מהמשפט המקורי.",
+      "tags": [
+        "conditionals",
+        "vocabulary"
       ]
     }
   ],
@@ -1159,6 +1761,422 @@
           ],
           "explanation": "הצעדים מורידים טמפרטורות באופן מורגש, although they cannot eliminate the effect entirely: הם עוזרים, אבל לא מעלימים את התופעה לגמרי. כלומר זהו פתרון חלקי.",
           "tags": [
+            "inference"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-006",
+      "title": "Sleep and the Teenage Brain",
+      "topic": "בריאות ומדעי המוח",
+      "difficulty": 3,
+      "paragraphs": [
+        "For decades, parents and teachers have complained that teenagers stay up too late and are difficult to wake in the morning. This behavior was usually explained as a matter of poor discipline or too much time spent in front of screens. Recent research, however, suggests that the explanation is largely biological.",
+        "During adolescence, the body's internal clock shifts. The brain begins to release melatonin, the hormone that signals that it is time to sleep, about two hours later than it did in childhood. As a result, many teenagers simply do not feel tired until close to midnight, even if they go to bed earlier. Yet they still need between eight and ten hours of sleep each night.",
+        "Because most schools begin early in the morning, the majority of teenagers are chronically short of sleep. Studies have linked this lack of sleep to lower grades, poorer concentration, and a higher risk of car accidents among young drivers. Some researchers also see a connection between insufficient sleep and depression, although the direction of cause and effect is not yet clear.",
+        "In response to these findings, several school districts in the United States have moved their starting times later. The results have been encouraging: attendance has improved, and students report feeling more alert. Critics point out, however, that later starting times create problems for working parents and for after-school activities, and they argue that the benefits may not justify the cost of reorganizing transportation and schedules."
+      ],
+      "questions": [
+        {
+          "id": "rc-006-1",
+          "type": "reading-comprehension",
+          "passageId": "p-006",
+          "stem": "The main purpose of the first paragraph is to -",
+          "options": [
+            "present a common explanation that the passage will challenge",
+            "prove that teenagers spend too much time in front of screens",
+            "explain how parents should wake their children",
+            "argue that teachers are responsible for poor discipline"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            1
+          ],
+          "explanation": "הפסקה מציגה את ההסבר המקובל (משמעת, מסכים), ומסיימת ב-however: מחקרים חדשים מצביעים על הסבר ביולוגי. כלומר — היא מציגה עמדה שהקטע יערער עליה.",
+          "tags": [
+            "main-idea",
+            "structure"
+          ]
+        },
+        {
+          "id": "rc-006-2",
+          "type": "reading-comprehension",
+          "passageId": "p-006",
+          "stem": "According to the second paragraph, many teenagers fall asleep late because -",
+          "options": [
+            "they need less sleep than children do",
+            "their brains release melatonin later than in childhood",
+            "they usually go to bed too early",
+            "their internal clock stops working during adolescence"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [
+            2
+          ],
+          "explanation": "בפסקה 2: המוח מפריש מלטונין כשעתיים מאוחר יותר מאשר בילדות, ולכן בני נוער לא מרגישים עייפים עד חצות. הם דווקא צריכים 8–10 שעות שינה, כך שאפשרות 1 שגויה. השעון \"זז\" (shifts) ולא מפסיק לפעול.",
+          "tags": [
+            "detail"
+          ]
+        },
+        {
+          "id": "rc-006-3",
+          "type": "reading-comprehension",
+          "passageId": "p-006",
+          "stem": "Which of the following is stated in the third paragraph about depression?",
+          "options": [
+            "It is the main cause of lower grades among teenagers.",
+            "It is caused by early school starting times.",
+            "It is linked to lack of sleep, but it is not clear which causes which.",
+            "It affects mainly young drivers."
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            3
+          ],
+          "explanation": "\"the direction of cause and effect is not yet clear\" — יש קשר בין חוסר שינה לדיכאון, אך לא ידוע מה גורם למה. אפשרות 2 קובעת סיבתיות שהקטע נמנע ממנה במפורש.",
+          "tags": [
+            "detail",
+            "cause-effect"
+          ]
+        },
+        {
+          "id": "rc-006-4",
+          "type": "reading-comprehension",
+          "passageId": "p-006",
+          "stem": "Critics of later school starting times argue that -",
+          "options": [
+            "students do not actually become more alert",
+            "attendance decreases when school starts later",
+            "teenagers will simply go to bed even later",
+            "the practical difficulties may outweigh the advantages"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            4
+          ],
+          "explanation": "המבקרים טוענים שהשינוי יוצר בעיות להורים עובדים ולפעילויות אחר הצהריים, ושהתועלת אולי אינה מצדיקה את העלות. אפשרויות 1–2 סותרות את התוצאות המעודדות שתוארו.",
+          "tags": [
+            "detail",
+            "opinion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-007",
+      "title": "The Printing Revolution",
+      "topic": "היסטוריה",
+      "difficulty": 3,
+      "paragraphs": [
+        "Before the middle of the fifteenth century, books in Europe were copied by hand, usually by monks working in monasteries. A single copy of the Bible could take more than a year to produce, and books were therefore rare and extremely expensive. Only the Church, universities, and the wealthiest families could afford to own them.",
+        "Around 1450, Johannes Gutenberg, a goldsmith from the German city of Mainz, developed a printing press that used movable metal type. Individual letters could be arranged to form a page, printed, and then rearranged for the next page. Gutenberg did not invent printing itself — craftsmen in China and Korea had used movable type centuries earlier — but his system was the first to be fast, durable, and well suited to alphabetic languages.",
+        "The new technology spread with remarkable speed. By 1500, printing presses were operating in more than two hundred European cities, and millions of books had been produced. As prices fell, reading was no longer limited to a small elite. Merchants, craftsmen, and eventually ordinary townspeople began to buy books, pamphlets, and calendars.",
+        "Historians continue to debate the long-term effects of printing. Some argue that it made the Protestant Reformation and the Scientific Revolution possible, since new ideas could now circulate widely before authorities were able to suppress them. Others warn against giving a single invention too much credit, noting that rising literacy and growing trade were already changing European society before Gutenberg's press appeared."
+      ],
+      "questions": [
+        {
+          "id": "rc-007-1",
+          "type": "reading-comprehension",
+          "passageId": "p-007",
+          "stem": "According to the first paragraph, books were expensive before 1450 mainly because -",
+          "options": [
+            "they were produced slowly by hand",
+            "only the Church was allowed to sell them",
+            "the monks charged high prices for their work",
+            "very few people knew how to read"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [
+            1
+          ],
+          "explanation": "בפסקה 1: העתקה ידנית של ספר אחד יכלה לארוך יותר משנה, ולכן (therefore) הספרים היו נדירים ויקרים. אפשרות 4 אולי נכונה היסטורית, אך אינה מוזכרת בקטע.",
+          "tags": [
+            "detail",
+            "cause-effect"
+          ]
+        },
+        {
+          "id": "rc-007-2",
+          "type": "reading-comprehension",
+          "passageId": "p-007",
+          "stem": "What does the second paragraph say about Gutenberg's achievement?",
+          "options": [
+            "He was the first person in history to print with movable type.",
+            "He improved a technique that already existed, making it more practical.",
+            "He learned how to print from craftsmen in China and Korea.",
+            "He developed a printing method that suited only the German language."
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            2
+          ],
+          "explanation": "\"Gutenberg did not invent printing itself\" — דפוס באותיות נעות היה קיים בסין ובקוריאה. החידוש שלו: שיטה מהירה, עמידה ומתאימה לשפות אלפביתיות. אין טענה שלמד מהם (אפשרות 3).",
+          "tags": [
+            "detail"
+          ]
+        },
+        {
+          "id": "rc-007-3",
+          "type": "reading-comprehension",
+          "passageId": "p-007",
+          "stem": "The word \"elite\" in the third paragraph refers to -",
+          "options": [
+            "merchants and craftsmen",
+            "ordinary townspeople",
+            "printers working in European cities",
+            "a small, privileged group of people"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [
+            3
+          ],
+          "explanation": "המשפט אומר שהקריאה כבר לא הוגבלה ל-small elite — קבוצה קטנה ומיוחסת (הכנסייה, האוניברסיטאות והעשירים מפסקה 1). סוחרים ובעלי מלאכה הם דווקא אלה שהצטרפו לקוראים אחר כך.",
+          "tags": [
+            "vocabulary-in-context"
+          ]
+        },
+        {
+          "id": "rc-007-4",
+          "type": "reading-comprehension",
+          "passageId": "p-007",
+          "stem": "Which of the following best describes the view of the \"others\" mentioned in the last paragraph?",
+          "options": [
+            "Printing had no effect at all on European society.",
+            "The Reformation led to the invention of printing.",
+            "The importance of printing should not be exaggerated.",
+            "Authorities managed to suppress most new ideas."
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 4,
+          "referencedParagraphs": [
+            4
+          ],
+          "explanation": "\"warn against giving a single invention too much credit\" — הם מזהירים מלייחס לדפוס יותר מדי חשיבות, כי שינויים אחרים כבר היו בעיצומם. הם אינם טוענים שלא הייתה לו השפעה כלל (אפשרות 1 קיצונית מדי).",
+          "tags": [
+            "opinion",
+            "inference"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-008",
+      "title": "Microplastics in the Ocean",
+      "topic": "סביבה",
+      "difficulty": 3,
+      "paragraphs": [
+        "Every year, millions of tons of plastic waste enter the world's oceans. While floating bottles and bags are easy to see, scientists are increasingly concerned about something far less visible: microplastics, pieces of plastic smaller than five millimeters. Some are manufactured at this size, such as the tiny beads once common in cosmetics, but most result from larger items slowly breaking apart under the effect of sunlight and waves.",
+        "Because they are so small, microplastics are easily swallowed by marine animals, from tiny plankton to whales. Laboratory studies have shown that they can damage the digestive systems of fish and reduce their ability to reproduce. In addition, microplastics tend to absorb toxic chemicals from the surrounding water, which may then be passed up the food chain.",
+        "Humans are not protected from this problem. Microplastics have been found in seafood, table salt, and even drinking water. The effects on human health remain uncertain, however. So far, there is little direct evidence that the amounts people typically consume cause harm, and researchers stress that more long-term studies are needed before firm conclusions can be drawn.",
+        "Removing microplastics from the ocean is practically impossible, so most experts agree that the only realistic solution is to stop them from entering it in the first place. Several countries have already banned plastic microbeads, and some are considering stricter rules on single-use plastics. Others, however, believe that improved recycling and waste management, rather than bans, will prove more effective in the long run."
+      ],
+      "questions": [
+        {
+          "id": "rc-008-1",
+          "type": "reading-comprehension",
+          "passageId": "p-008",
+          "stem": "According to the first paragraph, most microplastics -",
+          "options": [
+            "are manufactured for use in cosmetics",
+            "are larger than five millimeters",
+            "are formed when larger pieces of plastic break apart",
+            "float on the surface of the water where they can be seen"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [
+            1
+          ],
+          "explanation": "\"most result from larger items slowly breaking apart\" — רוב המיקרופלסטיק נוצר מפירוק של פריטים גדולים. רק חלק (Some) מיוצר בגודל זה, כמו החרוזים בקוסמטיקה.",
+          "tags": [
+            "detail"
+          ]
+        },
+        {
+          "id": "rc-008-2",
+          "type": "reading-comprehension",
+          "passageId": "p-008",
+          "stem": "The second paragraph mentions all of the following as possible dangers of microplastics EXCEPT -",
+          "options": [
+            "damage to the digestive systems of fish",
+            "a reduced ability of fish to reproduce",
+            "toxic chemicals passed up the food chain",
+            "the death of large numbers of whales"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            2
+          ],
+          "explanation": "לווייתנים מוזכרים רק כדוגמה לבעלי חיים שבולעים מיקרופלסטיק, ולא נאמר שהם מתים בגללו. שלוש הסכנות האחרות מופיעות במפורש בפסקה.",
+          "tags": [
+            "detail",
+            "except"
+          ]
+        },
+        {
+          "id": "rc-008-3",
+          "type": "reading-comprehension",
+          "passageId": "p-008",
+          "stem": "What is the main point of the third paragraph?",
+          "options": [
+            "Microplastics in drinking water are a proven health hazard.",
+            "Although people consume microplastics, the effect on their health is still unknown.",
+            "People should avoid seafood because it contains microplastics.",
+            "Long-term studies have shown that microplastics are harmless to humans."
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            3
+          ],
+          "explanation": "הפסקה אומרת שמיקרופלסטיק נמצא במזון ובמים, אך ההשפעה על בריאות האדם עדיין אינה ודאית (uncertain) ונדרשים מחקרים ארוכי טווח. אפשרויות 1 ו-4 קובעות מסקנות שהקטע נמנע מהן.",
+          "tags": [
+            "main-idea"
+          ]
+        },
+        {
+          "id": "rc-008-4",
+          "type": "reading-comprehension",
+          "passageId": "p-008",
+          "stem": "It can be inferred from the last paragraph that -",
+          "options": [
+            "there is disagreement about the best way to keep microplastics out of the ocean",
+            "effective methods of removing microplastics from the water have been developed",
+            "recycling has already solved the problem of microplastics",
+            "all countries have agreed to ban single-use plastics"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 4,
+          "referencedParagraphs": [
+            4
+          ],
+          "explanation": "חלק מהמדינות בוחרות באיסורים, ואחרים (Others, however) מאמינים שמחזור וניהול פסולת יעילים יותר — כלומר יש מחלוקת על הדרך. הסרה מהים מתוארת כבלתי אפשרית כמעט, ולכן אפשרות 2 שגויה.",
+          "tags": [
+            "inference"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-009",
+      "title": "The Future of the Office",
+      "topic": "כלכלה ועבודה",
+      "difficulty": 3,
+      "paragraphs": [
+        "Before 2020, working from home was a privilege enjoyed by a relatively small number of employees. The COVID-19 pandemic changed that almost overnight. Within weeks, millions of office workers around the world were holding meetings by video and sharing documents online. What began as an emergency measure soon became, for many companies, a permanent way of working.",
+        "Supporters of remote work point to several advantages. Employees save the time and money they once spent commuting, and many report a better balance between work and family life. Companies, for their part, can reduce the cost of office space and hire talented people who live far from their headquarters. Some studies have even found that productivity rose when employees worked from home.",
+        "Yet the picture is not entirely positive. Other studies suggest that productivity gains are concentrated in routine, individual tasks, while work that depends on creativity and cooperation suffers. Younger employees in particular may miss out on the informal learning that comes from watching experienced colleagues. Many remote workers also report feelings of isolation and find it hard to separate their working hours from their free time.",
+        "As a result, a growing number of organizations have adopted a \"hybrid\" model, in which employees spend some days in the office and others at home. Whether this compromise will capture the benefits of both arrangements, or simply combine their disadvantages, is a question that researchers and managers are only beginning to answer."
+      ],
+      "questions": [
+        {
+          "id": "rc-009-1",
+          "type": "reading-comprehension",
+          "passageId": "p-009",
+          "stem": "According to the first paragraph, the COVID-19 pandemic -",
+          "options": [
+            "led many companies to adopt remote work very quickly",
+            "made working from home a privilege for a few employees",
+            "put an end to the use of video meetings",
+            "forced most companies to close their offices permanently"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [
+            1
+          ],
+          "explanation": "\"changed that almost overnight\" ו-\"Within weeks\" — המגפה הובילה למעבר מהיר לעבודה מרחוק. לפני 2020 זו הייתה פריבילגיה (אפשרות 2 מתארת את המצב הקודם). הקטע לא אומר שמשרדים נסגרו לצמיתות.",
+          "tags": [
+            "detail"
+          ]
+        },
+        {
+          "id": "rc-009-2",
+          "type": "reading-comprehension",
+          "passageId": "p-009",
+          "stem": "Which of the following is NOT mentioned in the second paragraph as an advantage of remote work?",
+          "options": [
+            "saving time on travel to work",
+            "lower spending on office space",
+            "access to talented people who live far away",
+            "higher salaries for employees"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [
+            2
+          ],
+          "explanation": "הפסקה מזכירה חיסכון בזמן נסיעה (commuting), הוזלת שטחי משרד וגיוס עובדים מרוחקים. משכורות גבוהות יותר אינן מוזכרות.",
+          "tags": [
+            "detail",
+            "except"
+          ]
+        },
+        {
+          "id": "rc-009-3",
+          "type": "reading-comprehension",
+          "passageId": "p-009",
+          "stem": "According to the third paragraph, younger employees may be harmed by remote work because they -",
+          "options": [
+            "are less productive at routine tasks",
+            "have fewer chances to learn from experienced colleagues",
+            "prefer to work in the office with their friends",
+            "find it difficult to use video technology"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            3
+          ],
+          "explanation": "\"miss out on the informal learning that comes from watching experienced colleagues\" — עובדים צעירים מפסידים למידה לא פורמלית מעמיתים מנוסים. דווקא במשימות שגרתיות נמצאה עלייה בפריון.",
+          "tags": [
+            "detail"
+          ]
+        },
+        {
+          "id": "rc-009-4",
+          "type": "reading-comprehension",
+          "passageId": "p-009",
+          "stem": "The author's attitude toward the hybrid model can best be described as -",
+          "options": [
+            "enthusiastic",
+            "strongly critical",
+            "uncertain",
+            "indifferent"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 4,
+          "referencedParagraphs": [
+            4
+          ],
+          "explanation": "המחבר מציג שתי אפשרויות — המודל ישלב את היתרונות או את החסרונות — ואומר שהתשובה רק מתחילה להתברר. זו עמדה של חוסר ודאות, לא התלהבות ולא ביקורת.",
+          "tags": [
+            "tone",
             "inference"
           ]
         }

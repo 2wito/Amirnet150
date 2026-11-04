@@ -12,7 +12,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2 font-semibold text-primary">
           <BookOpenCheck className="size-5" aria-hidden />
-          <span>אמירנט 150</span>
+          <span dir="ltr" className="font-extrabold tracking-tight">EZ AMIRNET</span>
         </Link>
         <nav aria-label="ניווט ראשי">
           <ul className="flex items-center gap-1 text-sm">

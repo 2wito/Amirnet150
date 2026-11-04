@@ -21,8 +21,8 @@ const arimo = Arimo({
 
 export const metadata: Metadata = {
   title: {
-    default: "אמירנט 150 — תרגול למבחן אמירנט",
-    template: "%s | אמירנט 150",
+    default: "EZ AMIRNET — תרגול חינמי למבחן אמירנט",
+    template: "%s | EZ AMIRNET",
   },
   description: "סימולציות ותרגול למבחן האמירנט באנגלית, בממשק הדומה למבחן הממוחשב של מאל״ו.",
 };
