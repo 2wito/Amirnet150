@@ -86,7 +86,7 @@ function CompletedResults() {
           <p className="text-sm text-muted-foreground">
             {mode === "full-exam" ? "סימולציית מבחן מלא" : "תרגול פרק"}
           </p>
-          <h1 className="text-2xl font-bold tracking-tight">תוצאות המבחן</h1>
+          <h1 className="text-3xl font-bold tracking-tight">תוצאות המבחן</h1>
         </div>
         <NewExamButton onClick={startNew} />
       </div>
@@ -94,7 +94,7 @@ function CompletedResults() {
       {/* Score + headline stats */}
       <section
         aria-label="סיכום"
-        className="grid gap-6 rounded-xl border bg-card p-6 md:grid-cols-[1fr_1fr] md:p-8"
+        className="glass card-elevated grid gap-6 rounded-3xl p-6 md:grid-cols-[1fr_1fr] md:p-8"
       >
         <ScoreBadge score={result.score} level={result.level} />
         <dl className="grid content-center gap-4 sm:grid-cols-2">
@@ -137,9 +137,11 @@ function CompletedResults() {
           {categories.map((c) => {
             const Icon = TYPE_ICONS[c.questionType];
             return (
-              <li key={c.questionType} className="space-y-4 rounded-xl border bg-card p-5">
+              <li key={c.questionType} className="card-elevated card-hover space-y-4 rounded-2xl border bg-card p-5">
                 <div className="flex items-center gap-2">
-                  <Icon className="size-5 text-primary" aria-hidden />
+                  <span className="flex size-9 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <Icon className="size-5" aria-hidden />
+                  </span>
                   <h3 className="font-semibold">{QUESTION_TYPE_LABELS_HE[c.questionType]}</h3>
                 </div>
                 <div className="space-y-1.5">
@@ -155,7 +157,10 @@ function CompletedResults() {
                     aria-valuenow={Math.round(c.accuracy)}
                     className="h-1.5 overflow-hidden rounded-full bg-muted"
                   >
-                    <div className="h-full rounded-full bg-primary" style={{ width: `${c.accuracy}%` }} />
+                    <div
+                      className="h-full rounded-full bg-brand-gradient transition-[width] duration-500"
+                      style={{ width: `${c.accuracy}%` }}
+                    />
                   </div>
                 </div>
                 <dl className="grid grid-cols-2 gap-2 text-sm">
@@ -198,7 +203,11 @@ function CompletedResults() {
 
 function NewExamButton({ onClick }: { onClick: () => void }) {
   return (
-    <Button size="lg" onClick={onClick} className="gap-2">
+    <Button
+      size="lg"
+      onClick={onClick}
+      className="h-11 cursor-pointer gap-2 rounded-xl bg-brand-gradient px-5 shadow-lg shadow-primary/25 hover:opacity-90"
+    >
       <RotateCcw aria-hidden />
       התחל מבחן חדש / תרגול נוסף
     </Button>
@@ -215,7 +224,7 @@ function Stat({
   children: React.ReactNode;
 }) {
   return (
-    <div className="space-y-1.5 rounded-lg bg-muted/40 p-4">
+    <div className="space-y-1.5 rounded-2xl border bg-card/70 p-4">
       <dt className="flex items-center gap-1.5 text-xs text-muted-foreground">
         {Icon && <Icon className="size-3.5" aria-hidden />}
         {label}

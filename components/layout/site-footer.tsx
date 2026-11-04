@@ -20,16 +20,19 @@ const NOTICES = [
   },
 ] as const;
 
-/** Site-wide footer: branding, community notice, legal disclaimer and credits (RTL Hebrew). */
+const linkClass =
+  "font-medium text-foreground underline-offset-4 transition-colors duration-200 hover:text-primary hover:underline";
+
+/** Site-wide footer: branding, community notice, legal disclaimer, credits and dedication (RTL Hebrew). */
 export function SiteFooter() {
   return (
-    <footer className="mt-16 border-t bg-muted/40">
+    <footer className="glass mt-20 border-x-0 border-b-0">
       <div className="mx-auto w-full max-w-5xl space-y-8 px-4 py-10 sm:px-6">
-        <div className="space-y-2">
-          <p dir="ltr" className="text-end text-2xl font-extrabold tracking-tight text-primary">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <p dir="ltr" className="text-end text-3xl font-extrabold tracking-tight text-brand-gradient sm:text-start">
             EZ AMIRNET
           </p>
-          <p className="flex items-start gap-2 text-sm text-muted-foreground">
+          <p className="flex items-start gap-2 text-sm text-muted-foreground sm:max-w-md">
             <Heart className="mt-0.5 size-4 shrink-0 text-rose-500" aria-hidden />
             <span>
               האתר חינמי לחלוטין לטובת הקהילה, ונבנה מרצון טוב כדי לעזור לכם להצליח במבחן האמירנט.
@@ -39,9 +42,11 @@ export function SiteFooter() {
 
         <ul className="grid gap-4 sm:grid-cols-3">
           {NOTICES.map(({ icon: Icon, title, body }) => (
-            <li key={title} className="space-y-1.5 rounded-lg border bg-background p-4">
+            <li key={title} className="card-elevated space-y-2 rounded-2xl border bg-card/80 p-5">
               <h2 className="flex items-center gap-2 text-sm font-semibold">
-                <Icon className="size-4 text-primary" aria-hidden />
+                <span className="flex size-7 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <Icon className="size-4" aria-hidden />
+                </span>
                 {title}
               </h2>
               <p className="text-xs leading-relaxed text-muted-foreground">{body}</p>
@@ -52,23 +57,24 @@ export function SiteFooter() {
         <div className="flex flex-col gap-2 border-t pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>
             פיתוח על ידי{" "}
-            <a
-              href={`mailto:${DEVELOPER_EMAIL}`}
-              className="inline-flex items-center gap-1 font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-            >
+            <a href={`mailto:${DEVELOPER_EMAIL}`} className={`inline-flex items-center gap-1 ${linkClass}`}>
               איתי טויטו
               <Mail className="size-3.5" aria-hidden />
             </a>
           </p>
           <p>
             לדיווח על בעיה או הפרת זכויות:{" "}
-            <a
-              href={`mailto:${DEVELOPER_EMAIL}`}
-              dir="ltr"
-              className="font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
-            >
+            <a href={`mailto:${DEVELOPER_EMAIL}`} dir="ltr" className={linkClass}>
               {DEVELOPER_EMAIL}
             </a>
+          </p>
+        </div>
+
+        {/* Personal dedication */}
+        <div className="flex justify-center pt-2">
+          <p className="relative rounded-full border border-warm/25 bg-warm-soft px-6 py-3 text-center text-sm text-warm shadow-[0_0_32px_-6px] shadow-warm/40">
+            <span className="font-bold">שנהב</span> — האתר הזה נבנה בשבילך ולהצלחתך. תני בראש!{" "}
+            <span className="font-semibold">אוהב ❤️</span>
           </p>
         </div>
       </div>

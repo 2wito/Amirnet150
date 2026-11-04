@@ -1,3 +1,4 @@
+import { LevelBadge, levelDotClass } from "@/components/results/level-badge";
 import {
   AMIRNET_MAX_SCORE,
   AMIRNET_MIN_SCORE,
@@ -19,16 +20,19 @@ export function ScoreBadge({ score, level }: { score: number; level: LevelBand }
 
   return (
     <div className="flex flex-col items-center gap-5 text-center">
-      <div className="flex size-40 flex-col items-center justify-center rounded-full border-8 border-primary/15 bg-primary/5">
-        <span className="text-xs text-muted-foreground">ציון משוער</span>
-        <span className="font-exam text-6xl font-bold tabular-nums text-primary">{score}</span>
-        <span className="font-exam text-xs text-muted-foreground" dir="ltr">
-          {AMIRNET_MIN_SCORE}–{AMIRNET_MAX_SCORE}
-        </span>
+      {/* Gradient ring around the score */}
+      <div className="rounded-full bg-brand-gradient p-1.5 shadow-lg shadow-primary/20">
+        <div className="flex size-40 flex-col items-center justify-center rounded-full bg-card">
+          <span className="text-xs font-medium text-muted-foreground">ציון משוער</span>
+          <span className="font-exam text-6xl font-bold tabular-nums text-brand-gradient">{score}</span>
+          <span className="font-exam text-xs text-muted-foreground" dir="ltr">
+            {AMIRNET_MIN_SCORE}–{AMIRNET_MAX_SCORE}
+          </span>
+        </div>
       </div>
 
-      <div className="space-y-1">
-        <p className="text-2xl font-bold">{level.labelHe}</p>
+      <div className="flex flex-col items-center gap-2">
+        <LevelBadge band={level} showRange size="lg" />
         <p className="text-sm text-muted-foreground">
           {next ? `עוד ${next.points} נקודות לרמת ${next.next.labelHe}` : "הגעת לרמת הפטור"}
         </p>
@@ -36,11 +40,15 @@ export function ScoreBadge({ score, level }: { score: number; level: LevelBand }
 
       {/* Level scale. Numeric scales read left → right, so this block is LTR. */}
       <div dir="ltr" className="w-full max-w-sm space-y-1.5" aria-hidden>
-        <div className="relative flex h-2.5 overflow-hidden rounded-full">
+        <div className="relative flex h-2.5 gap-0.5 overflow-hidden rounded-full">
           {ASCENDING.map((band) => (
             <div
               key={band.level}
-              className={cn("h-full", band.level === level.level ? "bg-primary" : "bg-muted")}
+              className={cn(
+                "h-full transition-opacity",
+                levelDotClass(band.level),
+                band.level === level.level ? "opacity-100" : "opacity-25",
+              )}
               style={{
                 width: `${((band.maxScore - band.minScore + (band.maxScore === AMIRNET_MAX_SCORE ? 0 : 1)) / SPAN) * 100}%`,
               }}
