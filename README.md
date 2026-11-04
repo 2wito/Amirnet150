@@ -2,11 +2,17 @@
 
 # EZ AMIRNET
 
-**A free, community-built practice platform for the Israeli Amirnet English exam.**
+**A free exam-simulation platform for the Israeli Amirnet English test.**
 
-**פלטפורמת תרגול חינמית לקהילה, להכנה למבחן האמירנט באנגלית.**
+[**Live Demo →**](https://YOUR-DEPLOYMENT-URL.vercel.app) <!-- TODO: replace with the production URL -->
 
-[English](#english) · [עברית](#hebrew) · [Screenshots](#screenshots)
+[![Next.js](https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Zustand](https://img.shields.io/badge/Zustand-5-443E38)](https://zustand.docs.pmnd.rs)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com)
+
+[English](#english) · [עברית](#hebrew)
 
 </div>
 
@@ -14,53 +20,67 @@
 
 <a id="english"></a>
 
-## English
+## Executive Summary
 
-### Overview
+**EZ AMIRNET** is a full-featured practice platform for the **Amirnet**, the computerized English placement test that Israeli universities and colleges use to set students' English level. It reproduces the structure, question formats, and timing rules of the real test in a fully right-to-left Hebrew interface, while keeping all English exam content strictly left-to-right.
 
-EZ AMIRNET is a web app for practicing for the **Amirnet** (אמירנט), the computerized English placement test used by Israeli higher-education institutions. The exam interface mimics the look of the real computerized test: English content is shown left-to-right inside a fully right-to-left Hebrew UI, and every question type has its own timing rules.
+The project started from a simple need: good Amirnet practice material is usually paid, scattered, or doesn't look like the real test. EZ AMIRNET is **100% free**, needs no sign-up, and runs entirely in the browser.
 
-The site is **100% free** and was built for the community.
+## Key Features
 
-### Features
+| | Feature | Details |
+|---|---|---|
+| 🧠 | **Full Exam Engine** | Three sections in a fixed order (Sentence Completion → Restatement → Reading Comprehension), a 39-minute overall limit, a per-question countdown, automatic advance when time runs out, and no going back, like the real test. |
+| ⏱️ | **Dynamic Timer with Drift Prevention** | Time is computed from absolute deadlines, not by counting ticks, so a throttled background tab or a slow device never adds time. The clock catches up as soon as the tab becomes visible again. |
+| 🎯 | **Practice Modes** | Practice one section with a section-level timer and free back/forward navigation. |
+| 🔀 | **Randomized Exams** | Every new exam samples different questions per section and shuffles the answer order, remapping the correct answer and per-option explanations to match. |
+| 🃏 | **Vocabulary Flashcards** | About 100 high-frequency words in six categories, with search (English and Hebrew), category filters, a hide-translation self-test mode, 3D flip cards with keyboard navigation, and "known word" tracking. |
+| 📊 | **Scoring Algorithm (50–150)** | Raw score → estimated Amirnet score → exemption level (Pre-Basic … Exempt), plus a difficulty-weighted variant. The scoring functions are pure, typed, and independent of the UI. |
+| 🔍 | **Detailed Review Dashboard** | Score ring and level badge, a per-section accuracy and time breakdown, and a question-by-question review showing your answer, the correct answer, and a Hebrew explanation. |
+| 👋 | **Onboarding** | A first-visit welcome modal (stored in `localStorage`) that can be reopened from the header at any time. |
 
-| Feature | What it does |
-|---|---|
-| **Full Exam Simulation** | All three sections in sequence, a per-question timer, no going back, and an overall time limit, like the real test. |
-| **Practice Mode** | Practice a single section (Sentence Completion, Restatement, or Reading Comprehension) with a section timer and free navigation. |
-| **Randomized Exams** | Every new exam draws different questions and shuffles the answer order. The layout is saved, so a page refresh restores the same exam. |
-| **Scoring Engine** | Raw score → estimated Amirnet score (50–150) → exemption level (Pre-Basic → Exempt), with a per-type breakdown and a question-by-question review with Hebrew explanations. |
-| **Vocabulary (מילים נפוצות)** | About 100 high-frequency words and phrases in six categories, with search, category filters, Hebrew translations, example sentences, a hide-translations mode, and flip flashcards. Words you mark as known are remembered in your browser. |
+## Technical Highlights
 
-> The score is a transparent linear **estimate** for practice only. The real Amirnet is an adaptive test scored by NITE using a non-public method.
+- **App Router architecture.** Content pages (`/`, `/practice`, `/vocabulary`) share a route-group layout with the header and footer, while `/exam` renders full-screen without site chrome, as on the real test. Every route is statically prerendered.
+- **Custom Zustand hooks with `sessionStorage` persistence.** The exam store uses `persist` + `partialize` to save only a **compact exam layout** (question IDs and answer order), not full question objects. On reload, `materializeLayout` rebuilds the exam and checks it, so a refresh resumes the *same* exam, and a stale or tampered save is discarded instead of crashing. A `useSyncExternalStore`-based `useExamHydration` hook gates the UI until restore is complete, which prevents hydration mismatches and keeps a late restore from overwriting a newly started exam.
+- **Strict RTL/LTR separation.** The document is `dir="rtl"` Hebrew (Heebo). All English exam material goes through a single `<EnglishContent>` primitive that applies `dir="ltr"`, `lang="en"`, and an Arial-metric exam font (Arimo). Layout uses logical properties (`ps-*`, `start-*`, `border-s`), so nothing is hard-coded to a direction.
+- **Drift-free timer loop.** `useExamTimer` drives a 250 ms interval plus a `visibilitychange` listener. Each tick passes `Date.now()` to a pure store reducer that compares it with stored deadlines. The interval only controls how often the display refreshes; timing accuracy never depends on it.
+- **Build-time data validation.** `data/questions.json` is checked when the module loads (schema, four options, valid answer index, unique IDs, passage linkage), so a malformed question **fails `next build`** instead of breaking an exam in production.
+- **Deterministic randomness.** The exam builder accepts an injectable RNG (seeded mulberry32 available), which makes exam generation reproducible for debugging and testing.
+- **Accessible by default.** Radix primitives for dialogs, `aria-*` progress bars, `aria-pressed` toggles, visible focus rings, 40px+ touch targets, and `prefers-reduced-motion` support.
 
-### Tech Stack
-
-- **[Next.js 15](https://nextjs.org)** (App Router, Turbopack, static prerendering)
-- **TypeScript** (strict domain types in `types/exam.ts`)
-- **Tailwind CSS v4** + shadcn/ui primitives (Radix), RTL-first styling
-- **Zustand** (exam state, persisted to `sessionStorage`)
-- **lucide-react** icons; Heebo (Hebrew UI) and Arimo (English exam content) via `next/font`
-
-### Project Structure
+### Architecture at a glance
 
 ```
 app/
-  (site)/            Home, Practice, Vocabulary (with header + footer)
-  exam/              Full-screen exam runner and results page
-components/          UI by area: exam, practice, results, vocabulary, layout
-data/
-  questions.json     Question bank (validated at build time)
-  vocabulary.ts      Vocabulary list
+  (site)/              Home · Practice · Vocabulary   (header + footer layout)
+  exam/                Full-screen exam runner · results/
+components/
+  exam/                Question card, passage panel, timer, navigation
+  results/             Score ring, level badges, review accordion
+  vocabulary/          Search/filter explorer, flashcards
+  onboarding/          WelcomeModal
 lib/
-  exam-builder.ts    Random question selection and option shuffling
-  scoring.ts         Raw → 50–150 score → level
-  useExamStore.ts    Exam state (Zustand)
+  useExamStore.ts      Zustand store: state machine, persistence, timing
+  exam-builder.ts      Sampling, option shuffling, serializable layouts
+  scoring.ts           Raw → 50–150 → level (pure functions)
+  question-bank.ts     Typed, validated access to questions.json
+types/exam.ts          Domain model (discriminated unions per question type)
 ```
 
-### Local Setup
+## Screenshots
 
-Requires **Node.js 20+**.
+| Home | Exam |
+|:---:|:---:|
+| ![Home](docs/screenshots/home.png) | ![Exam](docs/screenshots/exam.png) |
+| **Results** | **Vocabulary** |
+| ![Results](docs/screenshots/results.png) | ![Vocabulary](docs/screenshots/vocab.png) |
+
+> Screenshots go in `docs/screenshots/`.
+
+## Local Development
+
+**Requirements:** Node.js 20+ and npm.
 
 ```bash
 git clone https://github.com/2wito/Amirnet150.git
@@ -69,34 +89,31 @@ npm install
 npm run dev
 ```
 
-Open <http://localhost:3000>.
+Then open <http://localhost:3000>.
 
-Other scripts:
+| Script | Purpose |
+|---|---|
+| `npm run dev` | Dev server (Turbopack) |
+| `npm run build` | Production build; also validates the question bank |
+| `npm run start` | Serve the production build |
+| `npm run lint` | ESLint |
 
-```bash
-npm run build   # production build (also validates data/questions.json)
-npm run start   # serve the production build
-npm run lint    # ESLint
-```
+**Adding questions:** add entries to `data/questions.json`. Each needs a unique `id`, exactly four `options`, a `correctOptionIndex` (0–3), and a Hebrew `explanation`. Reading-comprehension questions are nested inside their passage.
 
-### Adding Questions
+## Deploying to Vercel
 
-Add items to `data/questions.json` under `sentenceCompletion`, `restatement`, or `readingComprehension` (a passage with nested questions). Each question needs a unique `id`, exactly four `options`, a `correctOptionIndex` (0–3), and a Hebrew `explanation`. The build fails with a clear message if an item is malformed.
-
-### Deploying to Vercel
-
-The app is fully static and needs no environment variables.
+The app is fully static and needs **no environment variables**.
 
 1. Push the repository to GitHub.
-2. In the [Vercel dashboard](https://vercel.com/new), choose **Add New → Project** and import the repository. The Next.js framework preset is detected automatically.
-3. Click **Deploy**. Every push to `master` then deploys to production, and every pull request gets a preview URL.
+2. In Vercel, choose **Add New → Project**, import the repo, and keep the auto-detected Next.js settings.
+3. Click **Deploy**. Every push to `master` then ships to production, and every pull request gets its own preview URL.
 
-Or deploy from the command line:
+From the CLI:
 
 ```bash
 npm i -g vercel
-vercel          # preview deployment
-vercel --prod   # production deployment
+vercel          # preview
+vercel --prod   # production
 ```
 
 ---
@@ -105,53 +122,39 @@ vercel --prod   # production deployment
 
 <div dir="rtl">
 
-## עברית
+## על המיזם
 
-### על הפלטפורמה
+**EZ AMIRNET** הוא אתר חינמי לתרגול לקראת מבחן **האמירנט**, מבחן המיון הממוחשב באנגלית של מוסדות ההשכלה הגבוהה בישראל. האתר מדמה את מבנה המבחן, סוגי השאלות והזמנים, בממשק עברי מלא שבו התוכן באנגלית מוצג משמאל לימין.
 
-**EZ AMIRNET** היא אתר חינמי לתרגול לקראת מבחן **האמירנט** — מבחן המיון הממוחשב באנגלית של מוסדות ההשכלה הגבוהה בישראל. ממשק המבחן מדמה את המבחן הממוחשב: התוכן באנגלית מוצג משמאל לימין בתוך ממשק עברי מלא, ולכל סוג שאלה יש כללי זמן משלו.
+### מטרת האתר
 
-האתר נבנה מרצון טוב, **חינמי לחלוטין** ומיועד לכל הקהילה.
+לתת לכל אחד ואחת גישה חופשית לתרגול איכותי שמרגיש כמו המבחן האמיתי, בלי תשלום ובלי הרשמה:
 
-### תכונות מרכזיות
+- **סימולציה מלאה** של 39 דקות עם טיימר לכל שאלה.
+- **תרגול ממוקד** לפי פרק: השלמת משפטים, ניסוח מחדש והבנת הנקרא.
+- **ציון משוער** בסולם 50–150 ותחקיר מפורט עם הסבר בעברית לכל שאלה.
+- **אוצר מילים נפוץ** עם כרטיסיות, חיפוש וסינון.
 
-- **סימולציית מבחן מלא:** שלושת הפרקים ברצף, טיימר לכל שאלה, ללא אפשרות לחזור אחורה — כמו במבחן האמיתי.
-- **תרגול לפי פרק:** השלמת משפטים, ניסוח מחדש או הבנת הנקרא, עם טיימר לפרק ומעבר חופשי בין שאלות.
-- **מבחן חדש בכל פעם:** השאלות וסדר התשובות מוגרלים מחדש בכל התחלה.
-- **ציון משוער:** הערכת ציון בסולם 50–150, רמת פטור, פילוח לפי סוג שאלה, וסקירת כל שאלה עם הסבר בעברית.
-- **מילים נפוצות:** כ-100 מילים וביטויים בשש קטגוריות, עם חיפוש, סינון, תרגום, משפטי דוגמה, מצב הסתרת תרגום וכרטיסיות.
+### הבהרה משפטית ושחרור מאחריות
 
-### שחרור מאחריות
-
-- כל חומרי התרגול, השאלות והערכות הציון באתר נועדו **להערכה עצמית בלבד**, ואין בהם משום ייעוץ לימודי רשמי, ציון מחייב או הכנה רשמית למבחן.
-- האתר **עצמאי לחלוטין** ואינו קשור למרכז הארצי לבחינות ולהערכה (מאל״ו), למכון נועם או לכל מכון רשמי אחר להכנה למבחנים.
+- כל חומרי התרגול, השאלות והערכות הציון באתר נועדו **להערכה עצמית בלבד**, ואין בהם משום ייעוץ לימודי רשמי, ציון מחייב או הכנה רשמית למבחן. הציון באתר הוא הערכה בלבד: המבחן האמיתי מותאם לנבחן ומחושב בשיטה אחרת.
+- האתר **עצמאי לחלוטין** ואינו קשור, מטעם או בשיתוף עם המרכז הארצי לבחינות ולהערכה (מאל״ו), מכון נועם או כל מכון רשמי אחר להכנה למבחנים.
 - **השימוש באתר ובחומרים הינו על אחריות המשתמש בלבד.**
 - כל זכויות היוצרים של צדדים שלישיים שייכות לבעליהן. נתקלתם בתוכן שמפר זכויות יוצרים? כתבו ל-<span dir="ltr">[itay2wito@gmail.com](mailto:itay2wito@gmail.com)</span> והתוכן יוסר מיד.
 
-פיתוח: **איתי טויטו**
+### הקדשה וקרדיטים
+
+> **שנהב** — האתר הזה נבנה בשבילך ולהצלחתך. תני בראש! אוהב ❤️
+
+**פיתוח, עיצוב ותוכן:** איתי טויטו (Itay Twito)<br>
+**יצירת קשר:** <span dir="ltr">[itay2wito@gmail.com](mailto:itay2wito@gmail.com)</span>
 
 </div>
 
 ---
 
-<a id="screenshots"></a>
-
-## Screenshots
-
-> Placeholders: add PNG screenshots to `public/screenshots/` with these file names.
-
-| Home | Exam |
-|---|---|
-| ![Home Screen](./public/screenshots/home.png) | ![Exam Screen](./public/screenshots/exam.png) |
-
-| Results | Vocabulary |
-|---|---|
-| ![Results Screen](./public/screenshots/results.png) | ![Vocabulary Screen](./public/screenshots/vocabulary.png) |
-
----
-
 <div align="center">
 
-Built with care for the community · Developed by **Itay Twito** · [itay2wito@gmail.com](mailto:itay2wito@gmail.com)
+Designed & developed by **Itay Twito** · Free for the community
 
 </div>
