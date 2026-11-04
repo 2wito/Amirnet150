@@ -6,7 +6,7 @@ import { ClipboardCheck, FileText, ListChecks, Play, Repeat2, type LucideIcon } 
 import { Button } from "@/components/ui/button";
 import { QUESTION_TYPE_LABELS_HE } from "@/lib/exam-constants";
 import { formatMinutesHe } from "@/lib/format";
-import { getAllQuestions, getQuestionsByType } from "@/lib/question-bank";
+import { estimateSection } from "@/lib/exam-builder";
 import { useExamHydration } from "@/lib/useExamHydration";
 import { FULL_EXAM_DURATION_SECONDS, SECTION_ORDER, useExamStore } from "@/lib/useExamStore";
 import type { QuestionType } from "@/types/exam";
@@ -26,15 +26,12 @@ const SECTION_META: Record<QuestionType, { icon: LucideIcon; descriptionHe: stri
   },
 };
 
-/** Precomputed once: question counts and section-practice durations. */
+/** Precomputed once: questions per generated exam and section-practice durations. */
 const SECTION_STATS = Object.fromEntries(
-  SECTION_ORDER.map((type) => {
-    const qs = getQuestionsByType(type);
-    return [type, { count: qs.length, seconds: qs.reduce((n, q) => n + q.timeLimitSeconds, 0) }];
-  }),
-) as Record<QuestionType, { count: number; seconds: number }>;
+  SECTION_ORDER.map((type) => [type, estimateSection(type)]),
+) as Record<QuestionType, { questionCount: number; seconds: number }>;
 
-const FULL_EXAM_QUESTION_COUNT = getAllQuestions().length;
+const FULL_EXAM_QUESTION_COUNT = SECTION_ORDER.reduce((n, t) => n + SECTION_STATS[t].questionCount, 0);
 
 /**
  * Practice dashboard: start a full exam simulation or a single-section practice.
@@ -92,6 +89,7 @@ export function PracticeSelector() {
                 <li>{FULL_EXAM_QUESTION_COUNT} שאלות</li>
                 <li>טיימר לכל שאלה</li>
                 <li>ללא חזרה לשאלות קודמות</li>
+                <li>שאלות שונות בכל מבחן</li>
               </ul>
             </div>
           </div>
@@ -109,7 +107,8 @@ export function PracticeSelector() {
             תרגול לפי פרק
           </h2>
           <p className="text-sm text-muted-foreground">
-            טיימר לפרק כולו, עם אפשרות לנוע קדימה ואחורה בין השאלות.
+            טיימר לפרק כולו, עם אפשרות לנוע קדימה ואחורה בין השאלות. השאלות וסדר התשובות מוגרלים מחדש בכל
+            תרגול.
           </p>
         </div>
         <ul className="grid gap-4 md:grid-cols-3">
@@ -124,12 +123,12 @@ export function PracticeSelector() {
                 </div>
                 <p className="flex-1 text-sm text-muted-foreground">{descriptionHe}</p>
                 <p className="text-xs text-muted-foreground">
-                  {stats.count} שאלות · {formatMinutesHe(stats.seconds)}
+                  {stats.questionCount} שאלות · {formatMinutesHe(stats.seconds)}
                 </p>
                 <Button
                   variant="outline"
                   onClick={() => startSection(type)}
-                  disabled={!hydrated || stats.count === 0}
+                  disabled={!hydrated || stats.questionCount === 0}
                 >
                   התחל תרגול
                 </Button>

@@ -1,71 +1,363 @@
 {
-  "version": 1,
+  "version": 2,
   "sentenceCompletion": [
     {
       "id": "sc-001",
       "type": "sentence-completion",
       "stem": "Because the instructions were extremely ____, most of the participants completed the task without asking for help.",
-      "options": ["vague", "clear", "brief", "rare"],
+      "options": [
+        "vague",
+        "clear",
+        "brief",
+        "rare"
+      ],
       "correctOptionIndex": 1,
       "timeLimitSeconds": 45,
       "difficulty": 1,
       "explanation": "המשתתפים השלימו את המשימה בלי לבקש עזרה — כלומר ההוראות היו ברורות (clear). Because מציין סיבה ותוצאה, ולכן נדרשת מילה חיובית. vague (מעורפל) היה מוביל לתוצאה ההפוכה.",
-      "tags": ["vocabulary", "cause-effect"]
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
     },
     {
       "id": "sc-002",
       "type": "sentence-completion",
       "stem": "The company decided to ____ the launch of its new product until the safety tests had been completed.",
-      "options": ["postpone", "celebrate", "announce", "accelerate"],
+      "options": [
+        "postpone",
+        "celebrate",
+        "announce",
+        "accelerate"
+      ],
       "correctOptionIndex": 0,
       "timeLimitSeconds": 45,
       "difficulty": 2,
       "explanation": "המילה until (עד ש...) מרמזת על המתנה: החברה דחתה (postpone) את ההשקה עד לסיום בדיקות הבטיחות. accelerate (להאיץ) סותר את ההיגיון של המתנה.",
-      "tags": ["vocabulary", "time-clues"]
+      "tags": [
+        "vocabulary",
+        "time-clues"
+      ]
     },
     {
       "id": "sc-003",
       "type": "sentence-completion",
       "stem": "Although the novel received ____ reviews from critics, it became one of the best-selling books of the year.",
-      "options": ["lengthy", "accurate", "unfavorable", "enthusiastic"],
+      "options": [
+        "lengthy",
+        "accurate",
+        "unfavorable",
+        "enthusiastic"
+      ],
       "correctOptionIndex": 2,
       "timeLimitSeconds": 45,
       "difficulty": 2,
       "explanation": "Although (למרות ש...) מציין ניגוד: הספר הצליח מסחרית למרות ביקורות שליליות (unfavorable). enthusiastic (נלהבות) לא יוצר ניגוד ולכן אינו מתאים.",
-      "tags": ["vocabulary", "contrast"]
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
     },
     {
       "id": "sc-004",
       "type": "sentence-completion",
       "stem": "The researchers were unable to ____ their results, so other scientists questioned the validity of the original study.",
-      "options": ["publish", "ignore", "simplify", "replicate"],
+      "options": [
+        "publish",
+        "ignore",
+        "simplify",
+        "replicate"
+      ],
       "correctOptionIndex": 3,
       "timeLimitSeconds": 45,
       "difficulty": 4,
       "explanation": "מדענים אחרים הטילו ספק בתוקף המחקר כי החוקרים לא הצליחו לשחזר (replicate) את התוצאות. שחזור תוצאות הוא הבסיס לאמינות מחקר מדעי.",
-      "tags": ["academic-vocabulary", "cause-effect"]
+      "tags": [
+        "academic-vocabulary",
+        "cause-effect"
+      ]
     },
     {
       "id": "sc-005",
       "type": "sentence-completion",
       "stem": "The ancient manuscript was so ____ that the librarians allowed only experts to handle it.",
-      "options": ["fragile", "popular", "recent", "colorful"],
+      "options": [
+        "fragile",
+        "popular",
+        "recent",
+        "colorful"
+      ],
       "correctOptionIndex": 0,
       "timeLimitSeconds": 45,
       "difficulty": 2,
       "explanation": "מבנה so ... that (כל כך ... ש...) מקשר בין התכונה לתוצאה: רק מומחים הורשו לגעת בכתב היד כי הוא היה שביר (fragile).",
-      "tags": ["vocabulary", "so-that"]
+      "tags": [
+        "vocabulary",
+        "so-that"
+      ]
     },
     {
       "id": "sc-006",
       "type": "sentence-completion",
       "stem": "____ the evidence against him was overwhelming, the jury took three days to reach a verdict.",
-      "options": ["Because", "Unless", "Even though", "So that"],
+      "options": [
+        "Because",
+        "Unless",
+        "Even though",
+        "So that"
+      ],
       "correctOptionIndex": 2,
       "timeLimitSeconds": 45,
       "difficulty": 3,
       "explanation": "יש ניגוד בין הראיות החד-משמעיות לבין הזמן הארוך שלקח למושבעים להחליט, ולכן נדרשת מילת ניגוד: Even though (אף על פי ש...). Because היה יוצר קשר סיבתי לא הגיוני.",
-      "tags": ["connectors", "contrast"]
+      "tags": [
+        "connectors",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-007",
+      "type": "sentence-completion",
+      "stem": "Scientists have long been ____ about the origins of the universe, and many questions remain unanswered.",
+      "options": [
+        "curious",
+        "certain",
+        "careless",
+        "silent"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "שאלות רבות עדיין פתוחות, ולכן המדענים סקרנים (curious) לגבי מקור היקום. certain (בטוחים) סותר את העובדה שאין עדיין תשובות.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-008",
+      "type": "sentence-completion",
+      "stem": "The government introduced new measures to ____ air pollution in major cities.",
+      "options": [
+        "increase",
+        "reduce",
+        "admire",
+        "predict"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "ממשלה נוקטת צעדים כדי להפחית (reduce) זיהום אוויר. increase (להגביר) הפוך מהמטרה, ו-admire (להעריץ) אינו מתאים למשמעות.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-009",
+      "type": "sentence-completion",
+      "stem": "Despite years of careful planning, the expedition had to be ____ when one of the climbers was seriously injured.",
+      "options": [
+        "extended",
+        "financed",
+        "abandoned",
+        "celebrated"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Despite (למרות) מציין ניגוד: למרות התכנון הקפדני, המשלחת ננטשה / בוטלה (abandoned) בגלל הפציעה.",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-010",
+      "type": "sentence-completion",
+      "stem": "Unlike his outgoing older brother, Daniel was rather ____ and preferred to spend his evenings alone.",
+      "options": [
+        "sociable",
+        "ambitious",
+        "generous",
+        "reserved"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Unlike (בניגוד ל...) מציין שדניאל שונה מאחיו החברותי (outgoing). הוא מעדיף להיות לבד, כלומר מופנם ושמור (reserved). sociable היא בדיוק התכונה של האח.",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-011",
+      "type": "sentence-completion",
+      "stem": "The professor's lecture was so ____ that even students with no background in physics could follow it.",
+      "options": [
+        "accessible",
+        "technical",
+        "brief",
+        "controversial"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "גם סטודנטים ללא רקע בפיזיקה הבינו את ההרצאה, ולכן היא הייתה נגישה ומובנת (accessible). technical (טכנית) הייתה מובילה לתוצאה ההפוכה.",
+      "tags": [
+        "vocabulary",
+        "so-that"
+      ]
+    },
+    {
+      "id": "sc-012",
+      "type": "sentence-completion",
+      "stem": "The two studies reached ____ conclusions: one found the drug effective, while the other found no benefit at all.",
+      "options": [
+        "identical",
+        "contradictory",
+        "tentative",
+        "obvious"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "החלק שאחרי הנקודתיים מסביר: מחקר אחד מצא שהתרופה יעילה והשני לא מצא תועלת, כלומר המסקנות סותרות (contradictory).",
+      "tags": [
+        "academic-vocabulary",
+        "colon-clue"
+      ]
+    },
+    {
+      "id": "sc-013",
+      "type": "sentence-completion",
+      "stem": "Many ancient cities were built near rivers, ____ provided water for drinking and for agriculture.",
+      "options": [
+        "who",
+        "where",
+        "which",
+        "whose"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "נדרש כינוי זיקה שמתייחס ל-rivers (דבר, לא אדם) ומשמש כנושא של provided, ולכן which. who מתייחס לבני אדם בלבד.",
+      "tags": [
+        "grammar",
+        "relative-clauses"
+      ]
+    },
+    {
+      "id": "sc-014",
+      "type": "sentence-completion",
+      "stem": "The company's profits rose sharply last year; ____, its share price remained unchanged.",
+      "options": [
+        "therefore",
+        "similarly",
+        "for example",
+        "nevertheless"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "יש ניגוד בין עלייה חדה ברווחים לבין מחיר מניה שלא השתנה, ולכן נדרשת מילת ניגוד: nevertheless (למרות זאת). therefore מציין תוצאה ואינו מתאים.",
+      "tags": [
+        "connectors",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-015",
+      "type": "sentence-completion",
+      "stem": "The witness's account was so ____ that the police could not use it to identify the suspect.",
+      "options": [
+        "vague",
+        "detailed",
+        "reliable",
+        "recent"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "המשטרה לא יכלה לזהות את החשוד בעזרת העדות, כי היא הייתה מעורפלת (vague). detailed (מפורטת) הייתה דווקא עוזרת.",
+      "tags": [
+        "vocabulary",
+        "so-that"
+      ]
+    },
+    {
+      "id": "sc-016",
+      "type": "sentence-completion",
+      "stem": "Although the theory was initially ____ by most experts, it is now widely accepted.",
+      "options": [
+        "endorsed",
+        "dismissed",
+        "proven",
+        "published"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "Although מציין ניגוד בין העבר להווה: היום התאוריה מקובלת, ולכן בתחילה היא נדחתה (dismissed). endorsed (אומצה) לא יוצר ניגוד.",
+      "tags": [
+        "academic-vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-017",
+      "type": "sentence-completion",
+      "stem": "The museum's collection is ____: it includes everything from ancient pottery to modern video art.",
+      "options": [
+        "limited",
+        "fragile",
+        "diverse",
+        "private"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "הנקודתיים מובילים להסבר: האוסף כולל הכול, מכלי חרס עתיקים ועד אמנות וידאו מודרנית, כלומר הוא מגוון (diverse).",
+      "tags": [
+        "vocabulary",
+        "colon-clue"
+      ]
+    },
+    {
+      "id": "sc-018",
+      "type": "sentence-completion",
+      "stem": "Researchers hope that the findings will ____ the development of more effective treatments for the disease.",
+      "options": [
+        "hinder",
+        "imitate",
+        "postpone",
+        "facilitate"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "החוקרים מקווים שהממצאים יקלו ויקדמו (facilitate) את פיתוח הטיפולים. hinder (לעכב) ו-postpone (לדחות) הם ההפך ממה שמקווים לו.",
+      "tags": [
+        "academic-vocabulary"
+      ]
+    },
+    {
+      "id": "sc-019",
+      "type": "sentence-completion",
+      "stem": "The senator's speech was deliberately ____, allowing listeners on both sides of the debate to interpret it as support for their position.",
+      "options": [
+        "ambiguous",
+        "concise",
+        "hostile",
+        "repetitive"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 5,
+      "explanation": "שני הצדדים יכלו לפרש את הנאום כתמיכה בעמדתם, ולכן הוא היה דו-משמעי (ambiguous), ובכוונה (deliberately).",
+      "tags": [
+        "academic-vocabulary",
+        "inference"
+      ]
     }
   ],
   "restatement": [
@@ -83,7 +375,9 @@
       "timeLimitSeconds": 45,
       "difficulty": 2,
       "explanation": "Few (מעטים) = Only a small number. המשפט המקורי אומר שרק מעטים ציפו להצלחה. שימו לב: few בלי a הוא בעל משמעות שלילית (כמעט אף אחד), בניגוד ל-a few.",
-      "tags": ["quantifiers"]
+      "tags": [
+        "quantifiers"
+      ]
     },
     {
       "id": "rs-002",
@@ -99,7 +393,9 @@
       "timeLimitSeconds": 45,
       "difficulty": 1,
       "explanation": "remain closed until = לא ייפתח לפני ש... התשובה הנכונה שומרת על אותו סדר אירועים: קודם השיפוצים מסתיימים, ורק אחר כך המוזיאון נפתח.",
-      "tags": ["time-clauses"]
+      "tags": [
+        "time-clauses"
+      ]
     },
     {
       "id": "rs-003",
@@ -115,7 +411,10 @@
       "timeLimitSeconds": 45,
       "difficulty": 4,
       "explanation": "Had ... been = If ... had been — משפט תנאי מסוג שלישי (על העבר, שלא התממש). המשמעות: האזהרה לא ניתנה מוקדם, ולכן תושבים רבים לא הספיקו לעזוב.",
-      "tags": ["conditionals", "inversion"]
+      "tags": [
+        "conditionals",
+        "inversion"
+      ]
     },
     {
       "id": "rs-004",
@@ -130,8 +429,11 @@
       "correctOptionIndex": 3,
       "timeLimitSeconds": 45,
       "difficulty": 3,
-      "explanation": "Not only ... but also = both ... and (גם ... וגם). למדיניות היו שתי תוצאות חיוביות. אל תתבלבלו מ-only בתשובה השלישית — במשפט המקורי not only מוסיף, ולא מגביל.",
-      "tags": ["connectors", "addition"]
+      "explanation": "Not only ... but also = both ... and (גם ... וגם). למדיניות היו שתי תוצאות חיוביות. אל תתבלבלו מהמילה only בתשובה \"...only in order to reduce costs\" — במשפט המקורי not only מוסיף, ולא מגביל.",
+      "tags": [
+        "connectors",
+        "addition"
+      ]
     },
     {
       "id": "rs-005",
@@ -147,7 +449,10 @@
       "timeLimitSeconds": 45,
       "difficulty": 4,
       "explanation": "however + שם תואר = לא משנה כמה... (ויתור). כלומר: גם אם התאוריה נראית מושכת (appealing = attractive), הנתונים אינם תומכים בה.",
-      "tags": ["concession", "academic-vocabulary"]
+      "tags": [
+        "concession",
+        "academic-vocabulary"
+      ]
     },
     {
       "id": "rs-006",
@@ -162,8 +467,179 @@
       "correctOptionIndex": 2,
       "timeLimitSeconds": 45,
       "difficulty": 3,
-      "explanation": "It was not until X that Y = רק ב-X קרה Y. הגורם למחלה התגלה רק בסוף המאה ה-19. התשובה הראשונה היא מלכודת: היא מדברת על גילוי המחלה עצמה, ולא על הגורם לה.",
-      "tags": ["not-until", "emphasis"]
+      "explanation": "It was not until X that Y = רק ב-X קרה Y. הגורם למחלה התגלה רק בסוף המאה ה-19. התשובה \"Malaria was first discovered...\" היא מלכודת: היא מדברת על גילוי המחלה עצמה, ולא על הגורם לה.",
+      "tags": [
+        "not-until",
+        "emphasis"
+      ]
+    },
+    {
+      "id": "rs-007",
+      "type": "restatement",
+      "stem": "The author's second novel was even more successful than her first.",
+      "options": [
+        "The author's first novel was more successful than her second.",
+        "Both of the author's novels were successful, but the second was more so.",
+        "The author's second novel was not as successful as her first.",
+        "The author wrote two novels, neither of which was successful."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "even more successful (מצליח אף יותר) מרמז ששני הספרים הצליחו, והשני הצליח יותר. המילה even מניחה שגם הראשון היה מוצלח.",
+      "tags": [
+        "comparatives"
+      ]
+    },
+    {
+      "id": "rs-008",
+      "type": "restatement",
+      "stem": "Unless the funding is renewed, the research project will have to stop.",
+      "options": [
+        "The project will stop only if the funding is renewed.",
+        "The funding was renewed, so the project continued.",
+        "The project stopped even though the funding was renewed.",
+        "If the funding is not renewed, the project will be discontinued."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "Unless = if ... not (אלא אם כן). אם המימון לא יחודש, הפרויקט ייעצר. שימו לב לזמנים: המשפט המקורי מדבר על העתיד, ולא על משהו שכבר קרה.",
+      "tags": [
+        "conditionals",
+        "unless"
+      ]
+    },
+    {
+      "id": "rs-009",
+      "type": "restatement",
+      "stem": "Hardly anyone attended the meeting.",
+      "options": [
+        "Almost nobody came to the meeting.",
+        "The meeting was difficult to attend.",
+        "Most people worked hard at the meeting.",
+        "Everyone attended the meeting except one person."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Hardly anyone = כמעט אף אחד. אל תתבלבלו בין hardly (כמעט לא) לבין hard (קשה / בחריצות): אלו מילים עם משמעות שונה לגמרי.",
+      "tags": [
+        "quantifiers",
+        "false-friends"
+      ]
+    },
+    {
+      "id": "rs-010",
+      "type": "restatement",
+      "stem": "The bridge was closed to traffic so that repairs could be carried out safely.",
+      "options": [
+        "Repairs to the bridge were unsafe because of the heavy traffic.",
+        "The bridge was closed in order to allow safe repair work.",
+        "Traffic on the bridge was heavy while repairs were being made.",
+        "Because of the repairs, the bridge became safe for traffic."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "so that = in order to (כדי ש...). הגשר נסגר במטרה לאפשר תיקונים בטוחים. המשפט מציין מטרה, ולא סיבה או תוצאה.",
+      "tags": [
+        "purpose-clauses"
+      ]
+    },
+    {
+      "id": "rs-011",
+      "type": "restatement",
+      "stem": "Rarely have scientists observed such a rapid change in a species' behavior.",
+      "options": [
+        "Scientists have often observed rapid behavioral changes in species.",
+        "Scientists seldom see a species' behavior change this quickly.",
+        "Scientists rarely study the behavior of species.",
+        "The species changed its behavior because scientists observed it."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "Rarely have ... הוא מבנה הפוך (inversion) לצורך הדגשה, ומשמעותו: לעיתים רחוקות. rarely = seldom. הנדיר הוא השינוי המהיר, לא עצם המחקר על התנהגות.",
+      "tags": [
+        "inversion",
+        "frequency"
+      ]
+    },
+    {
+      "id": "rs-012",
+      "type": "restatement",
+      "stem": "The more time students spend reading, the larger their vocabulary tends to become.",
+      "options": [
+        "Students with large vocabularies usually prefer reading to other activities.",
+        "Reading for a long time is tiring for students with small vocabularies.",
+        "Students who read more generally develop a richer vocabulary.",
+        "Students should spend more time reading than learning new words."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "The more ... the more = ככל ש... כך... ככל שקוראים יותר, אוצר המילים גדל. tends to = generally. הכיוון חשוב: הקריאה משפיעה על אוצר המילים, ולא להפך.",
+      "tags": [
+        "comparatives",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "rs-013",
+      "type": "restatement",
+      "stem": "Had it not been for the volunteers, the festival would never have taken place.",
+      "options": [
+        "The festival took place despite the lack of volunteers.",
+        "The volunteers did not want the festival to take place.",
+        "The festival was cancelled because there were not enough volunteers.",
+        "The festival happened only thanks to the volunteers."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "Had it not been for X = If it had not been for X (אלמלא X). המשמעות: בזכות המתנדבים הפסטיבל התקיים, ובלעדיהם לא היה מתקיים.",
+      "tags": [
+        "conditionals",
+        "inversion"
+      ]
+    },
+    {
+      "id": "rs-014",
+      "type": "restatement",
+      "stem": "Contrary to popular belief, bats are not blind.",
+      "options": [
+        "Most people know that bats can see.",
+        "Although many people think otherwise, bats are able to see.",
+        "Bats are blind, as is commonly believed.",
+        "It is popularly believed that bats see better than people."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "Contrary to popular belief = בניגוד לדעה הרווחת. רבים חושבים שעטלפים עיוורים, אבל הם יכולים לראות. התשובה \"Most people know...\" הופכת את הדעה הרווחת.",
+      "tags": [
+        "contrast",
+        "idioms"
+      ]
+    },
+    {
+      "id": "rs-015",
+      "type": "restatement",
+      "stem": "The committee postponed its decision pending further investigation.",
+      "options": [
+        "The committee delayed its decision until more had been investigated.",
+        "The committee made its decision after a long investigation.",
+        "The committee decided to stop the investigation.",
+        "The investigation was postponed by the committee's decision."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 5,
+      "explanation": "postpone = לדחות, ו-pending = עד ל... / בהמתנה ל... הוועדה דחתה את ההחלטה עד שתיערך חקירה נוספת. ההחלטה נדחתה, לא החקירה.",
+      "tags": [
+        "academic-vocabulary"
+      ]
     }
   ],
   "readingComprehension": [
@@ -193,9 +669,13 @@
           "correctOptionIndex": 1,
           "timeLimitSeconds": 90,
           "difficulty": 2,
-          "referencedParagraphs": [2],
+          "referencedParagraphs": [
+            2
+          ],
           "explanation": "בפסקה 2 נכתב שעדרי האיילים רעו לאורך הגדות ואכלו את העצים הצעירים לפני שהספיקו לגדול. השנים היבשות מוזכרות רק בפסקה 4 ובהקשר אחר.",
-          "tags": ["detail"]
+          "tags": [
+            "detail"
+          ]
         },
         {
           "id": "rc-001-2",
@@ -211,9 +691,13 @@
           "correctOptionIndex": 2,
           "timeLimitSeconds": 90,
           "difficulty": 3,
-          "referencedParagraphs": [3],
+          "referencedParagraphs": [
+            3
+          ],
           "explanation": "המונח מוגדר בפסקה עצמה: a chain of effects, in which a predator indirectly influences plants and other species — שרשרת של השפעות עקיפות של טורף על המערכת האקולוגית.",
-          "tags": ["term-definition"]
+          "tags": [
+            "term-definition"
+          ]
         },
         {
           "id": "rc-001-3",
@@ -229,9 +713,13 @@
           "correctOptionIndex": 3,
           "timeLimitSeconds": 90,
           "difficulty": 3,
-          "referencedParagraphs": [4],
+          "referencedParagraphs": [
+            4
+          ],
           "explanation": "הפסקה פותחת ב-however ומציגה עמדה מסתייגת: גורמים נוספים (בצורת, דובים, ציד) תרמו לירידת מספר האיילים, ולכן ההתאוששות אינה נובעת מגורם יחיד.",
-          "tags": ["paragraph-purpose"]
+          "tags": [
+            "paragraph-purpose"
+          ]
         },
         {
           "id": "rc-001-4",
@@ -247,9 +735,13 @@
           "correctOptionIndex": 0,
           "timeLimitSeconds": 90,
           "difficulty": 3,
-          "referencedParagraphs": [1],
+          "referencedParagraphs": [
+            1
+          ],
           "explanation": "בפסקה 1 נכתב שהזאבים חוסלו בכוונה כי נתפסו כאיום על משק החי ועל חיות ציד — כלומר נחשבו מזיקים לאינטרסים של בני אדם.",
-          "tags": ["inference"]
+          "tags": [
+            "inference"
+          ]
         }
       ]
     },
@@ -279,9 +771,14 @@
           "correctOptionIndex": 1,
           "timeLimitSeconds": 90,
           "difficulty": 2,
-          "referencedParagraphs": [2],
-          "explanation": "בפסקה 2: ההברות נבחרו כי אין להן קשר לידע קודם, וכך אפשר למדוד זיכרון without the influence of prior knowledge. התשובה האחרונה שגויה — הוא היה הנבדק היחיד.",
-          "tags": ["detail", "purpose"]
+          "referencedParagraphs": [
+            2
+          ],
+          "explanation": "בפסקה 2: ההברות נבחרו כי אין להן קשר לידע קודם, וכך אפשר למדוד זיכרון without the influence of prior knowledge. התשובה \"compare his memory with that of other subjects\" שגויה — הוא היה הנבדק היחיד.",
+          "tags": [
+            "detail",
+            "purpose"
+          ]
         },
         {
           "id": "rc-002-2",
@@ -297,9 +794,13 @@
           "correctOptionIndex": 2,
           "timeLimitSeconds": 90,
           "difficulty": 2,
-          "referencedParagraphs": [2],
+          "referencedParagraphs": [
+            2
+          ],
           "explanation": "Most of the forgetting took place within the first hour — רוב השכחה מתרחשת זמן קצר אחרי הלמידה, ואחר כך הקצב מאט. לכן הקצב אינו קבוע.",
-          "tags": ["detail"]
+          "tags": [
+            "detail"
+          ]
         },
         {
           "id": "rc-002-3",
@@ -315,9 +816,13 @@
           "correctOptionIndex": 0,
           "timeLimitSeconds": 90,
           "difficulty": 3,
-          "referencedParagraphs": [4],
+          "referencedParagraphs": [
+            4
+          ],
           "explanation": "misleading = מטעה. תחושת ההיכרות נותנת רושם כוזב של שליטה בחומר, שכן החומר יישכח תוך ימים.",
-          "tags": ["vocabulary-in-context"]
+          "tags": [
+            "vocabulary-in-context"
+          ]
         },
         {
           "id": "rc-002-4",
@@ -333,9 +838,329 @@
           "correctOptionIndex": 3,
           "timeLimitSeconds": 90,
           "difficulty": 3,
-          "referencedParagraphs": [3, 4],
+          "referencedParagraphs": [
+            3,
+            4
+          ],
           "explanation": "הכותב מציג את אפקט הריווח (spacing effect) כיעיל ומבקר את שיטת ה-cramming. לכן הוא היה ממליץ לחזור על החומר כמה פעמים לאורך כמה ימים.",
-          "tags": ["inference", "author-view"]
+          "tags": [
+            "inference",
+            "author-view"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-003",
+      "title": "The Secret of Roman Concrete",
+      "topic": "הנדסה והיסטוריה",
+      "difficulty": 3,
+      "paragraphs": [
+        "Many structures built by the ancient Romans, such as the Pantheon in Rome and harbor walls along the Mediterranean coast, are still standing after nearly two thousand years. Modern concrete, by contrast, often begins to crack and crumble within a few decades, particularly when it is exposed to seawater.",
+        "For a long time, the secret of Roman concrete was poorly understood. Researchers knew that the Romans mixed lime with volcanic ash, but only recently have they discovered how this mixture behaves over time. When seawater seeps into Roman harbor walls, it reacts with the volcanic material and gradually forms new minerals. Instead of weakening the structure, these minerals fill tiny cracks and actually make the concrete stronger.",
+        "Another surprising feature is the presence of small white lumps of lime scattered throughout the material. Scientists once assumed that these lumps were evidence of careless mixing. However, recent studies suggest that they serve an important purpose: when water enters a crack and reaches one of the lumps, the lime dissolves and then hardens again, sealing the crack before it can spread.",
+        "Engineers are now exploring whether similar techniques could be used today. If modern concrete could repair itself in this way, buildings and bridges might last much longer, reducing both construction costs and the large amount of carbon dioxide released in the production of cement."
+      ],
+      "questions": [
+        {
+          "id": "rc-003-1",
+          "type": "reading-comprehension",
+          "passageId": "p-003",
+          "stem": "According to paragraph 1, modern concrete differs from Roman concrete in that it -",
+          "options": [
+            "is used mainly in harbor walls",
+            "tends to deteriorate much more quickly",
+            "contains a larger amount of volcanic ash",
+            "cannot be exposed to air"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [
+            1
+          ],
+          "explanation": "בפסקה 1 נכתב שבטון מודרני מתחיל להיסדק ולהתפורר תוך עשורים ספורים, בעוד מבנים רומיים עומדים כמעט אלפיים שנה. כלומר הבטון המודרני מתבלה מהר הרבה יותר.",
+          "tags": [
+            "detail",
+            "comparison"
+          ]
+        },
+        {
+          "id": "rc-003-2",
+          "type": "reading-comprehension",
+          "passageId": "p-003",
+          "stem": "What happens when seawater enters Roman harbor walls (paragraph 2)?",
+          "options": [
+            "The volcanic ash dissolves and the walls weaken.",
+            "The lime separates from the volcanic ash.",
+            "New minerals form and strengthen the concrete.",
+            "Tiny cracks appear and slowly spread."
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [
+            2
+          ],
+          "explanation": "לפי פסקה 2, מי הים מגיבים עם החומר הוולקני ויוצרים מינרלים חדשים, שממלאים סדקים זעירים ומחזקים את הבטון במקום להחליש אותו (Instead of weakening the structure).",
+          "tags": [
+            "detail",
+            "process"
+          ]
+        },
+        {
+          "id": "rc-003-3",
+          "type": "reading-comprehension",
+          "passageId": "p-003",
+          "stem": "The white lumps of lime (paragraph 3) were originally thought to be -",
+          "options": [
+            "a sign that the material had been poorly mixed",
+            "a deliberate method of sealing cracks",
+            "a type of volcanic ash",
+            "the result of exposure to seawater"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            3
+          ],
+          "explanation": "Scientists once assumed that these lumps were evidence of careless mixing: בעבר חשבו שהגושים מעידים על ערבוב רשלני. התפקיד של איטום סדקים התגלה רק במחקרים חדשים.",
+          "tags": [
+            "detail",
+            "past-vs-present"
+          ]
+        },
+        {
+          "id": "rc-003-4",
+          "type": "reading-comprehension",
+          "passageId": "p-003",
+          "stem": "The main purpose of the last paragraph is to -",
+          "options": [
+            "describe a disadvantage of Roman building methods",
+            "explain how cement is produced",
+            "compare the cost of ancient and modern buildings",
+            "suggest a possible practical application of the findings"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            4
+          ],
+          "explanation": "הפסקה האחרונה עוסקת בשאלה אם אפשר ליישם את השיטה הרומית היום, ובתועלת האפשרית (מבנים עמידים יותר, פחות פחמן דו-חמצני). כלומר היא מציעה יישום מעשי של הממצאים.",
+          "tags": [
+            "paragraph-purpose"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-004",
+      "title": "The Bilingual Advantage?",
+      "topic": "בלשנות ופסיכולוגיה",
+      "difficulty": 3,
+      "paragraphs": [
+        "For much of the twentieth century, many parents and educators believed that raising a child with two languages would cause confusion and slow down the child's development. Some schools even advised immigrant families to speak only the local language at home.",
+        "From the 1960s onward, this view began to change. A number of studies reported that bilingual children performed better than monolingual children on tasks requiring attention and self-control, such as ignoring irrelevant information or switching quickly between two rules. Researchers suggested that constantly managing two languages trains the brain's general control system, much as physical exercise strengthens a muscle.",
+        "More recently, however, this so-called \"bilingual advantage\" has been called into question. Several large studies, involving thousands of participants, have found little or no difference between bilinguals and monolinguals on such tasks. Critics have also pointed out that studies with positive results are more likely to be published than studies that find nothing, which may have created a misleading picture.",
+        "Even so, few researchers today would return to the earlier view. Whether or not bilingualism sharpens general mental skills, there is no evidence that it harms children's development, and knowing two languages offers obvious social, cultural and professional benefits."
+      ],
+      "questions": [
+        {
+          "id": "rc-004-1",
+          "type": "reading-comprehension",
+          "passageId": "p-004",
+          "stem": "According to paragraph 1, some schools advised immigrant families to -",
+          "options": [
+            "teach their children two languages from birth",
+            "avoid using their native language at home",
+            "send their children to bilingual schools",
+            "delay teaching their children to read"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [
+            1
+          ],
+          "explanation": "Some schools even advised immigrant families to speak only the local language at home: בתי ספר המליצו לדבר בבית רק בשפה המקומית, כלומר להימנע משפת האם.",
+          "tags": [
+            "detail",
+            "paraphrase"
+          ]
+        },
+        {
+          "id": "rc-004-2",
+          "type": "reading-comprehension",
+          "passageId": "p-004",
+          "stem": "The comparison to \"physical exercise\" in paragraph 2 is used to explain -",
+          "options": [
+            "how managing two languages might improve mental control",
+            "why bilingual children are physically healthier",
+            "why some children find learning languages tiring",
+            "how researchers measured attention"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            2
+          ],
+          "explanation": "ההשוואה לאימון גופני ממחישה את הרעיון: כמו שאימון מחזק שריר, ההתמודדות המתמדת עם שתי שפות \"מאמנת\" את מערכת השליטה של המוח. זו אנלוגיה, לא טענה על בריאות גופנית.",
+          "tags": [
+            "analogy",
+            "purpose"
+          ]
+        },
+        {
+          "id": "rc-004-3",
+          "type": "reading-comprehension",
+          "passageId": "p-004",
+          "stem": "According to the critics mentioned in paragraph 3, the \"bilingual advantage\" may have seemed stronger than it really is because -",
+          "options": [
+            "bilingual participants were generally older",
+            "the tasks used were too easy",
+            "studies that found no difference were less likely to be published",
+            "monolingual children refused to take part"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 4,
+          "referencedParagraphs": [
+            3
+          ],
+          "explanation": "המבקרים טוענים שמחקרים עם תוצאות חיוביות מתפרסמים יותר ממחקרים שלא מצאו דבר, ולכן התמונה שהצטיירה הייתה מטעה (misleading). זוהי \"הטיית פרסום\".",
+          "tags": [
+            "detail",
+            "cause-effect"
+          ]
+        },
+        {
+          "id": "rc-004-4",
+          "type": "reading-comprehension",
+          "passageId": "p-004",
+          "stem": "Which of the following best describes the author's conclusion in paragraph 4?",
+          "options": [
+            "Bilingualism is harmful only if it begins in early childhood.",
+            "The bilingual advantage has finally been proven.",
+            "Schools should once again discourage the use of two languages.",
+            "Even without a mental advantage, bilingualism is beneficial and not harmful."
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            4
+          ],
+          "explanation": "הכותב קובע שגם אם הדו-לשוניות לא משפרת כישורים מנטליים (Whether or not...), אין עדות לנזק, ויש לה יתרונות חברתיים, תרבותיים ומקצועיים ברורים.",
+          "tags": [
+            "author-view",
+            "conclusion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-005",
+      "title": "Urban Heat Islands",
+      "topic": "סביבה ועירוניות",
+      "difficulty": 3,
+      "paragraphs": [
+        "On a summer afternoon, the center of a large city can be several degrees warmer than the countryside around it. This phenomenon, known as the \"urban heat island\" effect, was first described in the early nineteenth century by the English scientist Luke Howard, who noticed that temperatures in London were consistently higher than those in nearby villages.",
+        "Several factors contribute to the effect. Dark surfaces such as asphalt roads and roofs absorb large amounts of solar energy during the day and release it slowly at night. Cities also have far fewer trees and plants, which normally cool the air by releasing water vapor. In addition, cars, air conditioners and factories produce heat of their own.",
+        "The consequences can be serious. Higher temperatures increase the demand for air conditioning, which in turn raises energy consumption and, ironically, adds even more heat to the streets. During heat waves, the effect can also be dangerous to health, particularly for elderly people and for those who live in poorly ventilated apartments.",
+        "Fortunately, the problem can be reduced. Some cities now encourage \"cool roofs,\" which are painted white or covered with reflective materials, while others are planting thousands of trees along their streets. Studies suggest that such measures can lower local temperatures noticeably, although they cannot eliminate the effect entirely."
+      ],
+      "questions": [
+        {
+          "id": "rc-005-1",
+          "type": "reading-comprehension",
+          "passageId": "p-005",
+          "stem": "Luke Howard is mentioned in paragraph 1 as the person who -",
+          "options": [
+            "first recorded that a city was warmer than its surroundings",
+            "invented a method for cooling cities",
+            "studied the effect of heat on elderly people",
+            "measured temperatures in villages around the world"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [
+            1
+          ],
+          "explanation": "לפי פסקה 1, לוק הווארד היה הראשון שתיאר את התופעה: הוא הבחין שהטמפרטורות בלונדון גבוהות באופן עקבי מאלה שבכפרים הסמוכים.",
+          "tags": [
+            "detail"
+          ]
+        },
+        {
+          "id": "rc-005-2",
+          "type": "reading-comprehension",
+          "passageId": "p-005",
+          "stem": "According to paragraph 2, trees and plants help to -",
+          "options": [
+            "absorb solar energy during the day",
+            "cool the air around them",
+            "reduce the number of cars in cities",
+            "reflect sunlight back into the sky"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "referencedParagraphs": [
+            2
+          ],
+          "explanation": "trees and plants ... normally cool the air by releasing water vapor: עצים וצמחים מקררים את האוויר. ספיגת אנרגיית השמש מתוארת באותה פסקה, אבל היא תכונה של משטחים כהים.",
+          "tags": [
+            "detail"
+          ]
+        },
+        {
+          "id": "rc-005-3",
+          "type": "reading-comprehension",
+          "passageId": "p-005",
+          "stem": "The word \"ironically\" in paragraph 3 suggests that air conditioning -",
+          "options": [
+            "is too expensive for most city residents",
+            "is especially important for elderly people",
+            "contributes to the very problem it is used to solve",
+            "was not available in Luke Howard's time"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 4,
+          "referencedParagraphs": [
+            3
+          ],
+          "explanation": "האירוניה היא שמזגנים, שנועדו להתמודד עם החום, מוסיפים בעצמם עוד חום לרחובות. כלומר הם מחמירים את הבעיה שהם אמורים לפתור.",
+          "tags": [
+            "vocabulary-in-context",
+            "inference"
+          ]
+        },
+        {
+          "id": "rc-005-4",
+          "type": "reading-comprehension",
+          "passageId": "p-005",
+          "stem": "It can be inferred from paragraph 4 that the measures described -",
+          "options": [
+            "have completely solved the problem in some cities",
+            "are too expensive to be used widely",
+            "have had no measurable effect on temperatures",
+            "can help, but are only a partial solution"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "referencedParagraphs": [
+            4
+          ],
+          "explanation": "הצעדים מורידים טמפרטורות באופן מורגש, although they cannot eliminate the effect entirely: הם עוזרים, אבל לא מעלימים את התופעה לגמרי. כלומר זהו פתרון חלקי.",
+          "tags": [
+            "inference"
+          ]
         }
       ]
     }

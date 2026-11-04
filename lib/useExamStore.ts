@@ -1,7 +1,11 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
-import { QUESTION_TYPE_LABELS_HE } from "@/lib/exam-constants";
-import { getQuestionsByType } from "@/lib/question-bank";
+import {
+  buildExamLayout,
+  materializeLayout,
+  type ExamLayout,
+  type ExamRuntimeSection,
+} from "@/lib/exam-builder";
 import { scoreResponses, type ScoreSummary } from "@/lib/scoring";
 import type { ExamMode, OptionIndex, Question, QuestionId, QuestionType } from "@/types/exam";
 
@@ -26,16 +30,15 @@ export const SECTION_ORDER: readonly QuestionType[] = [
 export type ExamStatus = "idle" | "in-progress" | "completed";
 export type FinishReason = "submitted" | "time-up";
 
-export interface ExamRuntimeSection {
-  type: QuestionType;
-  titleHe: string;
-  questions: readonly Question[];
-}
+export type { ExamRuntimeSection };
 
 /** Serializable exam state (no functions). */
 export interface ExamData {
   mode: ExamMode | null;
   status: ExamStatus;
+  /** Which questions this exam uses and their answer order (randomized per exam). */
+  layout: ExamLayout;
+  /** `layout` resolved to full questions, with options in display order. */
   sections: readonly ExamRuntimeSection[];
   currentSectionIndex: number;
   currentQuestionIndex: number;
@@ -60,7 +63,10 @@ export interface ExamData {
 }
 
 export interface ExamActions {
-  /** Starts a new exam, discarding any previous one. */
+  /**
+   * Starts a new exam, discarding any previous one. Questions are drawn at
+   * random per `SECTION_BLUEPRINT` and answer options are shuffled.
+   */
   startExam: {
     (mode: "full-exam"): void;
     (mode: "section-practice", section: QuestionType): void;
@@ -96,6 +102,7 @@ export type ExamStore = ExamData & ExamActions;
 const INITIAL_DATA: ExamData = {
   mode: null,
   status: "idle",
+  layout: [],
   sections: [],
   currentSectionIndex: 0,
   currentQuestionIndex: 0,
@@ -118,12 +125,6 @@ interface Position {
 }
 
 const secondsLeft = (deadline: number, now: number) => Math.max(0, Math.ceil((deadline - now) / 1000));
-
-function buildSections(types: readonly QuestionType[]): ExamRuntimeSection[] {
-  return types
-    .map((type) => ({ type, titleHe: QUESTION_TYPE_LABELS_HE[type], questions: getQuestionsByType(type) }))
-    .filter((s) => s.questions.length > 0);
-}
 
 function allQuestions(data: ExamData): Question[] {
   return data.sections.flatMap((s) => s.questions);
@@ -226,23 +227,26 @@ const isOptionIndex = (n: number): n is OptionIndex => Number.isInteger(n) && n 
 export const EXAM_STORAGE_KEY = "amirnet-exam";
 
 /**
- * What is written to sessionStorage. Sections are stored as their types and
- * rebuilt from the question bank on load, which keeps the payload small
- * (it is rewritten on every timer tick).
+ * What is written to sessionStorage. Only the compact `layout` (question ids and
+ * answer order) is saved; full questions are rebuilt from the bank on load. This
+ * keeps the payload small (it is rewritten on every timer tick) and restores the
+ * same randomized exam after a refresh.
  */
-type PersistedExam = Omit<ExamData, "sections"> & { sectionTypes: QuestionType[] };
+type PersistedExam = Omit<ExamData, "sections">;
 
 function toPersisted(store: ExamStore): PersistedExam {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { sections, ...rest } = dataOf(store);
-  return { ...rest, sectionTypes: sections.map((s) => s.type) };
+  return rest;
 }
 
 function fromPersisted(persisted: unknown, current: ExamStore): ExamStore {
   const p = persisted as Partial<PersistedExam> | null | undefined;
-  if (!p || !Array.isArray(p.sectionTypes)) return current;
-  const { sectionTypes, ...rest } = p;
-  const restored: ExamStore = { ...current, ...rest, sections: buildSections(sectionTypes) };
-  // If the question bank changed since the exam was saved, drop the stale exam.
+  if (!p || p.status === "idle") return current;
+  // A layout referring to questions that no longer exist (bank changed) → drop the saved exam.
+  const sections = materializeLayout(p.layout);
+  if (!sections) return current;
+  const restored: ExamStore = { ...current, ...p, sections };
   if (restored.status === "in-progress" && !questionAt(restored, currentPosition(restored))) return current;
   return restored;
 }
@@ -262,7 +266,8 @@ export const useExamStore = create<ExamStore>()(
     (set, get, api) => {
       const startExam = (mode: ExamMode, section?: QuestionType): void => {
         const types = mode === "full-exam" ? SECTION_ORDER : section ? [section] : [];
-        const sections = buildSections(types);
+        const layout = buildExamLayout(types);
+        const sections = materializeLayout(layout) ?? [];
         const questionCount = sections.reduce((n, s) => n + s.questions.length, 0);
         if (questionCount === 0) {
           console.warn(
@@ -282,6 +287,7 @@ export const useExamStore = create<ExamStore>()(
           ...INITIAL_DATA,
           mode,
           status: "in-progress",
+          layout,
           sections,
           startedAt: now,
           totalDeadline: now + totalSeconds * 1000,
@@ -375,7 +381,9 @@ export const useExamStore = create<ExamStore>()(
     },
     {
       name: EXAM_STORAGE_KEY,
-      version: 1,
+      // v2: saves the randomized `layout`. Older saves (v1) are discarded.
+      version: 2,
+      migrate: () => ({}),
       storage: createJSONStorage(() => sessionStorage),
       skipHydration: true,
       partialize: toPersisted,

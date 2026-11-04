@@ -56,6 +56,11 @@ interface BaseQuestion {
   optionExplanations?: Partial<Record<OptionIndex, string>>;
   /** Free-form tags, e.g. ["vocabulary", "connectors", "inference"]. */
   tags?: string[];
+  /**
+   * Keep options in their authored order when building an exam (e.g. when an
+   * option is "Both 1 and 2"). Options are shuffled by default.
+   */
+  fixedOptionOrder?: boolean;
 }
 
 /**
