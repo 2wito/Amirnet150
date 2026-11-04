@@ -4,7 +4,7 @@
 
 **A free exam-simulation platform for the Israeli Amirnet English test.**
 
-[**Live Demo →**](https://YOUR-DEPLOYMENT-URL.vercel.app) <!-- TODO: replace with the production URL -->
+[**Live Demo →**](https://amirnet150.vercel.app)
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
