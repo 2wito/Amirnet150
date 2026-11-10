@@ -23,7 +23,7 @@ const NOTICES = [
 const linkClass =
   "font-medium text-foreground underline-offset-4 transition-colors duration-200 hover:text-primary hover:underline";
 
-/** Site-wide footer: branding, community notice, legal disclaimer, credits and dedication (RTL Hebrew). */
+/** Site-wide footer: branding, community notice, legal disclaimer, and credits (RTL Hebrew). */
 export function SiteFooter() {
   return (
     <footer className="glass mt-20 border-x-0 border-b-0">
@@ -67,14 +67,6 @@ export function SiteFooter() {
             <a href={`mailto:${DEVELOPER_EMAIL}`} dir="ltr" className={linkClass}>
               {DEVELOPER_EMAIL}
             </a>
-          </p>
-        </div>
-
-        {/* Personal dedication */}
-        <div className="flex justify-center pt-2">
-          <p className="relative rounded-full border border-warm/25 bg-warm-soft px-6 py-3 text-center text-sm text-warm shadow-[0_0_32px_-6px] shadow-warm/40">
-            <span className="font-bold">שנהב</span> — האתר הזה נבנה בשבילך ולהצלחתך. תני בראש!{" "}
-            <span className="font-semibold">אוהב ❤️</span>
           </p>
         </div>
       </div>

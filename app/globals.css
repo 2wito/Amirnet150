@@ -177,9 +177,6 @@
   --brand-from: oklch(0.42 0.14 262);
   --brand-via: oklch(0.52 0.17 275);
   --brand-to: oklch(0.62 0.13 230);
-  /* Dedication accent (warm rose-gold). */
-  --warm: oklch(0.5 0.14 15);
-  --warm-soft: oklch(0.96 0.025 40);
   /* Exemption-level colors (lowest → highest). */
   --level-pre-basic: oklch(0.55 0.19 27);
   --level-basic: oklch(0.6 0.15 60);
@@ -188,13 +185,17 @@
   --level-exempt: oklch(0.52 0.14 152);
 }
 .dark {
-  --warm: oklch(0.78 0.11 30);
-  --warm-soft: oklch(0.28 0.04 30);
+  --brand-from: oklch(0.55 0.15 262);
+  --brand-via: oklch(0.6 0.16 275);
+  --brand-to: oklch(0.66 0.13 230);
+  --level-pre-basic: oklch(0.7 0.17 27);
+  --level-basic: oklch(0.78 0.14 70);
+  --level-advanced-a: oklch(0.72 0.12 230);
+  --level-advanced-b: oklch(0.72 0.13 275);
+  --level-exempt: oklch(0.74 0.15 152);
 }
 
 @theme inline {
-  --color-warm: var(--warm);
-  --color-warm-soft: var(--warm-soft);
   --color-level-pre-basic: var(--level-pre-basic);
   --color-level-basic: var(--level-basic);
   --color-level-advanced-a: var(--level-advanced-a);
@@ -216,7 +217,7 @@
 /* Frosted card: readable in light mode (high opacity), subtle blur. */
 @utility glass {
   background-color: color-mix(in oklch, var(--card) 88%, transparent);
-  border: 1px solid color-mix(in oklch, var(--border) 80%, white 20%);
+  border: 1px solid color-mix(in oklch, var(--border) 80%, var(--background) 20%);
   backdrop-filter: blur(14px) saturate(1.4);
   -webkit-backdrop-filter: blur(14px) saturate(1.4);
 }

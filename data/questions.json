@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "sentenceCompletion": [
     {
       "id": "sc-001",
@@ -681,6 +681,869 @@
         "connectors",
         "grammar"
       ]
+    },
+    {
+      "id": "sc-037",
+      "type": "sentence-completion",
+      "stem": "The doctor advised him to ____ from eating fatty foods for a few weeks after the operation.",
+      "options": [
+        "refrain",
+        "insist",
+        "benefit",
+        "depend"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "refrain from = להימנע מ-. הרופא המליץ לו להימנע ממזון שומני אחרי הניתוח. insist on / benefit from / depend on לא מתאימים למשמעות או למילת היחס from בהקשר הזה.",
+      "tags": [
+        "vocabulary",
+        "prepositions"
+      ]
+    },
+    {
+      "id": "sc-038",
+      "type": "sentence-completion",
+      "stem": "The town's population has ____ steadily over the past decade, from 20,000 to nearly 35,000 residents.",
+      "options": [
+        "declined",
+        "increased",
+        "remained",
+        "divided"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "המספרים (מ-20,000 לכמעט 35,000) מראים עלייה, ולכן increased (גדלה). declined (ירדה) הפוך, ו-remained (נשארה) לא מתאים לשינוי.",
+      "tags": [
+        "vocabulary",
+        "numbers"
+      ]
+    },
+    {
+      "id": "sc-039",
+      "type": "sentence-completion",
+      "stem": "The two paintings look almost ____, but experts can tell the original from the copy.",
+      "options": [
+        "distinct",
+        "ancient",
+        "identical",
+        "colorful"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "but מציין ניגוד: הציורים נראים כמעט זהים (identical), אבל מומחים מבחינים ביניהם. distinct (שונים) היה מבטל את הניגוד.",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-040",
+      "type": "sentence-completion",
+      "stem": "Her argument was so ____ that even her strongest opponents admitted she had a point.",
+      "options": [
+        "irrelevant",
+        "hesitant",
+        "careless",
+        "persuasive"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "גם המתנגדים החזקים ביותר הודו שהיא צודקת, כלומר הטיעון היה משכנע (persuasive). המבנה so... that מחבר בין התכונה לתוצאה.",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-041",
+      "type": "sentence-completion",
+      "stem": "____ the museum is free on Mondays, it is usually very crowded on that day.",
+      "options": [
+        "Because",
+        "Although",
+        "Unless",
+        "Until"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "הכניסה החינמית היא הסיבה לצפיפות, ולכן Because. Although (למרות ש) היה מתאים רק אם התוצאה הייתה מפתיעה.",
+      "tags": [
+        "connectors",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-042",
+      "type": "sentence-completion",
+      "stem": "The new manager made several ____ changes, transforming the way the entire department operated.",
+      "options": [
+        "minor",
+        "fundamental",
+        "temporary",
+        "invisible"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "השינויים שינו את כל אופן פעולת המחלקה, כלומר הם היו יסודיים (fundamental). minor (קלים) סותר את המילה transforming.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-043",
+      "type": "sentence-completion",
+      "stem": "The vaccine provides ____ against the virus for at least ten years.",
+      "options": [
+        "exposure",
+        "damage",
+        "protection",
+        "access"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "חיסון מעניק הגנה (protection against) מפני הנגיף. exposure (חשיפה) הוא ההפך ממה שחיסון עושה.",
+      "tags": [
+        "vocabulary",
+        "collocations"
+      ]
+    },
+    {
+      "id": "sc-044",
+      "type": "sentence-completion",
+      "stem": "The documents had been kept ____ for decades, and only a few officials knew of their existence.",
+      "options": [
+        "public",
+        "visible",
+        "popular",
+        "confidential"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "רק מעט פקידים ידעו על קיום המסמכים, ולכן הם נשמרו בסוד (confidential). public ו-visible הם ההפך.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-045",
+      "type": "sentence-completion",
+      "stem": "The athlete's ____ to training every single day eventually made her a champion.",
+      "options": [
+        "commitment",
+        "objection",
+        "reluctance",
+        "indifference"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "אימון בכל יום הוביל לאליפות, כלומר מדובר במחויבות (commitment to). reluctance (חוסר רצון) ו-indifference (אדישות) לא היו מובילים להצלחה.",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-046",
+      "type": "sentence-completion",
+      "stem": "The results of the survey were ____: half of the participants supported the plan and half opposed it.",
+      "options": [
+        "unanimous",
+        "inconclusive",
+        "overwhelming",
+        "predictable"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "חצי בעד וחצי נגד — אין הכרעה, ולכן התוצאות היו לא חד-משמעיות (inconclusive). unanimous (פה אחד) ו-overwhelming (מכריעות) הם ההפך.",
+      "tags": [
+        "vocabulary",
+        "definition-clue"
+      ]
+    },
+    {
+      "id": "sc-047",
+      "type": "sentence-completion",
+      "stem": "The professor ____ his students to question everything, including what he himself said.",
+      "options": [
+        "prohibited",
+        "doubted",
+        "encouraged",
+        "ignored"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "המבנה encourage someone to do something = לעודד מישהו לעשות. prohibited היה דורש from + ing, ו-doubted/ignored אינם מתאימים למבנה.",
+      "tags": [
+        "vocabulary",
+        "grammar"
+      ]
+    },
+    {
+      "id": "sc-048",
+      "type": "sentence-completion",
+      "stem": "The economy grew rapidly in the first half of the year, ____ it slowed down considerably in the second half.",
+      "options": [
+        "because",
+        "so that",
+        "unless",
+        "whereas"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "יש ניגוד בין צמיחה מהירה בחצי הראשון להאטה בחצי השני, ולכן whereas (ואילו). because ו-so that מציינים סיבה ומטרה.",
+      "tags": [
+        "connectors",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-049",
+      "type": "sentence-completion",
+      "stem": "The diplomat's ____ response, which neither confirmed nor denied the reports, frustrated the journalists.",
+      "options": [
+        "evasive",
+        "candid",
+        "hostile",
+        "enthusiastic"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "תגובה שלא אישרה ולא הכחישה היא תגובה מתחמקת (evasive). candid (גלוי) הוא ההפך — תשובה ישירה לא הייתה מתסכלת את העיתונאים.",
+      "tags": [
+        "vocabulary",
+        "definition-clue"
+      ]
+    },
+    {
+      "id": "sc-050",
+      "type": "sentence-completion",
+      "stem": "The negotiations reached a ____ when neither side was willing to make any further concessions.",
+      "options": [
+        "breakthrough",
+        "deadlock",
+        "celebration",
+        "conclusion"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "כששני הצדדים לא מוכנים לוותר, המשא ומתן נתקע — deadlock (מבוי סתום). breakthrough (פריצת דרך) הוא ההפך.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-051",
+      "type": "sentence-completion",
+      "stem": "The novel's main character is a ____ figure: readers cannot decide whether he is a hero or a villain.",
+      "options": [
+        "simple",
+        "minor",
+        "complex",
+        "cheerful"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "הנקודתיים מסבירים את המילה החסרה: הקוראים לא יכולים להחליט אם הוא גיבור או נבל — דמות מורכבת (complex).",
+      "tags": [
+        "vocabulary",
+        "definition-clue"
+      ]
+    },
+    {
+      "id": "sc-052",
+      "type": "sentence-completion",
+      "stem": "Despite their exhaustion, the team worked ____ through the night, determined to finish the report before the deadline.",
+      "options": [
+        "reluctantly",
+        "rarely",
+        "carelessly",
+        "tirelessly"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Despite their exhaustion מציין ניגוד: למרות העייפות הם עבדו ללא לאות (tirelessly). reluctantly סותר את determined.",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-053",
+      "type": "sentence-completion",
+      "stem": "The ancient city was ____ by a massive earthquake in the fourth century and was never rebuilt.",
+      "options": [
+        "destroyed",
+        "founded",
+        "visited",
+        "restored"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "רעידת אדמה עזה והעובדה שהעיר never rebuilt (לא נבנתה מחדש) מצביעות על כך שהיא נהרסה (destroyed).",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-054",
+      "type": "sentence-completion",
+      "stem": "The scientist's claims were met with ____, since she offered almost no evidence to support them.",
+      "options": [
+        "enthusiasm",
+        "skepticism",
+        "gratitude",
+        "admiration"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "טענות ללא ראיות מתקבלות בספקנות (skepticism). since מציין סיבה, ושאר האפשרויות חיוביות ולא מתאימות לחוסר ראיות.",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-055",
+      "type": "sentence-completion",
+      "stem": "____ all of the evidence had been examined, the committee announced its decision.",
+      "options": [
+        "Unless",
+        "Although",
+        "Once",
+        "Whether"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Once = ברגע ש... / לאחר ש. קודם נבדקו הראיות ואז הוכרזה ההחלטה. Unless ו-Although אינם יוצרים רצף זמנים הגיוני.",
+      "tags": [
+        "connectors",
+        "time-clues"
+      ]
+    },
+    {
+      "id": "sc-056",
+      "type": "sentence-completion",
+      "stem": "Some animals, such as bears, ____ during the winter, sleeping for months to save energy.",
+      "options": [
+        "migrate",
+        "hunt",
+        "reproduce",
+        "hibernate"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "השינה במשך חודשים כדי לחסוך אנרגיה היא תרדמת חורף — hibernate. migrate פירושו לנדוד למקום אחר.",
+      "tags": [
+        "vocabulary",
+        "definition-clue"
+      ]
+    },
+    {
+      "id": "sc-057",
+      "type": "sentence-completion",
+      "stem": "The company was forced to ____ hundreds of workers after its sales fell dramatically.",
+      "options": [
+        "dismiss",
+        "hire",
+        "promote",
+        "train"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "ירידה חדה במכירות מאלצת חברה לפטר (dismiss) עובדים. hire (להעסיק) ו-promote (לקדם) אינם הגיוניים במצב של הפסדים.",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-058",
+      "type": "sentence-completion",
+      "stem": "The instructions on the medicine bottle must be followed ____; taking too much can be dangerous.",
+      "options": [
+        "loosely",
+        "precisely",
+        "occasionally",
+        "randomly"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "אם מינון יתר מסוכן, יש למלא את ההוראות בדיוק (precisely). loosely (באופן רופף) הוא ההפך.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-059",
+      "type": "sentence-completion",
+      "stem": "The new evidence ____ the detective's suspicion that the butler had lied.",
+      "options": [
+        "concealed",
+        "invented",
+        "confirmed",
+        "rejected"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "ראיות חדשות יכולות לאשש (confirm) חשד. concealed (הסתירו) ו-invented (המציאו) אינם מתאימים לראיות, ו-reject משמש לאנשים הדוחים רעיון, לא לראיות.",
+      "tags": [
+        "vocabulary",
+        "collocations"
+      ]
+    },
+    {
+      "id": "sc-060",
+      "type": "sentence-completion",
+      "stem": "Although she is now a famous actress, she comes from a ____ background; her parents were farmers with very little money.",
+      "options": [
+        "wealthy",
+        "noble",
+        "privileged",
+        "modest"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "הורים חקלאים עם מעט כסף = רקע צנוע (modest). Although יוצר ניגוד בין המעמד היום לבין הרקע. wealthy ו-privileged הם ההפך.",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-061",
+      "type": "sentence-completion",
+      "stem": "The bridge is designed to ____ earthquakes of up to magnitude 8.",
+      "options": [
+        "withstand",
+        "cause",
+        "predict",
+        "measure"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "withstand = לעמוד בפני. גשר מתוכנן לשרוד רעידות אדמה, לא לגרום להן, לחזות אותן או למדוד אותן.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-062",
+      "type": "sentence-completion",
+      "stem": "The meeting was declared ____ because too few members were present to make an official decision.",
+      "options": [
+        "successful",
+        "invalid",
+        "urgent",
+        "public"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "כשאין מספיק חברים לקבלת החלטה רשמית (אין קוורום), הישיבה מוכרזת כלא תקפה (invalid).",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-063",
+      "type": "sentence-completion",
+      "stem": "Studies suggest that children who grow up caring for pets tend to become more ____ toward animals, showing greater kindness and concern for their welfare.",
+      "options": [
+        "hostile",
+        "indifferent",
+        "compassionate",
+        "fearful"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "ההמשך showing greater kindness and concern מגדיר את המילה החסרה: חומלים (compassionate). hostile ו-indifferent הם ההפך.",
+      "tags": [
+        "vocabulary",
+        "definition-clue"
+      ]
+    },
+    {
+      "id": "sc-064",
+      "type": "sentence-completion",
+      "stem": "The film was a huge commercial success, ____ the critics' negative reviews.",
+      "options": [
+        "because of",
+        "thanks to",
+        "due to",
+        "despite"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "ביקורות שליליות והצלחה מסחרית הם ניגוד, ולכן despite (למרות). שלוש האפשרויות האחרות מציינות סיבה.",
+      "tags": [
+        "connectors",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-065",
+      "type": "sentence-completion",
+      "stem": "The ____ of the new species surprised biologists, who had believed the island's wildlife was already fully documented.",
+      "options": [
+        "discovery",
+        "extinction",
+        "protection",
+        "absence"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "הביולוגים חשבו שכל החיות באי כבר תועדו, ולכן הגילוי (discovery) של מין חדש הפתיע אותם.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-066",
+      "type": "sentence-completion",
+      "stem": "Because the road was ____, the truck could not pass and had to take a longer route.",
+      "options": [
+        "paved",
+        "blocked",
+        "wide",
+        "empty"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "המשאית לא יכלה לעבור, ולכן הכביש היה חסום (blocked). paved (סלול), wide ו-empty היו דווקא מאפשרים מעבר.",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-067",
+      "type": "sentence-completion",
+      "stem": "The politician refused to ____ any wrongdoing, insisting that he had always acted honestly.",
+      "options": [
+        "deny",
+        "report",
+        "admit",
+        "investigate"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "הוא התעקש שתמיד פעל ביושר, כלומר סירב להודות (admit) בעוולה. היזהרו מ-deny: 'סירב להכחיש' היה אומר שהוא דווקא מודה.",
+      "tags": [
+        "vocabulary",
+        "logic"
+      ]
+    },
+    {
+      "id": "sc-068",
+      "type": "sentence-completion",
+      "stem": "The scientist ____ that the results would be published by the end of the year, but they were delayed for another eighteen months.",
+      "options": [
+        "doubted",
+        "regretted",
+        "forgot",
+        "anticipated"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "but מראה שהציפייה לא התממשה: המדענית צפתה (anticipated) פרסום עד סוף השנה, אך הוא התעכב. doubted לא היה יוצר ניגוד.",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-069",
+      "type": "sentence-completion",
+      "stem": "The decision was not made ____; it was the result of months of careful discussion.",
+      "options": [
+        "hastily",
+        "deliberately",
+        "officially",
+        "jointly"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "ההחלטה התקבלה אחרי חודשים של דיון זהיר, ולכן היא לא התקבלה בחיפזון (hastily).",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-070",
+      "type": "sentence-completion",
+      "stem": "The rainforest is home to an ____ variety of plants and animals, many of which have not yet been named.",
+      "options": [
+        "limited",
+        "enormous",
+        "ordinary",
+        "artificial"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "רבים מהמינים עוד לא קיבלו שם — מגוון עצום (enormous). limited סותר את התיאור.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-071",
+      "type": "sentence-completion",
+      "stem": "The theory is difficult to test, ____ it remains controversial among scientists.",
+      "options": [
+        "even though",
+        "in case",
+        "which is why",
+        "as if"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "הקושי לבדוק את התאוריה הוא הסיבה שהיא שנויה במחלוקת, ולכן which is why (ולכן). even though יוצר ניגוד שלא קיים כאן.",
+      "tags": [
+        "connectors",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-072",
+      "type": "sentence-completion",
+      "stem": "His ____ remarks offended many people at the ceremony.",
+      "options": [
+        "thoughtful",
+        "generous",
+        "modest",
+        "tactless"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "הערות שפגעו באנשים הן הערות חסרות טקט (tactless). שאר האפשרויות חיוביות.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-073",
+      "type": "sentence-completion",
+      "stem": "The museum ____ visitors from touching the paintings in order to protect them.",
+      "options": [
+        "prohibits",
+        "allows",
+        "invites",
+        "encourages"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "prohibit someone from doing = לאסור על מישהו. גם המבנה (from + ing) וגם המטרה (להגן על הציורים) מצביעים על איסור.",
+      "tags": [
+        "vocabulary",
+        "grammar"
+      ]
+    },
+    {
+      "id": "sc-074",
+      "type": "sentence-completion",
+      "stem": "Prices have been rising so quickly that many families can no longer ____ basic goods such as bread and milk.",
+      "options": [
+        "produce",
+        "afford",
+        "avoid",
+        "refuse"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "afford = להרשות לעצמו (מבחינה כלכלית). עליית מחירים גורמת לכך שמשפחות לא יכולות להרשות לעצמן מוצרי יסוד.",
+      "tags": [
+        "vocabulary",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "sc-075",
+      "type": "sentence-completion",
+      "stem": "The two languages are closely ____, so speakers of one can often understand the other.",
+      "options": [
+        "opposed",
+        "isolated",
+        "related",
+        "complicated"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "דוברי שפה אחת מבינים את השנייה, כלומר השפות קרובות (closely related).",
+      "tags": [
+        "vocabulary",
+        "collocations"
+      ]
+    },
+    {
+      "id": "sc-076",
+      "type": "sentence-completion",
+      "stem": "Although the patient's condition was serious, the doctors were ____ that she would make a full recovery.",
+      "options": [
+        "doubtful",
+        "furious",
+        "ignorant",
+        "optimistic"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Although יוצר ניגוד: המצב חמור, ובכל זאת הרופאים היו אופטימיים (optimistic) לגבי החלמה מלאה.",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-077",
+      "type": "sentence-completion",
+      "stem": "The report ____ several reasons for the decline in tourism, including high prices and poor weather.",
+      "options": [
+        "cites",
+        "ignores",
+        "conceals",
+        "disproves"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "cite = לציין, להביא כראיה. הדו״ח מונה סיבות (including...), ולכן הוא מציין אותן ולא מתעלם מהן.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-078",
+      "type": "sentence-completion",
+      "stem": "The author's first book was ____ into more than thirty languages.",
+      "options": [
+        "interpreted",
+        "translated",
+        "spoken",
+        "written"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "ספר מתורגם (translated into) לשפות. interpret משמש בעיקר לתרגום בעל פה או לפרשנות.",
+      "tags": [
+        "vocabulary",
+        "collocations"
+      ]
+    },
+    {
+      "id": "sc-079",
+      "type": "sentence-completion",
+      "stem": "The plan seemed ____ on paper, but it failed completely when it was put into practice.",
+      "options": [
+        "useless",
+        "costly",
+        "flawless",
+        "dangerous"
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "but יוצר ניגוד בין התוכנית על הנייר לבין הכישלון במציאות, ולכן היא נראתה מושלמת (flawless).",
+      "tags": [
+        "vocabulary",
+        "contrast"
+      ]
+    },
+    {
+      "id": "sc-080",
+      "type": "sentence-completion",
+      "stem": "Not all mushrooms are safe to eat; some are highly ____.",
+      "options": [
+        "nutritious",
+        "delicious",
+        "common",
+        "toxic"
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "החלק הראשון אומר שלא כל הפטריות בטוחות לאכילה, ולכן חלקן רעילות (toxic).",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "sc-081",
+      "type": "sentence-completion",
+      "stem": "The scientist's findings were ____ by later research, which reached exactly the same conclusions.",
+      "options": [
+        "corroborated",
+        "refuted",
+        "ignored",
+        "anticipated"
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 5,
+      "explanation": "מחקר מאוחר שהגיע בדיוק לאותן מסקנות מאשש (corroborate) את הממצאים. refuted (הופרכו) הוא ההפך.",
+      "tags": [
+        "vocabulary",
+        "definition-clue"
+      ]
+    },
+    {
+      "id": "sc-082",
+      "type": "sentence-completion",
+      "stem": "Her ____ approach to spending, never buying anything she did not absolutely need, allowed her to save a great deal of money.",
+      "options": [
+        "extravagant",
+        "frugal",
+        "careless",
+        "generous"
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "מי שלא קונה שום דבר מיותר וחוסכת הרבה היא חסכנית (frugal). extravagant (בזבזני) הוא ההפך.",
+      "tags": [
+        "vocabulary",
+        "definition-clue"
+      ]
     }
   ],
   "restatement": [
@@ -1241,6 +2104,744 @@
       "tags": [
         "conditionals",
         "vocabulary"
+      ]
+    },
+    {
+      "id": "rs-031",
+      "type": "restatement",
+      "stem": "The new library is twice as large as the old one.",
+      "options": [
+        "The new library has two floors, unlike the old one.",
+        "The old library was half the size of the new one.",
+        "The old library was twice as large as the new one.",
+        "The new library is slightly larger than the old one."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "twice as large = גדולה פי שניים. אם החדשה גדולה פי שניים, הישנה היא בחצי מגודלה. היזהרו מתשובה שהופכת את הכיוון.",
+      "tags": [
+        "comparison"
+      ]
+    },
+    {
+      "id": "rs-032",
+      "type": "restatement",
+      "stem": "She regrets not having accepted the job offer.",
+      "options": [
+        "She is glad that she did not accept the job offer.",
+        "She regrets accepting the job offer.",
+        "She is sorry that she turned down the job offer.",
+        "She has not yet decided whether to accept the job offer."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "היא מצטערת שלא קיבלה את ההצעה = היא מצטערת שדחתה אותה (turned down). שימו לב ל-not: התשובה השנייה הפוכה.",
+      "tags": [
+        "negation",
+        "verbs"
+      ]
+    },
+    {
+      "id": "rs-033",
+      "type": "restatement",
+      "stem": "The storm caused far less damage than had been expected.",
+      "options": [
+        "The storm caused more damage than anyone had predicted.",
+        "Nobody expected the storm to cause any damage.",
+        "The damage from the storm was exactly as expected.",
+        "The damage caused by the storm was much smaller than predicted."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "far less than expected = הרבה פחות מהצפוי. far מחזק את ההשוואה.",
+      "tags": [
+        "comparison"
+      ]
+    },
+    {
+      "id": "rs-034",
+      "type": "restatement",
+      "stem": "Under no circumstances should the door be left unlocked.",
+      "options": [
+        "The door must always be locked.",
+        "In some circumstances, the door may be left unlocked.",
+        "The door should never be locked.",
+        "The door is usually left unlocked."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "Under no circumstances = בשום מקרה (היפוך תחבירי עם should). אסור אף פעם להשאיר את הדלת לא נעולה — כלומר היא חייבת להיות נעולה תמיד. שימו לב לשלילה הכפולה (no + unlocked).",
+      "tags": [
+        "inversion",
+        "negation"
+      ]
+    },
+    {
+      "id": "rs-035",
+      "type": "restatement",
+      "stem": "Neither the manager nor her assistant was aware of the problem.",
+      "options": [
+        "Only the manager knew about the problem.",
+        "Both the manager and her assistant were unaware of the problem.",
+        "The assistant told the manager about the problem.",
+        "Either the manager or her assistant was aware of the problem."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Neither... nor = לא זה ולא זה. אף אחד מהשניים לא ידע על הבעיה.",
+      "tags": [
+        "connectors",
+        "negation"
+      ]
+    },
+    {
+      "id": "rs-036",
+      "type": "restatement",
+      "stem": "As far as the researchers know, no one has ever crossed the desert on foot.",
+      "options": [
+        "The researchers have crossed the desert on foot.",
+        "Many people have crossed the desert, but not on foot.",
+        "According to the researchers' knowledge, the desert has never been crossed on foot.",
+        "The researchers know that the desert is too far to cross on foot."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "As far as ... know = למיטב ידיעתם. המשפט אינו קובע עובדה מוחלטת אלא את מה שהחוקרים יודעים. התשובה האחרונה מנצלת את המילה far בצורה מטעה.",
+      "tags": [
+        "hedging"
+      ]
+    },
+    {
+      "id": "rs-037",
+      "type": "restatement",
+      "stem": "The company would have gone bankrupt if it had not received a government loan.",
+      "options": [
+        "The company went bankrupt despite the government loan.",
+        "The company did not need a government loan.",
+        "The company went bankrupt because the government refused to lend it money.",
+        "The government loan saved the company from bankruptcy."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "תנאי מסוג שלישי (would have... if... had not) מתאר מצב שלא קרה: החברה קיבלה הלוואה ולכן לא פשטה רגל. ההלוואה הצילה אותה.",
+      "tags": [
+        "conditionals"
+      ]
+    },
+    {
+      "id": "rs-038",
+      "type": "restatement",
+      "stem": "The play was so popular that tickets sold out within hours.",
+      "options": [
+        "Because so many people wanted to see the play, all the tickets were sold very quickly.",
+        "The play was not popular, so tickets were cheap.",
+        "Tickets for the play were available for several weeks.",
+        "The play became popular only after the tickets were sold."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "so... that מבטא סיבה ותוצאה: ההצגה הייתה כה פופולרית שהכרטיסים אזלו תוך שעות.",
+      "tags": [
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "rs-039",
+      "type": "restatement",
+      "stem": "In terms of population, Tel Aviv is smaller than Jerusalem.",
+      "options": [
+        "Tel Aviv has more residents than Jerusalem.",
+        "Jerusalem has more residents than Tel Aviv.",
+        "Tel Aviv covers a smaller area than Jerusalem.",
+        "Jerusalem and Tel Aviv have similar populations."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "In terms of population = מבחינת אוכלוסייה. בירושלים יש יותר תושבים. התשובה השלישית מדברת על שטח ולא על אוכלוסייה.",
+      "tags": [
+        "comparison"
+      ]
+    },
+    {
+      "id": "rs-040",
+      "type": "restatement",
+      "stem": "The professor insisted that every student submit the assignment on time.",
+      "options": [
+        "The professor allowed some students to submit the assignment late.",
+        "Every student asked the professor for more time.",
+        "The professor demanded that all students hand in the assignment by the deadline.",
+        "The professor submitted the assignment on time."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "insisted that = עמד על כך / דרש. submit = hand in (להגיש). הפרופסור דרש שכולם יגישו בזמן.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "rs-041",
+      "type": "restatement",
+      "stem": "It is widely assumed that the ancient wall was built for defense, but there is little evidence for this.",
+      "options": [
+        "There is strong evidence that the wall was built for defense.",
+        "Few people believe that the wall was built for defense.",
+        "The wall was not built for defense, as the evidence clearly shows.",
+        "Although many believe the wall was built for protection, this belief is not well supported."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "widely assumed = רבים מניחים. little evidence = מעט ראיות (לא ׳אין ראיות כלל׳ ולא הוכחה הפוכה). התשובה השלישית מוגזמת — המשפט לא קובע שהחומה לא נבנתה להגנה.",
+      "tags": [
+        "hedging",
+        "quantifiers"
+      ]
+    },
+    {
+      "id": "rs-042",
+      "type": "restatement",
+      "stem": "The longer the negotiations continued, the less likely an agreement seemed.",
+      "options": [
+        "As the negotiations went on, an agreement appeared increasingly unlikely.",
+        "The negotiations were long because both sides wanted an agreement.",
+        "An agreement was reached after long negotiations.",
+        "Short negotiations rarely lead to an agreement."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "The... -er, the less... = ככל ש... כך פחות. ככל שהמו״מ נמשך, הסיכוי להסכם נראה קטן יותר.",
+      "tags": [
+        "comparison",
+        "the-more"
+      ]
+    },
+    {
+      "id": "rs-043",
+      "type": "restatement",
+      "stem": "Despite being the youngest member of the team, she was chosen as its leader.",
+      "options": [
+        "She was chosen as leader because she was the youngest member.",
+        "She was selected to lead the team even though she was younger than all the others.",
+        "The youngest member of the team refused to lead it.",
+        "She was the oldest member, but she was not chosen as leader."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Despite = למרות. היא נבחרה למרות גילה הצעיר, לא בגללו (התשובה הראשונה הופכת ניגוד לסיבה).",
+      "tags": [
+        "concession"
+      ]
+    },
+    {
+      "id": "rs-044",
+      "type": "restatement",
+      "stem": "Scarcely had the guests arrived when the lights went out.",
+      "options": [
+        "The guests arrived after the lights had gone out.",
+        "Very few guests arrived before the lights went out.",
+        "The lights went out almost immediately after the guests arrived.",
+        "The lights went out, so the guests did not arrive."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "Scarcely had... when = אך ורק... ומיד. האורחים בקושי הגיעו והחשמל כבר כבה. scarcely כאן מתייחס לזמן, לא לכמות האורחים.",
+      "tags": [
+        "inversion",
+        "time"
+      ]
+    },
+    {
+      "id": "rs-045",
+      "type": "restatement",
+      "stem": "The museum is open to the public every day except Mondays.",
+      "options": [
+        "The museum is open only on Mondays.",
+        "The museum is closed to the public every day.",
+        "On Mondays, the museum is open only to members of the public.",
+        "The public can visit the museum on any day but Monday."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "except = but (חוץ מ-). המוזיאון פתוח בכל יום חוץ מיום שני.",
+      "tags": [
+        "exceptions"
+      ]
+    },
+    {
+      "id": "rs-046",
+      "type": "restatement",
+      "stem": "The findings cast doubt on the widely held view that the disease is inherited.",
+      "options": [
+        "The results raise questions about the common belief that the disease is passed down in families.",
+        "The results confirm that the disease is inherited.",
+        "Few people believe that the disease is inherited.",
+        "The findings show that the disease cannot be cured."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "cast doubt on = מעורר ספק לגבי. widely held view = דעה רווחת. inherited = עובר בתורשה (passed down in families).",
+      "tags": [
+        "vocabulary",
+        "hedging"
+      ]
+    },
+    {
+      "id": "rs-047",
+      "type": "restatement",
+      "stem": "Not a single error was found in the report.",
+      "options": [
+        "Only one error was found in the report.",
+        "The report was completely free of mistakes.",
+        "The report contained a few errors.",
+        "Nobody looked for errors in the report."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Not a single = אף לא אחת. לא נמצאה אפילו טעות אחת. היזהרו מ-single שמטעה לכיוון ׳טעות אחת׳.",
+      "tags": [
+        "negation",
+        "quantifiers"
+      ]
+    },
+    {
+      "id": "rs-048",
+      "type": "restatement",
+      "stem": "He could not have stolen the money, since he was abroad at the time.",
+      "options": [
+        "He stole the money and then went abroad.",
+        "He was unable to steal the money because it was kept abroad.",
+        "It is impossible that he took the money, because he was in another country when it disappeared.",
+        "He might have stolen the money before going abroad."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "could not have + V3 = לא ייתכן ש... (מסקנה לוגית על העבר). since כאן = because: הוא היה בחו״ל.",
+      "tags": [
+        "modals"
+      ]
+    },
+    {
+      "id": "rs-049",
+      "type": "restatement",
+      "stem": "Most of the town's residents are opposed to the construction of the new airport.",
+      "options": [
+        "Few of the town's residents object to the new airport.",
+        "The new airport was built despite the residents' support.",
+        "All the town's residents support the new airport.",
+        "The majority of the people living in the town are against building the airport."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "Most = the majority (רוב). opposed to = against (מתנגדים ל-).",
+      "tags": [
+        "quantifiers"
+      ]
+    },
+    {
+      "id": "rs-050",
+      "type": "restatement",
+      "stem": "The bridge, which was completed in 1932, is still in use today.",
+      "options": [
+        "The bridge has been used since it was finished in 1932.",
+        "The bridge was used until 1932.",
+        "Construction of the bridge began in 1932 and has not yet ended.",
+        "The bridge was rebuilt in 1932 and closed soon after."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "completed = הושלם. still in use = עדיין בשימוש. הגשר משמש מאז 1932 ועד היום.",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "rs-051",
+      "type": "restatement",
+      "stem": "Were the government to raise taxes, many small businesses would close.",
+      "options": [
+        "Because the government raised taxes, many small businesses closed.",
+        "If the government increased taxes, many small businesses would shut down.",
+        "Many small businesses closed, so the government raised taxes.",
+        "The government will not raise taxes, so small businesses will not close."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 5,
+      "explanation": "Were... to = If... (תנאי בהיפוך תחבירי). המשפט מתאר מצב היפותטי: אם הממשלה תעלה מסים — עסקים ייסגרו. זה לא קרה בפועל.",
+      "tags": [
+        "inversion",
+        "conditionals"
+      ]
+    },
+    {
+      "id": "rs-052",
+      "type": "restatement",
+      "stem": "She is said to be the best surgeon in the country.",
+      "options": [
+        "She says that she is the best surgeon in the country.",
+        "It has been proven that she is the best surgeon in the country.",
+        "People say that she is the finest surgeon in the country.",
+        "She was told that she was the best surgeon in the country."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "is said to be = אומרים עליה ש... (סביל). לא היא אומרת, וזו אינה עובדה מוכחת.",
+      "tags": [
+        "passive",
+        "hedging"
+      ]
+    },
+    {
+      "id": "rs-053",
+      "type": "restatement",
+      "stem": "The prize was awarded to the youngest of the three finalists.",
+      "options": [
+        "The youngest finalist awarded the prize.",
+        "All three finalists received prizes.",
+        "The prize went to the oldest finalist.",
+        "Of the three finalists, the one who was the youngest received the prize."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "was awarded to = הוענק ל-. הצעיר מבין שלושת המועמדים בגמר קיבל את הפרס. התשובה הראשונה הופכת את הסביל לפעיל.",
+      "tags": [
+        "passive",
+        "superlatives"
+      ]
+    },
+    {
+      "id": "rs-054",
+      "type": "restatement",
+      "stem": "There is no point in arguing with him; he never changes his mind.",
+      "options": [
+        "Arguing with him is useless, because he always sticks to his opinion.",
+        "He enjoys arguing, but he never changes his mind.",
+        "He often changes his mind after an argument.",
+        "It is important to argue with him so that he changes his mind."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "There is no point in = אין טעם ב-. אין טעם להתווכח איתו כי הוא אף פעם לא משנה את דעתו.",
+      "tags": [
+        "expressions"
+      ]
+    },
+    {
+      "id": "rs-055",
+      "type": "restatement",
+      "stem": "The experiment was repeated several times in order to rule out the possibility of error.",
+      "options": [
+        "The experiment was repeated because an error had been found.",
+        "The experiment was carried out more than once to make sure the results were not caused by a mistake.",
+        "Several errors were found when the experiment was repeated.",
+        "The experiment was performed only once, so errors were possible."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "rule out = לשלול. in order to = כדי. הניסוי חזר על עצמו כדי לשלול טעות — לא כי נמצאה טעות.",
+      "tags": [
+        "vocabulary",
+        "purpose"
+      ]
+    },
+    {
+      "id": "rs-056",
+      "type": "restatement",
+      "stem": "It took the workers three years to restore the old church.",
+      "options": [
+        "The old church was built in three years.",
+        "The workers restored the church three years ago.",
+        "The restoration of the old church lasted three years.",
+        "The old church was restored three times."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 1,
+      "explanation": "It took... three years = נדרשו שלוש שנים. restore = לשחזר/לשפץ (לא לבנות).",
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "rs-057",
+      "type": "restatement",
+      "stem": "But for her quick thinking, the accident would have been much worse.",
+      "options": [
+        "Her quick thinking caused the accident.",
+        "Even though she thought quickly, the accident was very serious.",
+        "The accident happened because she did not think quickly enough.",
+        "Her fast reaction prevented the accident from being far more serious."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 5,
+      "explanation": "But for = If it had not been for (אלמלא). אלמלא חשבה מהר, התאונה הייתה חמורה בהרבה — כלומר המחשבה המהירה מנעה החמרה.",
+      "tags": [
+        "conditionals"
+      ]
+    },
+    {
+      "id": "rs-058",
+      "type": "restatement",
+      "stem": "The ancient Egyptians are believed to have used this tool for measuring land.",
+      "options": [
+        "It is thought that the ancient Egyptians measured land with this tool.",
+        "The ancient Egyptians believed that the tool could measure land.",
+        "It has been proven that the tool was used by the Egyptians.",
+        "The tool was used to measure the land of ancient Egypt in modern times."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "are believed to have used = מאמינים (חוקרים) שהם השתמשו. זו הערכה, לא הוכחה, ולא המצרים הם שהאמינו.",
+      "tags": [
+        "passive",
+        "hedging"
+      ]
+    },
+    {
+      "id": "rs-059",
+      "type": "restatement",
+      "stem": "The company's profits have doubled since the new director took over.",
+      "options": [
+        "The new director doubled his own salary.",
+        "Since the arrival of the new director, the company has earned twice as much.",
+        "The company's profits fell after the new director took over.",
+        "The company has had two directors since its profits rose."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "doubled = הוכפלו. took over = נכנס לתפקיד. מאז כניסת המנהל החדש הרווחים גדלו פי שניים.",
+      "tags": [
+        "numbers",
+        "time"
+      ]
+    },
+    {
+      "id": "rs-060",
+      "type": "restatement",
+      "stem": "Whatever the outcome of the trial, the case has already damaged his reputation.",
+      "options": [
+        "His reputation will be damaged only if he loses the trial.",
+        "If he wins the trial, his reputation will be restored.",
+        "No matter how the trial ends, his reputation has already been harmed.",
+        "The trial has not yet affected his reputation."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "Whatever the outcome = No matter how it ends (לא משנה מה תהיה התוצאה). הנזק לשמו כבר נגרם.",
+      "tags": [
+        "concession"
+      ]
+    },
+    {
+      "id": "rs-061",
+      "type": "restatement",
+      "stem": "The novel is less a love story than a study of social class.",
+      "options": [
+        "The novel is mainly a love story.",
+        "The novel is neither a love story nor a study of social class.",
+        "Love stories are less popular than novels about social class.",
+        "The novel deals more with social class than with romance."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 5,
+      "explanation": "less X than Y = פחות X ויותר Y. הרומן הוא בעיקר עיון במעמדות חברתיים ופחות סיפור אהבה.",
+      "tags": [
+        "comparison"
+      ]
+    },
+    {
+      "id": "rs-062",
+      "type": "restatement",
+      "stem": "The meeting has been brought forward from Thursday to Tuesday.",
+      "options": [
+        "The meeting will now take place earlier, on Tuesday instead of Thursday.",
+        "The meeting has been moved from Tuesday to Thursday.",
+        "The meeting will take place on both Tuesday and Thursday.",
+        "The meeting was cancelled on Tuesday."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "bring forward = להקדים. הפגישה הוקדמה מחמישי לשלישי.",
+      "tags": [
+        "phrasal-verbs",
+        "time"
+      ]
+    },
+    {
+      "id": "rs-063",
+      "type": "restatement",
+      "stem": "Visitors are requested to refrain from taking photographs inside the building.",
+      "options": [
+        "Visitors are encouraged to take photographs inside the building.",
+        "Visitors are asked not to take pictures inside the building.",
+        "Visitors may take photographs only inside the building.",
+        "Photographs of visitors are taken inside the building."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "refrain from = להימנע מ-. are requested = מתבקשים. המבקרים מתבקשים לא לצלם בתוך הבניין.",
+      "tags": [
+        "vocabulary"
+      ]
+    },
+    {
+      "id": "rs-064",
+      "type": "restatement",
+      "stem": "It was the lack of funding, rather than a lack of interest, that ended the project.",
+      "options": [
+        "The project ended because nobody was interested in it.",
+        "The project had both enough funding and enough interest.",
+        "The project ended because there was not enough money, not because people were uninterested.",
+        "Interest in the project grew after its funding ended."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "It was X, rather than Y, that... = X (ולא Y) הוא שגרם. הסיבה לסיום הייתה מחסור בכסף, לא חוסר עניין.",
+      "tags": [
+        "emphasis",
+        "cause-effect"
+      ]
+    },
+    {
+      "id": "rs-065",
+      "type": "restatement",
+      "stem": "Only a handful of the original buildings survived the fire.",
+      "options": [
+        "Most of the original buildings survived the fire.",
+        "None of the original buildings survived the fire.",
+        "The fire started in a handful of the original buildings.",
+        "Very few of the original buildings were left standing after the fire."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "a handful = קומץ, מספר קטן. רק מעט מהבניינים המקוריים שרדו — לא אף אחד ולא רובם.",
+      "tags": [
+        "quantifiers"
+      ]
+    },
+    {
+      "id": "rs-066",
+      "type": "restatement",
+      "stem": "He is not so much lazy as unmotivated.",
+      "options": [
+        "His problem is a lack of motivation rather than laziness.",
+        "He is both lazy and unmotivated.",
+        "He is lazy but highly motivated.",
+        "He is more lazy than he is unmotivated."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 5,
+      "explanation": "not so much X as Y = לא כל כך X אלא יותר Y. הבעיה שלו היא חוסר מוטיבציה, לא עצלות.",
+      "tags": [
+        "comparison"
+      ]
+    },
+    {
+      "id": "rs-067",
+      "type": "restatement",
+      "stem": "The disease, once common throughout Europe, is now extremely rare.",
+      "options": [
+        "The disease has always been rare in Europe.",
+        "The disease used to be widespread in Europe, but today it is very uncommon.",
+        "The disease is becoming more common in Europe.",
+        "The disease was rare in Europe but is now common."
+      ],
+      "correctOptionIndex": 1,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "once common = הייתה נפוצה בעבר. now extremely rare = כיום נדירה מאוד.",
+      "tags": [
+        "time",
+        "contrast"
+      ]
+    },
+    {
+      "id": "rs-068",
+      "type": "restatement",
+      "stem": "She would rather walk to work than take the crowded bus.",
+      "options": [
+        "She has to walk because the bus is always full.",
+        "She takes the bus because she dislikes walking.",
+        "She prefers walking to work over riding the crowded bus.",
+        "She walks to work only when the bus is crowded."
+      ],
+      "correctOptionIndex": 2,
+      "timeLimitSeconds": 45,
+      "difficulty": 2,
+      "explanation": "would rather X than Y = מעדיפה X על פני Y. זו העדפה, לא חובה (has to).",
+      "tags": [
+        "preference"
+      ]
+    },
+    {
+      "id": "rs-069",
+      "type": "restatement",
+      "stem": "The report makes no mention of the costs involved.",
+      "options": [
+        "The report focuses mainly on costs.",
+        "The report mentions only some of the costs.",
+        "The costs of the report were not mentioned.",
+        "The report says nothing about how much it will cost."
+      ],
+      "correctOptionIndex": 3,
+      "timeLimitSeconds": 45,
+      "difficulty": 3,
+      "explanation": "makes no mention of = לא מזכיר כלל. הדו״ח לא אומר דבר על העלויות. התשובה השלישית מדברת על עלות הדו״ח עצמו.",
+      "tags": [
+        "negation"
+      ]
+    },
+    {
+      "id": "rs-070",
+      "type": "restatement",
+      "stem": "So successful was the campaign that it was copied by organizations around the world.",
+      "options": [
+        "The campaign was so effective that organizations worldwide imitated it.",
+        "The campaign succeeded because it copied other organizations.",
+        "Organizations around the world tried to stop the campaign.",
+        "The campaign was copied, but it was not successful."
+      ],
+      "correctOptionIndex": 0,
+      "timeLimitSeconds": 45,
+      "difficulty": 4,
+      "explanation": "So + adj + was... that = היפוך של The campaign was so successful that. ההצלחה גרמה לארגונים בעולם לחקות את הקמפיין.",
+      "tags": [
+        "inversion",
+        "cause-effect"
       ]
     }
   ],
@@ -2178,6 +3779,839 @@
           "tags": [
             "tone",
             "inference"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-010",
+      "title": "How Habits Form",
+      "topic": "פסיכולוגיה",
+      "difficulty": 3,
+      "paragraphs": [
+        "Every day, people perform hundreds of actions without thinking about them: brushing their teeth, locking the door, checking their phones. Psychologists estimate that a large share of our daily behavior is not the result of conscious decisions but of habits, automatic responses triggered by familiar situations.",
+        "Researchers often describe a habit as a loop with three parts. First comes a cue, such as a time of day, a place, or a feeling. The cue triggers a routine, the behavior itself. Finally, there is a reward, a pleasant result that makes the brain more likely to repeat the routine the next time the cue appears. Over time, the link between cue and routine becomes so strong that the behavior occurs almost by itself.",
+        "This explains why bad habits are so difficult to break. Simply deciding to stop rarely works, because the cue is still present and the brain still expects the reward. Many experts therefore recommend keeping the cue and the reward but replacing the routine. A person who snacks when bored in the afternoon, for example, might take a short walk instead, which also provides a break and a sense of relief.",
+        "How long does it take to form a new habit? A popular belief holds that twenty-one days are enough. However, a study conducted at University College London found that the time varied enormously between participants, from a few weeks to most of a year, with an average of about two months. The researchers also found that missing a single day did not seriously harm the process."
+      ],
+      "questions": [
+        {
+          "id": "rc-010-1",
+          "type": "reading-comprehension",
+          "passageId": "p-010",
+          "stem": "According to the first paragraph, habits are -",
+          "options": [
+            "decisions that people make with great care",
+            "automatic reactions to familiar situations",
+            "actions that people perform only rarely",
+            "the result of conscious planning"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 1 הרגלים מוגדרים כ-automatic responses triggered by familiar situations — תגובות אוטומטיות למצבים מוכרים, ולא החלטות מודעות.",
+          "tags": [
+            "detail",
+            "definition"
+          ],
+          "referencedParagraphs": [
+            1
+          ]
+        },
+        {
+          "id": "rc-010-2",
+          "type": "reading-comprehension",
+          "passageId": "p-010",
+          "stem": "In the habit loop described in paragraph 2, the reward -",
+          "options": [
+            "appears before the cue",
+            "replaces the routine",
+            "makes it more likely that the routine will be repeated",
+            "is always a feeling of boredom"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 2 נכתב שהתגמול makes the brain more likely to repeat the routine — מגביר את הסיכוי שהשגרה תחזור.",
+          "tags": [
+            "detail"
+          ],
+          "referencedParagraphs": [
+            2
+          ]
+        },
+        {
+          "id": "rc-010-3",
+          "type": "reading-comprehension",
+          "passageId": "p-010",
+          "stem": "The example of the afternoon walk (paragraph 3) is given in order to -",
+          "options": [
+            "show that exercise is more important than eating",
+            "explain why people feel bored in the afternoon",
+            "prove that bad habits cannot be changed",
+            "illustrate how a routine can be replaced while the cue and reward stay the same"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "ההליכה היא דוגמה להמלצה שלפניה: להשאיר את הרמז ואת התגמול ולהחליף רק את השגרה. שאלות ׳for what purpose׳ בודקות את תפקיד הדוגמה בטיעון.",
+          "tags": [
+            "purpose",
+            "example"
+          ],
+          "referencedParagraphs": [
+            3
+          ]
+        },
+        {
+          "id": "rc-010-4",
+          "type": "reading-comprehension",
+          "passageId": "p-010",
+          "stem": "What does the London study (paragraph 4) suggest about the popular belief mentioned in the same paragraph?",
+          "options": [
+            "It is too simple, since the time needed varies greatly from person to person.",
+            "It is accurate for most people.",
+            "It underestimates the harm of missing a single day.",
+            "It applies only to bad habits."
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "המחקר מצא טווח רחב — משבועות ספורים ועד כמעט שנה — ולכן האמונה ש-21 יום מספיקים היא פשטנית. המחקר דווקא מצא שדילוג על יום אחד לא פוגע משמעותית.",
+          "tags": [
+            "inference",
+            "author-view"
+          ],
+          "referencedParagraphs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-011",
+      "title": "Drinking Water from the Sea",
+      "topic": "סביבה וטכנולוגיה",
+      "difficulty": 3,
+      "paragraphs": [
+        "Although about seventy percent of the Earth's surface is covered by water, only a tiny fraction of it is fresh water that people can drink. As populations grow and droughts become more frequent, many countries have turned to desalination, the process of removing salt from seawater.",
+        "The most common method today is reverse osmosis. Seawater is pushed at high pressure through special membranes with extremely small holes. Water molecules pass through, while salt and most other substances are left behind. Compared with older methods, which boiled the water and collected the steam, reverse osmosis uses far less energy.",
+        "Israel is often cited as a success story. Since the early 2000s, the country has built several large desalination plants along its Mediterranean coast, and today a large share of its household water comes from the sea. As a result, a country that once suffered from chronic water shortages now has a relatively stable supply, even in dry years.",
+        "Desalination is not without problems, however. The plants still require a great deal of electricity, which is often produced by burning fossil fuels. In addition, the process produces brine, a very salty liquid that is returned to the sea and may harm marine life near the outlet pipes. Engineers are therefore searching for ways to power plants with renewable energy and to dispose of brine more safely."
+      ],
+      "questions": [
+        {
+          "id": "rc-011-1",
+          "type": "reading-comprehension",
+          "passageId": "p-011",
+          "stem": "According to paragraph 1, countries have turned to desalination mainly because -",
+          "options": [
+            "most of the Earth's water is already fresh",
+            "fresh water is limited while demand is increasing",
+            "seawater is cleaner than river water",
+            "desalination is cheaper than any other source of water"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 1: רק חלק זעיר מהמים ראויים לשתייה, והאוכלוסייה גדלה ובצורות מתרבות — כלומר מחסור מול ביקוש גובר.",
+          "tags": [
+            "detail",
+            "cause"
+          ],
+          "referencedParagraphs": [
+            1
+          ]
+        },
+        {
+          "id": "rc-011-2",
+          "type": "reading-comprehension",
+          "passageId": "p-011",
+          "stem": "In reverse osmosis, the membranes -",
+          "options": [
+            "boil the water and collect the steam",
+            "add salt to the water",
+            "allow water molecules through but block salt",
+            "require no pressure at all"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 2: Water molecules pass through, while salt... are left behind. הרתחה ואיסוף אדים הם השיטה הישנה.",
+          "tags": [
+            "detail"
+          ],
+          "referencedParagraphs": [
+            2
+          ]
+        },
+        {
+          "id": "rc-011-3",
+          "type": "reading-comprehension",
+          "passageId": "p-011",
+          "stem": "The word \"chronic\" in paragraph 3 is closest in meaning to -",
+          "options": [
+            "sudden",
+            "minor",
+            "imaginary",
+            "long-lasting"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "chronic = כרוני, מתמשך. המדינה סבלה ממחסור במים לאורך זמן, בניגוד לאספקה היציבה של היום.",
+          "tags": [
+            "vocabulary-in-context"
+          ],
+          "referencedParagraphs": [
+            3
+          ]
+        },
+        {
+          "id": "rc-011-4",
+          "type": "reading-comprehension",
+          "passageId": "p-011",
+          "stem": "The main purpose of the last paragraph is to -",
+          "options": [
+            "present some drawbacks of desalination and possible solutions",
+            "argue that desalination should be stopped",
+            "explain how brine is produced from fresh water",
+            "compare Israel with other countries"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "הפסקה נפתחת ב-not without problems, however, מציגה בעיות (חשמל, תמלחת) ומסיימת בפתרונות שמהנדסים מחפשים. היא אינה קוראת להפסיק את ההתפלה.",
+          "tags": [
+            "main-idea",
+            "purpose"
+          ],
+          "referencedParagraphs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-012",
+      "title": "The Power of the Placebo",
+      "topic": "רפואה",
+      "difficulty": 4,
+      "paragraphs": [
+        "A placebo is a treatment with no active ingredient, such as a sugar pill or an injection of salt water. Yet patients who receive placebos often report real improvements in their symptoms. This puzzling phenomenon, known as the placebo effect, has fascinated doctors for centuries.",
+        "The placebo effect is especially strong for conditions that are influenced by the brain's own processing, such as pain, nausea, and anxiety. Brain-imaging studies have shown that when patients expect a treatment to reduce their pain, their brains may release natural painkillers. In other words, expectation alone can produce measurable physical changes.",
+        "Because of this effect, new drugs are usually tested in controlled trials. One group of patients receives the real drug, while another receives a placebo, and neither the patients nor the doctors know who received which. A drug is considered effective only if it performs significantly better than the placebo. Without such comparisons, researchers might mistake the placebo effect for the action of the drug.",
+        "Perhaps the most surprising finding is that placebos can work even when patients know they are taking them. In several small studies, patients with chronic conditions who were openly given \"honest placebos\" still reported feeling better. Researchers caution that placebos cannot shrink tumors or cure infections, but they suggest that the ritual of receiving care may itself have healing power."
+      ],
+      "questions": [
+        {
+          "id": "rc-012-1",
+          "type": "reading-comprehension",
+          "passageId": "p-012",
+          "stem": "According to paragraph 2, the placebo effect is strongest for -",
+          "options": [
+            "infections caused by bacteria",
+            "conditions such as pain and anxiety",
+            "diseases that require surgery",
+            "patients who do not expect any improvement"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 2: especially strong for conditions... such as pain, nausea, and anxiety.",
+          "tags": [
+            "detail"
+          ],
+          "referencedParagraphs": [
+            2
+          ]
+        },
+        {
+          "id": "rc-012-2",
+          "type": "reading-comprehension",
+          "passageId": "p-012",
+          "stem": "The brain-imaging studies mentioned in paragraph 2 show that -",
+          "options": [
+            "placebos contain hidden painkillers",
+            "expectation can cause real changes in the body",
+            "patients only imagine that they feel better",
+            "sugar pills are more effective than real drugs"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "המחקרים הראו שציפייה גורמת למוח לשחרר משככי כאבים טבעיים — expectation alone can produce measurable physical changes. התשובה השלישית הפוכה: השינוי אמיתי ולא דמיוני.",
+          "tags": [
+            "detail",
+            "inference"
+          ],
+          "referencedParagraphs": [
+            2
+          ]
+        },
+        {
+          "id": "rc-012-3",
+          "type": "reading-comprehension",
+          "passageId": "p-012",
+          "stem": "In a controlled trial (paragraph 3), a new drug is considered effective if -",
+          "options": [
+            "patients in both groups improve equally",
+            "the doctors know which patients received the drug",
+            "it works clearly better than the placebo",
+            "it is given to patients openly"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 3: considered effective only if it performs significantly better than the placebo.",
+          "tags": [
+            "detail"
+          ],
+          "referencedParagraphs": [
+            3
+          ]
+        },
+        {
+          "id": "rc-012-4",
+          "type": "reading-comprehension",
+          "passageId": "p-012",
+          "stem": "Which of the following statements would the researchers in paragraph 4 most likely agree with?",
+          "options": [
+            "Placebos can replace all medical treatment.",
+            "Honest placebos have no effect at all.",
+            "Placebos are useful for curing infections.",
+            "Placebos have limits, but the experience of being cared for may help patients."
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 4,
+          "explanation": "החוקרים מזהירים שפלצבו לא מכווץ גידולים ולא מרפא זיהומים, אך מציעים שטקס קבלת הטיפול עצמו מרפא. לכן יש לו מגבלות, אך גם תועלת.",
+          "tags": [
+            "inference",
+            "author-view"
+          ],
+          "referencedParagraphs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-013",
+      "title": "The Library of Alexandria",
+      "topic": "היסטוריה",
+      "difficulty": 3,
+      "paragraphs": [
+        "In the third century BCE, the rulers of Egypt set out to build the greatest collection of knowledge in the ancient world. The Library of Alexandria was part of a larger research institution where scholars from across the Mediterranean studied mathematics, astronomy, medicine, and literature.",
+        "The library's leaders were determined to acquire every book they could find. According to one story, ships that entered the harbor of Alexandria were searched, and any scrolls on board were taken to be copied. The library kept the originals and returned the copies to their owners. Whether or not this story is true, it reflects the library's enormous ambition.",
+        "The library is famous today largely because of its destruction, which is often imagined as a single dramatic fire. In reality, historians believe that its decline was slow. Funding was reduced, scholars were driven out during periods of political unrest, and parts of the city were damaged in a series of wars over several centuries. By the time the last remains disappeared, the library had long since lost its importance.",
+        "The popular image of a single catastrophe may persist because it offers a simple lesson about the fragility of knowledge. The more complex reality, however, carries a lesson of its own: great institutions are rarely destroyed overnight. More often, they fade away when societies stop supporting them."
+      ],
+      "questions": [
+        {
+          "id": "rc-013-1",
+          "type": "reading-comprehension",
+          "passageId": "p-013",
+          "stem": "According to paragraph 1, the Library of Alexandria was -",
+          "options": [
+            "a small private collection of literature",
+            "part of a larger center of learning",
+            "built mainly to store government records",
+            "open only to Egyptian scholars"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 1: part of a larger research institution where scholars from across the Mediterranean studied — חלק ממוסד מחקר גדול, ולא רק למלומדים מצרים.",
+          "tags": [
+            "detail"
+          ],
+          "referencedParagraphs": [
+            1
+          ]
+        },
+        {
+          "id": "rc-013-2",
+          "type": "reading-comprehension",
+          "passageId": "p-013",
+          "stem": "The story about the ships (paragraph 2) is mentioned in order to -",
+          "options": [
+            "prove that the library stole books",
+            "describe the history of the harbor",
+            "show how eager the library was to collect books",
+            "explain why the library was destroyed"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "הכותב מסייג (Whether or not this story is true) ומסביר שהסיפור reflects the library's enormous ambition — הוא ממחיש את השאיפה לאסוף ספרים, ולא מוכיח דבר.",
+          "tags": [
+            "purpose",
+            "example"
+          ],
+          "referencedParagraphs": [
+            2
+          ]
+        },
+        {
+          "id": "rc-013-3",
+          "type": "reading-comprehension",
+          "passageId": "p-013",
+          "stem": "According to historians, the library -",
+          "options": [
+            "was destroyed in one great fire",
+            "was never actually built",
+            "was moved to another city",
+            "declined gradually over a long period"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 3: historians believe that its decline was slow — דעיכה הדרגתית לאורך מאות שנים, בניגוד לדימוי של שריפה אחת.",
+          "tags": [
+            "detail",
+            "contrast"
+          ],
+          "referencedParagraphs": [
+            3
+          ]
+        },
+        {
+          "id": "rc-013-4",
+          "type": "reading-comprehension",
+          "passageId": "p-013",
+          "stem": "What lesson does the author draw in the last paragraph?",
+          "options": [
+            "Institutions usually disappear slowly when they lose society's support.",
+            "Libraries should be built far from cities.",
+            "Fires are the main danger to knowledge.",
+            "Ancient scholars were not interested in politics."
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "המשפט האחרון: they fade away when societies stop supporting them — מוסדות נעלמים בהדרגה כשהחברה מפסיקה לתמוך בהם.",
+          "tags": [
+            "main-idea",
+            "author-view"
+          ],
+          "referencedParagraphs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-014",
+      "title": "When Languages Disappear",
+      "topic": "בלשנות",
+      "difficulty": 4,
+      "paragraphs": [
+        "Linguists estimate that there are about seven thousand languages spoken in the world today. Yet this diversity is unevenly distributed: a handful of major languages are spoken by most of the world's population, while thousands of others have only a few thousand speakers, or even fewer. Many experts predict that a large proportion of these smaller languages could disappear by the end of this century.",
+        "A language rarely dies because its speakers suddenly stop using it. More often, the process takes several generations. Parents who speak a minority language may decide that their children will have better opportunities if they speak the dominant language of the country. The children grow up understanding their parents' language but speaking it less and less, and their own children may not learn it at all.",
+        "The loss of a language involves more than the loss of words. Each language contains knowledge accumulated over centuries, such as names for local plants and their medical uses, ways of describing the landscape, and stories that preserve a community's history. When the last speakers die, much of this knowledge may vanish with them.",
+        "Some communities have managed to reverse the trend. Hebrew, which for centuries was used mainly in prayer and writing, became the everyday language of millions of people. More recently, communities in New Zealand and Wales have set up schools in which children are taught entirely in the local language. Such efforts show that decline is not inevitable, but they require strong commitment from both communities and governments."
+      ],
+      "questions": [
+        {
+          "id": "rc-014-1",
+          "type": "reading-comprehension",
+          "passageId": "p-014",
+          "stem": "According to paragraph 1, the world's languages -",
+          "options": [
+            "are spoken by roughly equal numbers of people",
+            "are increasing in number every year",
+            "are very unevenly distributed among speakers",
+            "will all disappear by the end of the century"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 1: this diversity is unevenly distributed — מעט שפות מדוברות על ידי רוב האנשים. התשובה האחרונה מוגזמת (all).",
+          "tags": [
+            "detail"
+          ],
+          "referencedParagraphs": [
+            1
+          ]
+        },
+        {
+          "id": "rc-014-2",
+          "type": "reading-comprehension",
+          "passageId": "p-014",
+          "stem": "According to paragraph 2, a language usually disappears -",
+          "options": [
+            "gradually, as each generation uses it less",
+            "immediately after a war",
+            "because speakers forget it in old age",
+            "when governments ban it"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 2: the process takes several generations — כל דור משתמש בשפה פחות, עד שהנכדים כבר לא לומדים אותה.",
+          "tags": [
+            "detail"
+          ],
+          "referencedParagraphs": [
+            2
+          ]
+        },
+        {
+          "id": "rc-014-3",
+          "type": "reading-comprehension",
+          "passageId": "p-014",
+          "stem": "The examples in paragraph 3 (names of plants, stories) are given to show that -",
+          "options": [
+            "minority languages have small vocabularies",
+            "plants have different names in every country",
+            "stories are more important than words",
+            "a language carries a community's knowledge and history"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "הדוגמאות ממחישות את טענת הפתיחה של הפסקה: The loss of a language involves more than the loss of words — שפה נושאת ידע והיסטוריה.",
+          "tags": [
+            "purpose",
+            "example"
+          ],
+          "referencedParagraphs": [
+            3
+          ]
+        },
+        {
+          "id": "rc-014-4",
+          "type": "reading-comprehension",
+          "passageId": "p-014",
+          "stem": "The case of Hebrew is mentioned in paragraph 4 as an example of -",
+          "options": [
+            "a language that disappeared",
+            "a language that was revived for daily use",
+            "a language used only in schools",
+            "a language spoken mainly in Wales"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "עברית שימשה בעיקר לתפילה ולכתיבה והפכה לשפת היומיום של מיליונים — דוגמה להיפוך המגמה (reverse the trend).",
+          "tags": [
+            "example",
+            "inference"
+          ],
+          "referencedParagraphs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-015",
+      "title": "Can Machines Be Creative?",
+      "topic": "טכנולוגיה",
+      "difficulty": 4,
+      "paragraphs": [
+        "Computer programs can now write poems, compose music, and produce paintings in the style of famous artists. Some of these works are so convincing that audiences cannot tell whether they were made by a person or a machine. This development has revived an old question: can a machine be truly creative?",
+        "Supporters of the idea argue that creativity is simply the ability to produce something that is both new and valuable. By this definition, they say, the source of the work does not matter. If a program composes a melody that listeners find beautiful and that no one has heard before, it has done what we expect of a creative person.",
+        "Critics disagree. They point out that such programs learn by analyzing enormous numbers of existing works and then producing new combinations of the patterns they have found. In their view, this is closer to skilled imitation than to genuine invention. A human artist, they argue, creates out of experiences, emotions, and intentions, none of which a program possesses.",
+        "Many artists, however, see the debate as less important than the practical question of how to use these tools. Some use programs to suggest ideas, which they then develop and change. For them, the machine is neither a rival nor a genius but an instrument, much like the camera, which was once feared as the end of painting and instead became an art form of its own."
+      ],
+      "questions": [
+        {
+          "id": "rc-015-1",
+          "type": "reading-comprehension",
+          "passageId": "p-015",
+          "stem": "According to the supporters described in paragraph 2, -",
+          "options": [
+            "only humans can produce valuable work",
+            "the source of a work is irrelevant if the work is new and valuable",
+            "music is the only creative art",
+            "audiences should always know who made a work"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "התומכים מגדירים יצירתיות כיצירת דבר חדש ובעל ערך, ולכן the source of the work does not matter.",
+          "tags": [
+            "detail",
+            "viewpoint"
+          ],
+          "referencedParagraphs": [
+            2
+          ]
+        },
+        {
+          "id": "rc-015-2",
+          "type": "reading-comprehension",
+          "passageId": "p-015",
+          "stem": "The critics in paragraph 3 believe that computer programs -",
+          "options": [
+            "are more creative than most human artists",
+            "have their own emotions and intentions",
+            "mainly recombine patterns from existing works",
+            "cannot produce anything that sounds new"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "לדברי המבקרים, התוכנות מנתחות יצירות קיימות ומייצרות צירופים חדשים של דפוסים — closer to skilled imitation. הם לא טוענים שהתוצאה לא נשמעת חדשה.",
+          "tags": [
+            "detail",
+            "viewpoint"
+          ],
+          "referencedParagraphs": [
+            3
+          ]
+        },
+        {
+          "id": "rc-015-3",
+          "type": "reading-comprehension",
+          "passageId": "p-015",
+          "stem": "Why does the author mention the camera in the last paragraph?",
+          "options": [
+            "To argue that photography is not a real art",
+            "To show that new technologies always destroy older arts",
+            "To explain how computer programs take pictures",
+            "To suggest that a feared new tool may become a means of artistic expression"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 4,
+          "explanation": "המצלמה עוררה חשש שתביא לקץ הציור, ובמקום זאת הפכה לאמנות בפני עצמה. ההשוואה מרמזת שגם תוכנות עשויות להפוך לכלי אמנותי.",
+          "tags": [
+            "purpose",
+            "analogy"
+          ],
+          "referencedParagraphs": [
+            4
+          ]
+        },
+        {
+          "id": "rc-015-4",
+          "type": "reading-comprehension",
+          "passageId": "p-015",
+          "stem": "Which of the following best describes the structure of the passage?",
+          "options": [
+            "A question is raised, two opposing views are presented, and a practical perspective is added.",
+            "A problem is described and a single solution is proposed.",
+            "The history of computers is told in chronological order.",
+            "An experiment is described and its results are analyzed."
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 4,
+          "explanation": "פסקה 1 מעלה שאלה, פסקאות 2–3 מציגות עמדות מנוגדות (תומכים ומבקרים), ופסקה 4 מוסיפה נקודת מבט מעשית של אמנים.",
+          "tags": [
+            "structure",
+            "main-idea"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-016",
+      "title": "In Praise of Boredom",
+      "topic": "פסיכולוגיה",
+      "difficulty": 3,
+      "paragraphs": [
+        "Boredom has a bad reputation. It is usually seen as an unpleasant state to be escaped as quickly as possible, and modern technology makes escape easier than ever: at the first sign of boredom, most people reach for their phones. Yet a growing number of psychologists argue that boredom may actually be good for us.",
+        "In one well-known experiment, participants were first asked to perform a deliberately dull task, copying numbers from a telephone directory, for fifteen minutes. They were then asked to think of as many uses as possible for a pair of plastic cups. Compared with a group that had not done the dull task, the bored participants came up with more ideas, and their ideas were more original.",
+        "Researchers suggest that when the outside world offers little stimulation, the mind begins to wander. This daydreaming allows the brain to make unexpected connections between ideas, which is an important part of creative thinking. Boredom may also act as a signal, telling us that our current activity is not satisfying and pushing us to look for more meaningful goals.",
+        "None of this means that boredom is always beneficial. Chronic boredom has been linked to poor concentration and unhealthy habits. The point, researchers say, is that brief periods of boredom are not necessarily a problem to be solved. Allowing ourselves to be bored occasionally, instead of filling every free moment, might make us both more creative and more aware of what we really want."
+      ],
+      "questions": [
+        {
+          "id": "rc-016-1",
+          "type": "reading-comprehension",
+          "passageId": "p-016",
+          "stem": "According to paragraph 1, modern technology -",
+          "options": [
+            "makes people more bored than in the past",
+            "makes it easy to avoid feeling bored",
+            "has improved boredom's reputation",
+            "is recommended by psychologists"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 1: modern technology makes escape easier than ever — קל לברוח מהשעמום (למשל לטלפון).",
+          "tags": [
+            "detail"
+          ],
+          "referencedParagraphs": [
+            1
+          ]
+        },
+        {
+          "id": "rc-016-2",
+          "type": "reading-comprehension",
+          "passageId": "p-016",
+          "stem": "In the experiment described in paragraph 2, the participants who had done the dull task -",
+          "options": [
+            "refused to complete the second task",
+            "produced fewer ideas than the other group",
+            "produced more and more original ideas",
+            "copied the ideas of the other group"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "המשתתפים המשועממים came up with more ideas, and their ideas were more original — יותר רעיונות ומקוריים יותר.",
+          "tags": [
+            "detail"
+          ],
+          "referencedParagraphs": [
+            2
+          ]
+        },
+        {
+          "id": "rc-016-3",
+          "type": "reading-comprehension",
+          "passageId": "p-016",
+          "stem": "According to paragraph 3, boredom may help creativity because it -",
+          "options": [
+            "encourages the mind to wander and connect ideas",
+            "improves people's memory for numbers",
+            "makes people work faster",
+            "reduces the need for sleep"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "בפסקה 3: כשהסביבה לא מגרה, the mind begins to wander, וחלימה בהקיץ מאפשרת חיבורים לא צפויים בין רעיונות.",
+          "tags": [
+            "detail",
+            "cause"
+          ],
+          "referencedParagraphs": [
+            3
+          ]
+        },
+        {
+          "id": "rc-016-4",
+          "type": "reading-comprehension",
+          "passageId": "p-016",
+          "stem": "The author's attitude toward boredom can best be described as -",
+          "options": [
+            "completely negative",
+            "enthusiastic without any reservations",
+            "indifferent",
+            "generally positive, with some reservations"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 4,
+          "explanation": "הכותב מציג יתרונות לשעמום, אך מסייג בפסקה 4: None of this means that boredom is always beneficial. לכן העמדה חיובית בעיקרה, עם הסתייגויות.",
+          "tags": [
+            "author-view",
+            "tone"
+          ],
+          "referencedParagraphs": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-017",
+      "title": "The Long Journey of the Monarch Butterfly",
+      "topic": "ביולוגיה",
+      "difficulty": 3,
+      "paragraphs": [
+        "Each autumn, millions of monarch butterflies leave Canada and the northern United States and fly south to the mountains of central Mexico, a journey of up to 4,000 kilometers. For an insect that weighs less than a gram, it is one of the most remarkable migrations in the animal kingdom.",
+        "What makes the journey even more mysterious is that no single butterfly completes the full round trip. The monarchs that fly south in autumn spend the winter in Mexico and begin the return journey in spring, but they die along the way. Their offspring continue north, and it takes three or four generations to reach Canada again. The butterflies that fly south the following autumn have therefore never made the trip before.",
+        "How do they find their way? Scientists have discovered that monarchs use the position of the sun as a compass, correcting for its movement across the sky with an internal clock located in their antennae. There is also evidence that they can sense the Earth's magnetic field, which may help them on cloudy days.",
+        "In recent decades, the number of monarchs reaching Mexico has dropped sharply. Researchers point to several causes, including the loss of milkweed, the only plant on which monarch caterpillars can feed, as well as the destruction of forests in their winter habitat and changes in climate. Conservation programs now encourage people across North America to plant milkweed in their gardens."
+      ],
+      "questions": [
+        {
+          "id": "rc-017-1",
+          "type": "reading-comprehension",
+          "passageId": "p-017",
+          "stem": "According to paragraph 2, the butterflies that fly south in autumn -",
+          "options": [
+            "have made the journey several times before",
+            "have never made the journey before",
+            "spend the summer in Mexico",
+            "complete the whole round trip"
+          ],
+          "correctOptionIndex": 1,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "המשפט האחרון בפסקה 2: The butterflies that fly south the following autumn have therefore never made the trip before.",
+          "tags": [
+            "detail",
+            "inference"
+          ],
+          "referencedParagraphs": [
+            2
+          ]
+        },
+        {
+          "id": "rc-017-2",
+          "type": "reading-comprehension",
+          "passageId": "p-017",
+          "stem": "The word \"offspring\" in paragraph 2 refers to the butterflies' -",
+          "options": [
+            "enemies",
+            "parents",
+            "young",
+            "food"
+          ],
+          "correctOptionIndex": 2,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "offspring = צאצאים. הפרפרים מתים בדרך, וצאצאיהם ממשיכים צפונה.",
+          "tags": [
+            "vocabulary-in-context"
+          ],
+          "referencedParagraphs": [
+            2
+          ]
+        },
+        {
+          "id": "rc-017-3",
+          "type": "reading-comprehension",
+          "passageId": "p-017",
+          "stem": "According to paragraph 3, the internal clock in the monarchs' antennae helps them -",
+          "options": [
+            "sense the Earth's magnetic field",
+            "find milkweed plants",
+            "know when to lay eggs",
+            "adjust for the changing position of the sun"
+          ],
+          "correctOptionIndex": 3,
+          "timeLimitSeconds": 90,
+          "difficulty": 3,
+          "explanation": "בפסקה 3: correcting for its movement across the sky with an internal clock located in their antennae — השעון מתקן את תנועת השמש. השדה המגנטי הוא מנגנון נפרד.",
+          "tags": [
+            "detail"
+          ],
+          "referencedParagraphs": [
+            3
+          ]
+        },
+        {
+          "id": "rc-017-4",
+          "type": "reading-comprehension",
+          "passageId": "p-017",
+          "stem": "Why do conservation programs encourage people to plant milkweed?",
+          "options": [
+            "Because monarch caterpillars cannot feed on any other plant",
+            "Because milkweed protects forests in Mexico",
+            "Because milkweed changes the climate",
+            "Because adult butterflies use it to find their way"
+          ],
+          "correctOptionIndex": 0,
+          "timeLimitSeconds": 90,
+          "difficulty": 2,
+          "explanation": "בפסקה 4: milkweed הוא the only plant on which monarch caterpillars can feed, והיעלמותו היא אחת הסיבות לירידה במספר הפרפרים.",
+          "tags": [
+            "detail",
+            "cause"
+          ],
+          "referencedParagraphs": [
+            4
           ]
         }
       ]

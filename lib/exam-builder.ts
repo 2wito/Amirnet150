@@ -131,27 +131,82 @@ export interface ExamRuntimeSection {
   questions: readonly Question[];
 }
 
-function pickQuestions(type: QuestionType, rng: Rng): Question[] {
+/**
+ * The selectable units of a section: questions for sentence completion and
+ * restatement, passages for reading comprehension. Each has an `id`, which is
+ * what "seen" history tracks.
+ */
+function poolFor(type: QuestionType): readonly { id: string }[] {
+  if (type === "reading-comprehension") return questionBank.readingComprehension;
+  return type === "sentence-completion" ? questionBank.sentenceCompletion : questionBank.restatement;
+}
+
+/** IDs of every selectable unit (question or passage) of a section. */
+export function getPoolIds(type: QuestionType): string[] {
+  return poolFor(type).map((item) => item.id);
+}
+
+/**
+ * `count` random items, taking unseen ones first and topping up from seen ones
+ * only when there aren't enough unseen items left.
+ */
+function sampleFresh<T extends { id: string }>(
+  pool: readonly T[],
+  count: number,
+  seen: ReadonlySet<string>,
+  rng: Rng,
+): T[] {
+  const unseen = pool.filter((item) => !seen.has(item.id));
+  const fresh = sample(unseen, count, rng);
+  if (fresh.length >= count) return fresh;
+  const rest = sample(
+    pool.filter((item) => seen.has(item.id)),
+    count - fresh.length,
+    rng,
+  );
+  return shuffle([...fresh, ...rest], rng);
+}
+
+/** The units picked for one section: their IDs (for history) and their questions. */
+function pickQuestions(type: QuestionType, rng: Rng, seen: ReadonlySet<string>): { unitIds: string[]; questions: Question[] } {
   const count = SECTION_BLUEPRINT[type];
   if (type === "reading-comprehension") {
-    return sample(questionBank.readingComprehension, count, rng).flatMap((p) => p.questions);
+    const passages = sampleFresh(questionBank.readingComprehension, count, seen, rng);
+    return { unitIds: passages.map((p) => p.id), questions: passages.flatMap((p) => p.questions) };
   }
   const pool: readonly Question[] =
     type === "sentence-completion" ? questionBank.sentenceCompletion : questionBank.restatement;
-  return sample(pool, count, rng);
+  const questions = sampleFresh(pool, count, seen, rng);
+  return { unitIds: questions.map((q) => q.id), questions };
+}
+
+/**
+ * Randomly selects questions for each section (in the given order) and shuffles
+ * their options. Items whose IDs are in `seen` are only used once a section has
+ * run out of unseen ones. `servedIds` lists the question / passage IDs used.
+ */
+export function buildExamLayoutWithHistory(
+  types: readonly QuestionType[],
+  seen: ReadonlySet<string> = new Set(),
+  rng: Rng = Math.random,
+): { layout: ExamLayout; servedIds: string[] } {
+  const servedIds: string[] = [];
+  const layout = types
+    .map((type) => {
+      const { unitIds, questions } = pickQuestions(type, rng, seen);
+      servedIds.push(...unitIds);
+      return {
+        type,
+        items: questions.map((q) => ({ questionId: q.id, optionOrder: randomOptionOrder(q, rng) })),
+      };
+    })
+    .filter((s) => s.items.length > 0);
+  return { layout, servedIds };
 }
 
 /** Randomly selects questions for each section (in the given order) and shuffles their options. */
 export function buildExamLayout(types: readonly QuestionType[], rng: Rng = Math.random): ExamLayout {
-  return types
-    .map((type) => ({
-      type,
-      items: pickQuestions(type, rng).map((q) => ({
-        questionId: q.id,
-        optionOrder: randomOptionOrder(q, rng),
-      })),
-    }))
-    .filter((s) => s.items.length > 0);
+  return buildExamLayoutWithHistory(types, new Set(), rng).layout;
 }
 
 /**

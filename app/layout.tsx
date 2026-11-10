@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Arimo, Heebo } from "next/font/google";
+import { THEME_INIT_SCRIPT } from "@/components/theme/theme-toggle";
 import "./globals.css";
 
 /** Hebrew UI font (navigation, explanations, dashboard). */
@@ -34,7 +35,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="he" dir="rtl" className={`${heebo.variable} ${arimo.variable}`}>
+    <html lang="he" dir="rtl" className={`${heebo.variable} ${arimo.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body className="min-h-dvh antialiased">{children}</body>
     </html>
   );

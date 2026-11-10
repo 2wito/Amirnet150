@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BookA, BookOpenCheck, ClipboardList, House, type LucideIcon } from "lucide-react";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { WelcomeModal } from "@/components/onboarding/WelcomeModal";
 import { cn } from "@/lib/utils";
 
@@ -27,11 +28,11 @@ export function SiteHeader() {
           <span className="flex size-9 items-center justify-center rounded-xl bg-brand-gradient text-white shadow-md shadow-primary/25">
             <BookOpenCheck className="size-5" aria-hidden />
           </span>
-          <span dir="ltr" className="hidden text-lg font-extrabold tracking-tight text-brand-gradient min-[380px]:inline">
+          <span dir="ltr" className="hidden text-lg font-extrabold tracking-tight text-brand-gradient min-[480px]:inline">
             EZ AMIRNET
           </span>
         </Link>
-        <div className="flex items-center gap-1">
+        <div className="flex min-w-0 items-center gap-0.5 sm:gap-1">
           <nav aria-label="ניווט ראשי">
             <ul className="flex items-center gap-1 text-sm">
               {NAV_ITEMS.map(({ href, label, icon: Icon, hideOnMobile }) => {
@@ -56,6 +57,7 @@ export function SiteHeader() {
               })}
             </ul>
           </nav>
+          <ThemeToggle />
           <WelcomeModal />
         </div>
       </div>

@@ -1,11 +1,13 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import {
-  buildExamLayout,
+  buildExamLayoutWithHistory,
+  getPoolIds,
   materializeLayout,
   type ExamLayout,
   type ExamRuntimeSection,
 } from "@/lib/exam-builder";
+import { getSeenIds, markSeen, unmarkSeen } from "@/lib/seen-questions";
 import { scoreResponses, type ScoreSummary } from "@/lib/scoring";
 import type { ExamMode, OptionIndex, Question, QuestionId, QuestionType } from "@/types/exam";
 
@@ -251,6 +253,21 @@ function fromPersisted(persisted: unknown, current: ExamStore): ExamStore {
   return restored;
 }
 
+/**
+ * Saves the served questions / passages to "seen" history. When a section's
+ * whole pool has now been seen, its history restarts (keeping only what was
+ * just served), so the next exams cycle through the bank again.
+ */
+function recordServed(types: readonly QuestionType[], servedIds: readonly string[]): void {
+  markSeen(servedIds);
+  const seen = getSeenIds();
+  const served = new Set(servedIds);
+  for (const type of types) {
+    const pool = getPoolIds(type);
+    if (pool.every((id) => seen.has(id))) unmarkSeen(pool.filter((id) => !served.has(id)));
+  }
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                    Store                                   */
 /* -------------------------------------------------------------------------- */
@@ -266,7 +283,7 @@ export const useExamStore = create<ExamStore>()(
     (set, get, api) => {
       const startExam = (mode: ExamMode, section?: QuestionType): void => {
         const types = mode === "full-exam" ? SECTION_ORDER : section ? [section] : [];
-        const layout = buildExamLayout(types);
+        const { layout, servedIds } = buildExamLayoutWithHistory(types, getSeenIds());
         const sections = materializeLayout(layout) ?? [];
         const questionCount = sections.reduce((n, s) => n + s.questions.length, 0);
         if (questionCount === 0) {
@@ -292,6 +309,7 @@ export const useExamStore = create<ExamStore>()(
           startedAt: now,
           totalDeadline: now + totalSeconds * 1000,
         };
+        recordServed(types, servedIds);
         // Drop any previous exam from sessionStorage before saving the new one.
         // `persist` is absent when sessionStorage is unavailable; the exam still works, unsaved.
         api.persist?.clearStorage();

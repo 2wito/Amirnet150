@@ -34,6 +34,9 @@ The project started from a simple need: good Amirnet practice material is usuall
 | ⏱️ | **Dynamic Timer with Drift Prevention** | Time is computed from absolute deadlines, not by counting ticks, so a throttled background tab or a slow device never adds time. The clock catches up as soon as the tab becomes visible again. |
 | 🎯 | **Practice Modes** | Practice one section with a section-level timer and free back/forward navigation. |
 | 🔀 | **Randomized Exams** | Every new exam samples different questions per section and shuffles the answer order, remapping the correct answer and per-option explanations to match. |
+| ♻️ | **No Repeats** | The browser remembers which questions and passages you've already seen, and new exams draw unseen ones first. A section's pool starts over only once you've seen all of it. |
+| 🌗 | **Day / Night Mode** | A header toggle switches between light and dark themes. It follows the OS setting by default, remembers your choice, and applies it before first paint (no flash). |
+| 📚 | **Large Question Bank** | 82 sentence-completion, 70 restatement, and 17 reading passages (68 questions), each with a Hebrew explanation. |
 | 🃏 | **Vocabulary Flashcards** | About 100 high-frequency words in six categories, with search (English and Hebrew), category filters, a hide-translation self-test mode, 3D flip cards with keyboard navigation, and "known word" tracking. |
 | 📊 | **Scoring Algorithm (50–150)** | Raw score → estimated Amirnet score → exemption level (Pre-Basic … Exempt), plus a difficulty-weighted variant. The scoring functions are pure, typed, and independent of the UI. |
 | 🔍 | **Detailed Review Dashboard** | Score ring and level badge, a per-section accuracy and time breakdown, and a question-by-question review showing your answer, the correct answer, and a Hebrew explanation. |
@@ -70,13 +73,25 @@ types/exam.ts          Domain model (discriminated unions per question type)
 
 ## Screenshots
 
-| Home | Exam |
-|:---:|:---:|
-| ![Home](docs/screenshots/home.png) | ![Exam](docs/screenshots/exam.png) |
-| **Results** | **Vocabulary** |
-| ![Results](docs/screenshots/results.png) | ![Vocabulary](docs/screenshots/vocab.png) |
+### Home: light & dark mode
 
-> Screenshots go in `docs/screenshots/`.
+| Light | Dark |
+|:---:|:---:|
+| ![Home page in light mode](docs/screenshots/home-light.png) | ![Home page in dark mode](docs/screenshots/home-dark.png) |
+
+### Exam experience
+
+| Sentence Completion | Reading Comprehension |
+|:---:|:---:|
+| ![Sentence completion question with per-question timer](docs/screenshots/exam-sentence-completion.png) | ![Reading passage with numbered paragraphs beside the question](docs/screenshots/exam-reading.png) |
+
+### Practice, results & vocabulary
+
+| Practice Dashboard | Results |
+|:---:|:---:|
+| ![Practice dashboard: full simulation or single section](docs/screenshots/practice.png) | ![Results: estimated score, level and breakdown](docs/screenshots/results.png) |
+| **Vocabulary Flashcards** | **Mobile (dark)** |
+| ![Vocabulary flashcards with search and categories](docs/screenshots/vocabulary.png) | <img src="docs/screenshots/mobile-home-dark.png" alt="Home page on a phone in dark mode" width="260"> |
 
 ## Local Development
 
@@ -134,6 +149,8 @@ vercel --prod   # production
 - **תרגול ממוקד** לפי פרק: השלמת משפטים, ניסוח מחדש והבנת הנקרא.
 - **ציון משוער** בסולם 50–150 ותחקיר מפורט עם הסבר בעברית לכל שאלה.
 - **אוצר מילים נפוץ** עם כרטיסיות, חיפוש וסינון.
+- **מאגר גדול בלי חזרות**: מעל 200 שאלות, והאתר זוכר מה כבר ראיתם כדי להציג קודם שאלות חדשות.
+- **מצב יום ולילה** בלחיצת כפתור.
 
 ### הבהרה משפטית ושחרור מאחריות
 
@@ -142,9 +159,7 @@ vercel --prod   # production
 - **השימוש באתר ובחומרים הינו על אחריות המשתמש בלבד.**
 - כל זכויות היוצרים של צדדים שלישיים שייכות לבעליהן. נתקלתם בתוכן שמפר זכויות יוצרים? כתבו ל-<span dir="ltr">[itay2wito@gmail.com](mailto:itay2wito@gmail.com)</span> והתוכן יוסר מיד.
 
-### הקדשה וקרדיטים
-
-> **שנהב** — האתר הזה נבנה בשבילך ולהצלחתך. תני בראש! אוהב ❤️
+### קרדיטים
 
 **פיתוח, עיצוב ותוכן:** איתי טויטו (Itay Twito)<br>
 **יצירת קשר:** <span dir="ltr">[itay2wito@gmail.com](mailto:itay2wito@gmail.com)</span>
