@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Briefcase, GraduationCap, Layers, Mail, type LucideIcon } from "lucide-react";
+import { Briefcase, GraduationCap, Layers, Mail, Sparkles, type LucideIcon } from "lucide-react";
 
 /** All user-facing strings for the "About me" section (Hebrew, RTL). */
 const COPY = {
@@ -10,8 +10,9 @@ const COPY = {
   highlights: [
     // U+2068/U+2069 (FSI/PDI) isolate "B.Sc." so its periods don't flip inside the Hebrew run.
     { icon: GraduationCap, text: "בוגר ⁨B.Sc.⁩ במדעי המחשב, ממוצע 96 ורשימת דיקן" },
-    { icon: Briefcase, text: "עובד בסטארטאפ בתל אביב" },
-    { icon: Layers, text: "מפתח Full-stack שבונה אפליקציות ווב מודרניות" },
+    { icon: Briefcase, text: "עובד בסטארטאפ בתחומי QA ו-Support" },
+    { icon: Layers, text: "מפתח Full-stack בשילוב כלי AI ו-LLM מודרניים" },
+    { icon: Sparkles, text: "מעודכן בכל החידושים בעולם ה-AI" },
   ] satisfies readonly { icon: LucideIcon; text: string }[],
   stackLabel: "הסטאק שלי",
   stack: ["Next.js", "Supabase", "Tailwind CSS", "Claude Code", "Cursor"],
