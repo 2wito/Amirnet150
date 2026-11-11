@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Copyright, Heart, Mail, ShieldAlert, Unlink } from "lucide-react";
 
-const DEVELOPER_EMAIL = "itay2wito@gmail.com";
+import { DEVELOPER_EMAIL } from "@/lib/site";
 
 const NOTICES = [
   {
@@ -19,6 +19,12 @@ const NOTICES = [
     title: "זכויות יוצרים",
     body: "כל זכויות היוצרים של צדדים שלישיים שייכות לבעליהן. אם נתקלתם בתוכן שלדעתכם מפר זכויות יוצרים, נשמח שתדווחו לנו במייל והתוכן יוסר מיד.",
   },
+] as const;
+
+const LEGAL_LINKS = [
+  { href: "/legal#terms", label: "תנאי שימוש" },
+  { href: "/legal#privacy", label: "מדיניות פרטיות" },
+  { href: "/legal#accessibility", label: "הצהרת נגישות" },
 ] as const;
 
 const linkClass =
@@ -54,6 +60,18 @@ export function SiteFooter() {
             </li>
           ))}
         </ul>
+
+        <nav aria-label="מידע משפטי" className="border-t pt-6">
+          <ul className="flex flex-wrap gap-x-5 gap-y-2 text-xs">
+            {LEGAL_LINKS.map(({ href, label }) => (
+              <li key={href}>
+                <Link href={href} className={linkClass}>
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         <div className="flex flex-col gap-2 border-t pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>

@@ -40,7 +40,7 @@ const TYPE_META: Record<QuestionType, { icon: LucideIcon; descriptionHe: string;
 };
 
 const FEATURES: readonly { icon: LucideIcon; title: string; body: string }[] = [
-  { icon: ClipboardCheck, title: "סימולציה מלאה", body: "שלושת הפרקים ברצף, עם טיימר לכל שאלה וללא חזרה — כמו במבחן." },
+  { icon: ClipboardCheck, title: "סימולציה מלאה", body: "שלושת הפרקים ברצף, עם טיימר לכל שאלה וללא חזרה — בדומה למבנה המבחן." },
   { icon: Shuffle, title: "מבחן חדש בכל פעם", body: "השאלות וסדר התשובות מוגרלים מחדש בכל התחלה." },
   { icon: Gauge, title: "ציון משוער ורמה", body: "הערכת ציון בסולם 50–150, פילוח לפי סוג שאלה והסבר לכל תשובה." },
   { icon: BookA, title: "מילים נפוצות", body: "אוצר מילים ממוין לקטגוריות עם כרטיסיות ומצב תרגול." },

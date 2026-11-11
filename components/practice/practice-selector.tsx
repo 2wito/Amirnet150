@@ -84,7 +84,7 @@ export function PracticeSelector() {
               <h2 id="full-exam-heading" className="text-xl font-bold">
                 סימולציית מבחן מלא
               </h2>
-              <p className="text-sm text-muted-foreground">כל שלושת הפרקים ברצף, בתנאים של המבחן האמיתי.</p>
+              <p className="text-sm text-muted-foreground">כל שלושת הפרקים ברצף, בתנאים שמדמים את המבחן.</p>
               <ul className="flex flex-wrap gap-2 pt-1 text-xs">
                 {[
                   formatMinutesHe(FULL_EXAM_DURATION_SECONDS),

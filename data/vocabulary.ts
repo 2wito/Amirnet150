@@ -25,7 +25,7 @@ export const VOCAB_CATEGORIES: readonly { id: VocabCategory; labelHe: string; de
   { id: "connectors", labelHe: "מילות קישור", descriptionHe: "ניגוד, סיבה ותוצאה, תוספת — המפתח להשלמת משפטים." },
   { id: "restatement-keys", labelHe: "מפתחות לניסוח מחדש", descriptionHe: "כמתים, שלילה ותדירות שמשנים את משמעות המשפט." },
   { id: "verbs", labelHe: "פעלים אקדמיים", descriptionHe: "פעלים שחוזרים בקטעי קריאה ובשאלות." },
-  { id: "adjectives", labelHe: "תארים", descriptionHe: "תארים נפוצים במבחן, רבים מהם בזוגות של הפכים." },
+  { id: "adjectives", labelHe: "תארים", descriptionHe: "תארים נפוצים בטקסטים אקדמיים, רבים מהם בזוגות של הפכים." },
   { id: "nouns", labelHe: "שמות עצם", descriptionHe: "מושגים מופשטים מטקסטים אקדמיים." },
   { id: "phrases", labelHe: "ביטויים וצירופים", descriptionHe: "צירופים קבועים שכדאי לזהות כיחידה אחת." },
 ];

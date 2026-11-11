@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     default: "EZ AMIRNET — תרגול חינמי למבחן אמירנט",
     template: "%s | EZ AMIRNET",
   },
-  description: "סימולציות ותרגול למבחן האמירנט באנגלית, בממשק הדומה למבחן הממוחשב של מאל״ו.",
+  description: "סימולציות ותרגול חינמיים לקראת מבחן האמירנט באנגלית. אתר עצמאי לתרגול עצמי.",
 };
 
 /** Root layout: RTL Hebrew document. Site chrome lives in `(site)/layout.tsx`; the exam is full-screen. */

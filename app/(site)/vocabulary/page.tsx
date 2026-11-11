@@ -18,7 +18,7 @@ export default function VocabularyPage() {
         <div className="space-y-1.5">
           <h1 className="text-3xl font-bold tracking-tight">מילים נפוצות</h1>
           <p className="max-w-prose text-muted-foreground">
-            {VOCABULARY.length} מילים וביטויים שחוזרים שוב ושוב באמירנט ובפסיכומטרי. חפשו, סננו לפי קטגוריה,
+            {VOCABULARY.length} מילים וביטויים נפוצים באנגלית אקדמית, שימושיים לתרגול לאמירנט ולפסיכומטרי. חפשו, סננו לפי קטגוריה,
             הסתירו את התרגום כדי לבחון את עצמכם, או עברו למצב כרטיסיות.
           </p>
         </div>
