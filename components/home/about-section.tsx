@@ -19,8 +19,8 @@ const COPY = {
   emailLabel: "אימייל",
   email: "hello@claude-code-hebrew.com",
   linkedinLabel: "LinkedIn",
-  linkedinHandle: "itay-twito",
-  linkedinUrl: "https://www.linkedin.com/in/itay-twito/",
+  linkedinHandle: "itay-twito-2083812b9",
+  linkedinUrl: "https://www.linkedin.com/in/itay-twito-2083812b9/",
   story: [
     "אני חי ונושם פיתוח עכשווי, וכלי Agentic Coding כמו Claude Code ו-Cursor הפכו לחלק מרכזי ב-Workflow היומיומי שלי.",
     "את EZ AMIRNET בניתי מאותה סיבה שבגללה בניתי את ״המדריך ל-Claude Code בעברית״: כדי לעזור לחברים, למשפחה ולקהילה. זה משאב חינמי ונגיש, שנועד לעזור גם למי שרק מתחיל להתכונן לאמירנט וגם למי שכבר מנוסה ורוצה למקסם את הציון.",
