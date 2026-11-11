@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Copyright, Heart, Mail, ShieldAlert, Unlink } from "lucide-react";
 
 const DEVELOPER_EMAIL = "itay2wito@gmail.com";
@@ -61,6 +62,10 @@ export function SiteFooter() {
               איתי טויטו
               <Mail className="size-3.5" aria-hidden />
             </a>
+            {" · "}
+            <Link href="/#about" className={linkClass}>
+              קצת עליי
+            </Link>
           </p>
           <p>
             לדיווח על בעיה או הפרת זכויות:{" "}

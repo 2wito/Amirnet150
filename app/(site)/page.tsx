@@ -12,6 +12,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AboutSection } from "@/components/home/about-section";
 import { EnglishContent } from "@/components/exam/english-content";
 import { LevelBadge } from "@/components/results/level-badge";
 import { VOCABULARY } from "@/data/vocabulary";
@@ -186,6 +187,8 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
+      <AboutSection />
 
       <p className="text-center text-xs text-muted-foreground">
         במאגר: {questionBank.sentenceCompletion.length + questionBank.restatement.length + TYPE_META["reading-comprehension"].count}{" "}
