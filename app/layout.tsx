@@ -20,7 +20,27 @@ const arimo = Arimo({
   display: "swap",
 });
 
+const SITE_URL = "https://amirnet150.vercel.app";
+const SITE_DESCRIPTION =
+  "סימולציות ותרגול חינמיים לקראת מבחן האמירנט באנגלית: סימולציה מלאה, ציון משוער ואוצר מילים.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  // Share previews (WhatsApp, Facebook, Telegram, X, LinkedIn). The image itself comes from
+  // app/opengraph-image.png and app/twitter-image.png.
+  openGraph: {
+    type: "website",
+    locale: "he_IL",
+    url: "/",
+    siteName: "EZ AMIRNET",
+    title: "EZ AMIRNET — תרגול חינמי למבחן אמירנט",
+    description: SITE_DESCRIPTION,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EZ AMIRNET — תרגול חינמי למבחן אמירנט",
+    description: SITE_DESCRIPTION,
+  },
   title: {
     default: "EZ AMIRNET — תרגול חינמי למבחן אמירנט",
     template: "%s | EZ AMIRNET",
