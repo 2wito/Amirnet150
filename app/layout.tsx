@@ -20,7 +20,7 @@ const arimo = Arimo({
   display: "swap",
 });
 
-const SITE_URL = "https://amirnet150.vercel.app";
+const SITE_URL = "https://www.amirnet-150.com";
 const SITE_DESCRIPTION =
   "סימולציות ותרגול חינמיים לקראת מבחן האמירנט באנגלית: סימולציה מלאה, ציון משוער ואוצר מילים.";
 

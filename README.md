@@ -4,7 +4,7 @@
 
 **A free exam-simulation platform for the Israeli Amirnet English test.**
 
-[**Live Demo →**](https://amirnet150.vercel.app)
+[**Live Demo →**](https://www.amirnet-150.com)
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -158,7 +158,7 @@ vercel --prod   # production
 - האתר **עצמאי לחלוטין** ואינו קשור, מטעם או בשיתוף עם המרכז הארצי לבחינות ולהערכה (מאל״ו), מכון נועם או כל מכון רשמי אחר להכנה למבחנים.
 - **השימוש באתר ובחומרים הינו על אחריות המשתמש בלבד.**
 - כל זכויות היוצרים של צדדים שלישיים שייכות לבעליהן. נתקלתם בתוכן שמפר זכויות יוצרים? כתבו ל-<span dir="ltr">[itay2wito@gmail.com](mailto:itay2wito@gmail.com)</span> והתוכן יוסר מיד.
-- תנאי השימוש, מדיניות הפרטיות והצהרת הנגישות המלאים מופיעים בעמוד [המידע המשפטי](https://amirnet150.vercel.app/legal) באתר.
+- תנאי השימוש, מדיניות הפרטיות והצהרת הנגישות המלאים מופיעים בעמוד [המידע המשפטי](https://www.amirnet-150.com/legal) באתר.
 
 ### קרדיטים
 
